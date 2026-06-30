@@ -327,6 +327,10 @@
       <span class="autosave-txt" id="asBadge">💾 Auto-save on</span>
       <button class="btn btn-ghost" id="undoBtn" onclick="undo()" disabled title="Ctrl+Z">↩ Undo <span class="undo-badge" id="uBadge" style="display:none">0</span></button>
       <button class="btn btn-ghost" onclick="exportCSV()" title="Export CSV">⬇ CSV</button>
+      <button class="btn btn-ghost" onclick="downloadBackup()" title="Download Backup">💾 Backup</button>
+      <select class="ctrl-select" id="fileSelect" onchange="loadFile(this.value)" title="Switch file" style="min-width:140px; margin-right:10px;">
+        <option value="">📁 Switch File…</option>
+      </select>
       <span id="repoBadge" class="shown-badge" style="background:#f0e6ff;color:#6c5ce7;cursor:pointer;" onclick="openConfigModal()">GitHub Repo</span>
       <button class="btn btn-orange" onclick="openPipeline()">🔄 Pipeline</button>
       <button class="btn btn-green" onclick="saveToGitHub()">💾 Save to GitHub</button>
@@ -880,12 +884,31 @@ async function loadData() {
     return;
   }
   $('repoBadge').textContent = `${c.owner}/${c.repo}`;
-  try {
-    const res = await fetch(`https://api.github.com/repos/${c.owner}/${c.repo}/contents/${c.path}`, {
+
+  const loadFromGitHub = async (path) => {
+    const res = await fetch(`https://api.github.com/repos/${c.owner}/${c.repo}/contents/${path}`, {
       headers: { 'Authorization': `Bearer ${c.token}`, 'Accept': 'application/vnd.github.v3+json' }
     });
-    if (!res.ok) throw new Error(await res.text());
-    const data = await res.json();
+    if (!res.ok) {
+      if (res.status === 404) return null;
+      throw new Error(await res.text());
+    }
+    return await res.json();
+  };
+
+  try {
+    let editedPath = c.path.replace('.json', '_edited.json');
+    if (c.path === 'enriched_edited.json') editedPath = c.path;
+    
+    let data = await loadFromGitHub(editedPath);
+    if (data) {
+      toast('Loaded edited data', 'i');
+    } else {
+      data = await loadFromGitHub(c.path);
+      if (!data) throw new Error("Base file not found on GitHub!");
+      toast('Loaded raw data', 'i');
+    }
+
     currentGhSha = data.sha;
     const content = decodeURIComponent(escape(atob(data.content)));
     allProducts = JSON.parse(content);
@@ -899,11 +922,46 @@ async function loadData() {
     $('pCount').textContent = `${allProducts.length} products`;
     refreshAll();
     startAutoSave();
+    loadFileList();
     toast('Loaded successfully', 's');
   } catch(e) {
     toast('Failed to load from GitHub', 'e');
     console.error(e);
   }
+}
+
+async function loadFileList() {
+  const c = loadGhConfig();
+  if (!c) return;
+  try {
+    const res = await fetch(`https://api.github.com/repos/${c.owner}/${c.repo}/contents/`, {
+      headers: { 'Authorization': `Bearer ${c.token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    if (!res.ok) return;
+    const files = await res.json();
+    const sel = $('fileSelect');
+    sel.innerHTML = '<option value="">📁 Switch File…</option>';
+    files.filter(f => f.name.endsWith('.json')).forEach(f => {
+      const o = document.createElement('option');
+      o.value = f.name;
+      const kb = Math.round(f.size/1024);
+      o.textContent = `${f.name} (${kb > 1024 ? (kb/1024).toFixed(1)+'MB' : kb+'KB'})`;
+      sel.appendChild(o);
+    });
+  } catch(e) { console.error('Failed to load file list', e); }
+}
+
+async function loadFile(name) {
+  if (!name) return;
+  const c = loadGhConfig();
+  if (!c) return;
+  
+  // Update the config with the new file path and reload
+  c.path = name;
+  localStorage.setItem('ghConfig', JSON.stringify(c));
+  toast(`Loading ${name}...`, 'i');
+  await loadData();
+  $('fileSelect').value = '';
 }
 
 // ================================================================
@@ -1531,28 +1589,59 @@ async function exportCSV() {
 }
 
 // ================================================================
-// SAVE TO GITHUB
+// SAVE TO GITHUB & BACKUP
 // ================================================================
 function sendToServer() { try { localStorage.setItem('localProducts', JSON.stringify(allProducts)); } catch(e){} }
+
+function downloadBackup() {
+  if(!allProducts.length){toast('Nothing to backup','w');return;}
+  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(allProducts, null, 2));
+  const a = document.createElement('a');
+  a.href = dataStr;
+  a.download = `backup_products_${Date.now()}.json`;
+  a.click();
+  toast('Backup downloaded!', 's');
+}
+
 async function saveToGitHub() {
   const c = loadGhConfig();
   if (!c) return openConfigModal();
+
+  let editedPath = c.path.replace('.json', '_edited.json');
+  if (c.path === 'enriched_edited.json') editedPath = c.path;
+
   try {
     toast('Saving to GitHub...', 'i');
     const content = btoa(unescape(encodeURIComponent(JSON.stringify(allProducts, null, 2))));
-    const res = await fetch(`https://api.github.com/repos/${c.owner}/${c.repo}/contents/${c.path}`, {
+    
+    // Get the SHA of the edited file if it exists so we can overwrite it
+    let targetSha = undefined;
+    try {
+      const shaCheck = await fetch(`https://api.github.com/repos/${c.owner}/${c.repo}/contents/${editedPath}`, {
+        headers: { 'Authorization': `Bearer ${c.token}`, 'Accept': 'application/vnd.github.v3+json' }
+      });
+      if (shaCheck.ok) {
+        const shaData = await shaCheck.json();
+        targetSha = shaData.sha;
+      }
+    } catch(e) {}
+
+    const bodyPayload = {
+      message: 'Update products via Build Mart Editor',
+      content: content
+    };
+    if (targetSha) bodyPayload.sha = targetSha;
+
+    const res = await fetch(`https://api.github.com/repos/${c.owner}/${c.repo}/contents/${editedPath}`, {
       method: 'PUT',
       headers: { 'Authorization': `Bearer ${c.token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        message: 'Update products via Build Mart Editor',
-        content: content,
-        sha: currentGhSha
-      })
+      body: JSON.stringify(bodyPayload)
     });
+    
     if (!res.ok) throw new Error(await res.text());
     const data = await res.json();
     currentGhSha = data.content.sha;
-    toast('Saved to GitHub!', 's');
+    toast(`Saved safely to ${editedPath}!`, 's');
     localStorage.removeItem('localProducts');
   } catch(e) {
     toast('Failed to save to GitHub: ' + e.message, 'e');
