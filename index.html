@@ -910,7 +910,18 @@ async function loadData() {
     }
 
     currentGhSha = data.sha;
-    const content = decodeURIComponent(escape(atob(data.content)));
+    let b64 = data.content;
+    // GitHub API limits contents to 1MB. If file is larger, content is empty and encoding is 'none'.
+    if (data.encoding === 'none' && data.git_url) {
+       toast('Fetching large file...', 'i');
+       const blobRes = await fetch(data.git_url, { headers: { 'Authorization': `Bearer ${c.token}`, 'Accept': 'application/vnd.github.v3+json' }});
+       if (!blobRes.ok) throw new Error('Failed to fetch large file blob');
+       const blobData = await blobRes.json();
+       b64 = blobData.content;
+    }
+    
+    if (!b64) throw new Error("File content is empty or unsupported format.");
+    const content = decodeURIComponent(escape(atob(b64)));
     allProducts = JSON.parse(content);
     
     // Check for local unsaved changes
