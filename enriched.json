@@ -1,0 +1,3848 @@
+[
+  {
+    "productId": "B0H2V6LNSV",
+    "name": "Drill Bits",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Drill Bits",
+    "price": 3999,
+    "mrp": 399900,
+    "discount": 99,
+    "material": "Steel",
+    "type": "",
+    "size": "13mm",
+    "packSize": "136 PCs",
+    "finish": "Nickel Plated",
+    "usage": "DIY Crafts",
+    "imageUrl": "https://m.media-amazon.com/images/I/81TKgDzQ1BL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/dp/B0H2V6LNSV",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:20.748Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:52:31.019Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/81TKgDzQ1BL._AC_UL960_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/81TKgDzQ1BL._AC_UL960_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 48,
+      "grade": "D"
+    },
+    "_urlGenerated": "https://www.amazon.in/dp/B0H2V6LNSV",
+    "_urlMethod": "generated"
+  },
+  {
+    "productId": "B09NW3X5PT",
+    "name": "Hardware Item",
+    "brand": "HETTICH",
+    "category": "Furniture Hardware",
+    "subcategory": "General",
+    "price": 178,
+    "mrp": 659,
+    "discount": 73,
+    "material": "Steel",
+    "type": "Screw",
+    "size": "7x",
+    "packSize": "60 pcs",
+    "finish": "Zinc Plated",
+    "usage": "Woodworking",
+    "imageUrl": "https://m.media-amazon.com/images/I/41He2TcfdrL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Xyka-Professional-Carving-Woodworking-Beginners/dp/B09NW3X5PT/ref=sr_1_5?dib=eyJ2IjoiMSJ9.n0CO4_tsXWVujXOU8GgdXG9_kyWS4e0uw7IN1gmlwmI6CU0413dAMhaDjj2Fp7_-RSqS_xc4HmyFzCzL8-ABGImfJYL4F0hpGc9E7PpdoOuBPtc3UvffSo4o9SOfExNpiirXCSNGsm2Ua2q_dNv_O18ycikaf9T85hphxPXOf1Qmq_iwQs6cz4DXibErs9h0GNqMNYfktjt63YoGF0EKuCAK8gHDP8mE_EIoiRQK7NiN1Ewv2KpM9iEbDN_LkXc96dNaTSFjMj-WnTxFWT1QBHS0GkYgCo0cu6CUWF3Wco8.BniU9AVx088l7-93xQOyLli7_pqpf4cBux4R51x8Ak0&dib_tag=se&keywords=power+tools+carpenter&qid=1782657133&sr=8-5",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:20.749Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [],
+    "_isComplete": true,
+    "_imputedFrom": {
+      "type": "catSub (Furniture Hardware|General)",
+      "size": "catSubType (Furniture Hardware|General|Screw)",
+      "packSize": "catSubType (Furniture Hardware|General|Screw)",
+      "finish": "catSubType (Furniture Hardware|General|Screw)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:52:38.396Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/41He2TcfdrL._AC_UL960_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/41He2TcfdrL._AC_UL960_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 100,
+    "_quality": {
+      "score": 52,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B07L3291SH",
+    "name": "Drill Bits",
+    "brand": "Unknown",
+    "category": "Tool Accessories",
+    "subcategory": "Drill Bits",
+    "price": 184,
+    "mrp": 300,
+    "discount": 39,
+    "material": "Steel",
+    "type": "Handle",
+    "size": "",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/51tVLZqhnEL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/GPT-TOOLs-Electric-Connecting-Converter/dp/B07L3291SH/ref=sr_1_6?dib=eyJ2IjoiMSJ9.n0CO4_tsXWVujXOU8GgdXG9_kyWS4e0uw7IN1gmlwmI6CU0413dAMhaDjj2Fp7_-RSqS_xc4HmyFzCzL8-ABGImfJYL4F0hpGc9E7PpdoOuBPtc3UvffSo4o9SOfExNpiirXCSNGsm2Ua2q_dNv_O18ycikaf9T85hphxPXOf1Qmq_iwQs6cz4DXibErs9h0GNqMNYfktjt63YoGF0EKuCAK8gHDP8mE_EIoiRQK7NiN1Ewv2KpM9iEbDN_LkXc96dNaTSFjMj-WnTxFWT1QBHS0GkYgCo0cu6CUWF3Wco8.BniU9AVx088l7-93xQOyLli7_pqpf4cBux4R51x8Ak0&dib_tag=se&keywords=power+tools+carpenter&qid=1782657133&sr=8-6",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:20.749Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv",
+      "mega-collection.json",
+      "mega-collection.csv"
+    ],
+    "_missingFields": [
+      "size",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "catSub (Tool Accessories|Drill Bits)",
+      "finish": "catSub (Tool Accessories|Drill Bits)",
+      "usage": "category (Tool Accessories)"
+    },
+    "_confidence": {
+      "brand": 0,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:52:47.175Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/51tVLZqhnEL._AC_UL960_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/51tVLZqhnEL._AC_UL960_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 75,
+    "_quality": {
+      "score": 39.5,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0FQ1S8GZB",
+    "name": "Drill Bits",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Drill Bits",
+    "price": 499,
+    "mrp": 1299,
+    "discount": 62,
+    "material": "Steel",
+    "type": "",
+    "size": "",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/51H+dvQgkLL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/UPTO-DATE-PRODUCTS-Reciprocating-Attachment/dp/B0FQ1S8GZB/ref=sr_1_7?dib=eyJ2IjoiMSJ9.n0CO4_tsXWVujXOU8GgdXG9_kyWS4e0uw7IN1gmlwmI6CU0413dAMhaDjj2Fp7_-RSqS_xc4HmyFzCzL8-ABGImfJYL4F0hpGc9E7PpdoOuBPtc3UvffSo4o9SOfExNpiirXCSNGsm2Ua2q_dNv_O18ycikaf9T85hphxPXOf1Qmq_iwQs6cz4DXibErs9h0GNqMNYfktjt63YoGF0EKuCAK8gHDP8mE_EIoiRQK7NiN1Ewv2KpM9iEbDN_LkXc96dNaTSFjMj-WnTxFWT1QBHS0GkYgCo0cu6CUWF3Wco8.BniU9AVx088l7-93xQOyLli7_pqpf4cBux4R51x8Ak0&dib_tag=se&keywords=power+tools+carpenter&qid=1782657133&sr=8-7",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:20.749Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "size",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:52:55.267Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/51H+dvQgkLL._AC_UL960_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/51H+dvQgkLL._AC_UL960_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 75,
+    "_quality": {
+      "score": 39.5,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0FD3ZDLCG",
+    "name": "Hardware Item",
+    "brand": "HETTICH",
+    "category": "Furniture Hardware",
+    "subcategory": "General",
+    "price": 410,
+    "mrp": 41000,
+    "discount": 99,
+    "material": "Steel",
+    "type": "Screw",
+    "size": "7x",
+    "packSize": "60 pcs",
+    "finish": "Zinc Plated",
+    "usage": "Woodworking",
+    "imageUrl": "https://m.media-amazon.com/images/I/41SbHUdg86L._AC_UL886_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Inditrust-Double-Sided-Woodworking-Trimming-Carpenter/dp/B0FD3ZDLCG/ref=sr_1_8?dib=eyJ2IjoiMSJ9.n0CO4_tsXWVujXOU8GgdXG9_kyWS4e0uw7IN1gmlwmI6CU0413dAMhaDjj2Fp7_-RSqS_xc4HmyFzCzL8-ABGImfJYL4F0hpGc9E7PpdoOuBPtc3UvffSo4o9SOfExNpiirXCSNGsm2Ua2q_dNv_O18ycikaf9T85hphxPXOf1Qmq_iwQs6cz4DXibErs9h0GNqMNYfktjt63YoGF0EKuCAK8gHDP8mE_EIoiRQK7NiN1Ewv2KpM9iEbDN_LkXc96dNaTSFjMj-WnTxFWT1QBHS0GkYgCo0cu6CUWF3Wco8.BniU9AVx088l7-93xQOyLli7_pqpf4cBux4R51x8Ak0&dib_tag=se&keywords=power+tools+carpenter&qid=1782657133&sr=8-8",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:20.749Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [],
+    "_isComplete": true,
+    "_imputedFrom": {
+      "material": "catSub (Furniture Hardware|General)",
+      "type": "catSub (Furniture Hardware|General)",
+      "size": "catSubType (Furniture Hardware|General|Screw)",
+      "packSize": "catSubType (Furniture Hardware|General|Screw)",
+      "finish": "catSubType (Furniture Hardware|General|Screw)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:53:02.702Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/41SbHUdg86L._AC_UL886_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/41SbHUdg86L._AC_UL886_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 100,
+    "_quality": {
+      "score": 52,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0H6MTJ68Q",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 249,
+    "mrp": 399,
+    "discount": 38,
+    "material": "Steel",
+    "type": "Lock",
+    "size": "5 Inch",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Furniture Hardware",
+    "imageUrl": "https://m.media-amazon.com/images/I/615fz-L00iL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Mini-Iron-Steel-Block-Plane/dp/B0H6MTJ68Q/ref=sr_1_9?dib=eyJ2IjoiMSJ9.n0CO4_tsXWVujXOU8GgdXG9_kyWS4e0uw7IN1gmlwmI6CU0413dAMhaDjj2Fp7_-RSqS_xc4HmyFzCzL8-ABGImfJYL4F0hpGc9E7PpdoOuBPtc3UvffSo4o9SOfExNpiirXCSNGsm2Ua2q_dNv_O18ycikaf9T85hphxPXOf1Qmq_iwQs6cz4DXibErs9h0GNqMNYfktjt63YoGF0EKuCAK8gHDP8mE_EIoiRQK7NiN1Ewv2KpM9iEbDN_LkXc96dNaTSFjMj-WnTxFWT1QBHS0GkYgCo0cu6CUWF3Wco8.BniU9AVx088l7-93xQOyLli7_pqpf4cBux4R51x8Ak0&dib_tag=se&keywords=power+tools+carpenter&qid=1782657133&sr=8-9",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:20.749Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "finish": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:53:08.138Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/615fz-L00iL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/615fz-L00iL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "Heavy-Duty Iron Steel Build – Ensures strength, stability, and long life",
+      "Heavy-Duty Iron Steel Build – Ensures strength, stability, and long life",
+      "Sharp Adjustable Blade – Delivers smooth, clean, and accurate cuts",
+      "Sharp Adjustable Blade – Delivers smooth, clean, and accurate cuts",
+      "Compact 5-Inch Design – Ideal for precision carpentry & fine finishing",
+      "Compact 5-Inch Design – Ideal for precision carpentry & fine finishing",
+      "Ergonomic Grip – Provides comfortable handling and superior control",
+      "Ergonomic Grip – Provides comfortable handling and superior control",
+      "Professional & DIY Use – Perfect for woodworking, trimming, and furniture making",
+      "Professional & DIY Use – Perfect for woodworking, trimming, and furniture making"
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0C58G9SZG",
+    "name": "Drill Bits",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Drill Bits",
+    "price": 181,
+    "mrp": 1100,
+    "discount": 84,
+    "material": "Steel",
+    "type": "",
+    "size": "1.5 Meter",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/31wDxRIqXGL._AC_UL832_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Sauran-Meter-Power-Drill-Tools/dp/B0C58G9SZG/ref=sr_1_10?dib=eyJ2IjoiMSJ9.n0CO4_tsXWVujXOU8GgdXG9_kyWS4e0uw7IN1gmlwmI6CU0413dAMhaDjj2Fp7_-RSqS_xc4HmyFzCzL8-ABGImfJYL4F0hpGc9E7PpdoOuBPtc3UvffSo4o9SOfExNpiirXCSNGsm2Ua2q_dNv_O18ycikaf9T85hphxPXOf1Qmq_iwQs6cz4DXibErs9h0GNqMNYfktjt63YoGF0EKuCAK8gHDP8mE_EIoiRQK7NiN1Ewv2KpM9iEbDN_LkXc96dNaTSFjMj-WnTxFWT1QBHS0GkYgCo0cu6CUWF3Wco8.BniU9AVx088l7-93xQOyLli7_pqpf4cBux4R51x8Ak0&dib_tag=se&keywords=power+tools+carpenter&qid=1782657133&sr=8-10",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:20.749Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:53:14.032Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/31wDxRIqXGL._AC_UL832_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/31wDxRIqXGL._AC_UL832_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 83,
+    "_quality": {
+      "score": 43.5,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0CHBV2RVJ",
+    "name": "Drill Bits",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Drill Bits",
+    "price": 5099,
+    "mrp": 9350,
+    "discount": 45,
+    "material": "Steel",
+    "type": "",
+    "size": "",
+    "packSize": "100Pcs",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/71rDK+hDmHL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Bosch-Electric-Variable-Insulation-Multicolor/dp/B0CHBV2RVJ/ref=sr_1_11?dib=eyJ2IjoiMSJ9.n0CO4_tsXWVujXOU8GgdXG9_kyWS4e0uw7IN1gmlwmI6CU0413dAMhaDjj2Fp7_-RSqS_xc4HmyFzCzL8-ABGImfJYL4F0hpGc9E7PpdoOuBPtc3UvffSo4o9SOfExNpiirXCSNGsm2Ua2q_dNv_O18ycikaf9T85hphxPXOf1Qmq_iwQs6cz4DXibErs9h0GNqMNYfktjt63YoGF0EKuCAK8gHDP8mE_EIoiRQK7NiN1Ewv2KpM9iEbDN_LkXc96dNaTSFjMj-WnTxFWT1QBHS0GkYgCo0cu6CUWF3Wco8.BniU9AVx088l7-93xQOyLli7_pqpf4cBux4R51x8Ak0&dib_tag=se&keywords=power+tools+carpenter&qid=1782657133&sr=8-11",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:20.749Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "size"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:53:22.567Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/71rDK+hDmHL._AC_UL960_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71rDK+hDmHL._AC_UL960_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 83,
+    "_quality": {
+      "score": 43.5,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0GRNRY31F",
+    "name": "Hardware Item",
+    "brand": "HETTICH",
+    "category": "Furniture Hardware",
+    "subcategory": "General",
+    "price": 2040,
+    "mrp": 3300,
+    "discount": 38,
+    "material": "Steel",
+    "type": "Screw",
+    "size": "6mm",
+    "packSize": "60 pcs",
+    "finish": "Zinc Plated",
+    "usage": "Woodworking",
+    "imageUrl": "https://m.media-amazon.com/images/I/51H7XXzfJ9L._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Jon-Bhandari-Tools-Precision-Woodworking/dp/B0GRNRY31F/ref=sr_1_12?dib=eyJ2IjoiMSJ9.n0CO4_tsXWVujXOU8GgdXG9_kyWS4e0uw7IN1gmlwmI6CU0413dAMhaDjj2Fp7_-RSqS_xc4HmyFzCzL8-ABGImfJYL4F0hpGc9E7PpdoOuBPtc3UvffSo4o9SOfExNpiirXCSNGsm2Ua2q_dNv_O18ycikaf9T85hphxPXOf1Qmq_iwQs6cz4DXibErs9h0GNqMNYfktjt63YoGF0EKuCAK8gHDP8mE_EIoiRQK7NiN1Ewv2KpM9iEbDN_LkXc96dNaTSFjMj-WnTxFWT1QBHS0GkYgCo0cu6CUWF3Wco8.BniU9AVx088l7-93xQOyLli7_pqpf4cBux4R51x8Ak0&dib_tag=se&keywords=power+tools+carpenter&qid=1782657133&sr=8-12",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:20.749Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [],
+    "_isComplete": true,
+    "_imputedFrom": {
+      "material": "catSub (Furniture Hardware|General)",
+      "type": "catSub (Furniture Hardware|General)",
+      "packSize": "catSubType (Furniture Hardware|General|Screw)",
+      "finish": "catSubType (Furniture Hardware|General|Screw)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:53:29.801Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/51H7XXzfJ9L._AC_UL960_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/51H7XXzfJ9L._AC_UL960_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 100,
+    "_quality": {
+      "score": 52,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0FCSL2G8Z",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 479,
+    "mrp": 799,
+    "discount": 40,
+    "material": "Stainless Steel",
+    "type": "",
+    "size": "",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/71htj2wckFL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/XSteez-Banding-Trimmer-Stainless-Carpenter/dp/B0FCSL2G8Z/ref=sr_1_13?dib=eyJ2IjoiMSJ9.n0CO4_tsXWVujXOU8GgdXG9_kyWS4e0uw7IN1gmlwmI6CU0413dAMhaDjj2Fp7_-RSqS_xc4HmyFzCzL8-ABGImfJYL4F0hpGc9E7PpdoOuBPtc3UvffSo4o9SOfExNpiirXCSNGsm2Ua2q_dNv_O18ycikaf9T85hphxPXOf1Qmq_iwQs6cz4DXibErs9h0GNqMNYfktjt63YoGF0EKuCAK8gHDP8mE_EIoiRQK7NiN1Ewv2KpM9iEbDN_LkXc96dNaTSFjMj-WnTxFWT1QBHS0GkYgCo0cu6CUWF3Wco8.BniU9AVx088l7-93xQOyLli7_pqpf4cBux4R51x8Ak0&dib_tag=se&keywords=power+tools+carpenter&qid=1782657133&sr=8-13",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:20.749Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "size",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:53:36.939Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/71htj2wckFL._AC_UL960_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71htj2wckFL._AC_UL960_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 75,
+    "_quality": {
+      "score": 39.5,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B07WLVV8Y3",
+    "name": "Drill Bits",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Drill Bits",
+    "price": 3780,
+    "mrp": 6500,
+    "discount": 42,
+    "material": "Steel",
+    "type": "",
+    "size": "10 mm",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/61dzwNelWaL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Professional-Cordless-Capacity-Included-Warranty/dp/B07WLVV8Y3/ref=sr_1_5?dib=eyJ2IjoiMSJ9.FFfjKy1DXiW6dlud_p7AFAUW7RRjeFAhP9QssHhhqAvSUmSLwr9jqMcCZPallMMFsrboH-7RzxDpy2H0hhKviSzE3-RexfyPnNx8526K15sCS7DmLxT2l2Y0JArNVE9Iac473Uk-NBogLlGsszKhlPtqnQ8Reu5Zmwkk2MHKP1yln4KGf3gT0hino8w9-kkwLn2ZBpEkwGIDrGEA-xdxVFGNQfoslr62DWAZDAG-HXTFfCYHxKmJaJIQdakIVKsklDFhTjQPYXL39UQfl7hQt_JhVTBJYus-RewZrAJXZew.DqM6UGJONpBLEP1LxG3gOCcbN4lfibGEAKQ4JhapgDI&dib_tag=se&keywords=drill+machine+cordless&qid=1782657146&sr=8-5",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:32.851Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:53:44.101Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/61dzwNelWaL._AC_UL960_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/61dzwNelWaL._AC_UL960_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 83,
+    "_quality": {
+      "score": 43.5,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0DK4VW2GD",
+    "name": "Wood Screws",
+    "brand": "Unknown",
+    "category": "Fasteners",
+    "subcategory": "Screws",
+    "price": 2099,
+    "mrp": 209900,
+    "discount": 99,
+    "material": "",
+    "type": "Screw",
+    "size": "2x",
+    "packSize": "",
+    "finish": "",
+    "usage": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/81tOvdz2QBL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Cordless-Functions-Magnetic-Batteries-XE-CD1610/dp/B0DK4VW2GD/ref=sr_1_6?dib=eyJ2IjoiMSJ9.FFfjKy1DXiW6dlud_p7AFAUW7RRjeFAhP9QssHhhqAvSUmSLwr9jqMcCZPallMMFsrboH-7RzxDpy2H0hhKviSzE3-RexfyPnNx8526K15sCS7DmLxT2l2Y0JArNVE9Iac473Uk-NBogLlGsszKhlPtqnQ8Reu5Zmwkk2MHKP1yln4KGf3gT0hino8w9-kkwLn2ZBpEkwGIDrGEA-xdxVFGNQfoslr62DWAZDAG-HXTFfCYHxKmJaJIQdakIVKsklDFhTjQPYXL39UQfl7hQt_JhVTBJYus-RewZrAJXZew.DqM6UGJONpBLEP1LxG3gOCcbN4lfibGEAKQ4JhapgDI&dib_tag=se&keywords=drill+machine+cordless&qid=1782657146&sr=8-6",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:32.851Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv",
+      "mega-collection.json",
+      "mega-collection.csv"
+    ],
+    "_missingFields": [
+      "material",
+      "packSize",
+      "finish",
+      "usage"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {},
+    "_confidence": {
+      "brand": 0,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:53:51.794Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/81tOvdz2QBL._AC_UL960_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/81tOvdz2QBL._AC_UL960_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 58,
+    "_quality": {
+      "score": 31,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0CMHJSKVZ",
+    "name": "Wood Screws",
+    "brand": "Unknown",
+    "category": "Fasteners",
+    "subcategory": "Screws",
+    "price": 989,
+    "mrp": 1149,
+    "discount": 14,
+    "material": "",
+    "type": "Screw",
+    "size": "",
+    "packSize": "",
+    "finish": "",
+    "usage": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/81hw0+bD7TL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Electric-Cordless-Screwdriver-Rechargeable-Driver/dp/B0CMHJSKVZ/ref=sr_1_7?dib=eyJ2IjoiMSJ9.FFfjKy1DXiW6dlud_p7AFAUW7RRjeFAhP9QssHhhqAvSUmSLwr9jqMcCZPallMMFsrboH-7RzxDpy2H0hhKviSzE3-RexfyPnNx8526K15sCS7DmLxT2l2Y0JArNVE9Iac473Uk-NBogLlGsszKhlPtqnQ8Reu5Zmwkk2MHKP1yln4KGf3gT0hino8w9-kkwLn2ZBpEkwGIDrGEA-xdxVFGNQfoslr62DWAZDAG-HXTFfCYHxKmJaJIQdakIVKsklDFhTjQPYXL39UQfl7hQt_JhVTBJYus-RewZrAJXZew.DqM6UGJONpBLEP1LxG3gOCcbN4lfibGEAKQ4JhapgDI&dib_tag=se&keywords=drill+machine+cordless&qid=1782657146&sr=8-7",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:32.851Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv",
+      "mega-collection.json",
+      "mega-collection.csv"
+    ],
+    "_missingFields": [
+      "material",
+      "size",
+      "packSize",
+      "finish",
+      "usage"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {},
+    "_confidence": {
+      "brand": 0,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:54:03.250Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/81hw0+bD7TL._AC_UL960_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/81hw0+bD7TL._AC_UL960_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 50,
+    "_quality": {
+      "score": 27,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0F9NZNJ8P",
+    "name": "Wood Screws",
+    "brand": "Unknown",
+    "category": "Fasteners",
+    "subcategory": "Screws",
+    "price": 1369,
+    "mrp": 1870,
+    "discount": 27,
+    "material": "",
+    "type": "Screw",
+    "size": "10mm",
+    "packSize": "",
+    "finish": "",
+    "usage": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/619qlzavTaL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Tomahawk-DMS-3000-Cordless-Screwdriver-Accessories/dp/B0F9NZNJ8P/ref=sr_1_8?dib=eyJ2IjoiMSJ9.FFfjKy1DXiW6dlud_p7AFAUW7RRjeFAhP9QssHhhqAvSUmSLwr9jqMcCZPallMMFsrboH-7RzxDpy2H0hhKviSzE3-RexfyPnNx8526K15sCS7DmLxT2l2Y0JArNVE9Iac473Uk-NBogLlGsszKhlPtqnQ8Reu5Zmwkk2MHKP1yln4KGf3gT0hino8w9-kkwLn2ZBpEkwGIDrGEA-xdxVFGNQfoslr62DWAZDAG-HXTFfCYHxKmJaJIQdakIVKsklDFhTjQPYXL39UQfl7hQt_JhVTBJYus-RewZrAJXZew.DqM6UGJONpBLEP1LxG3gOCcbN4lfibGEAKQ4JhapgDI&dib_tag=se&keywords=drill+machine+cordless&qid=1782657146&sr=8-8",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:32.851Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv",
+      "mega-collection.json",
+      "mega-collection.csv"
+    ],
+    "_missingFields": [
+      "material",
+      "packSize",
+      "finish",
+      "usage"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {},
+    "_confidence": {
+      "brand": 0,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:54:09.215Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/619qlzavTaL._AC_UL960_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/619qlzavTaL._AC_UL960_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 58,
+    "_quality": {
+      "score": 31,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0DFTGGMR9",
+    "name": "Drill Bits",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Drill Bits",
+    "price": 6239,
+    "mrp": 623900,
+    "discount": 99,
+    "material": "Steel",
+    "type": "Drill Bit",
+    "size": "4mm",
+    "packSize": "2Pcs",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/81HluC39I2L._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Cordless-Machine-Brushless-Battery-Charger/dp/B0DFTGGMR9/ref=sr_1_9?dib=eyJ2IjoiMSJ9.FFfjKy1DXiW6dlud_p7AFAUW7RRjeFAhP9QssHhhqAvSUmSLwr9jqMcCZPallMMFsrboH-7RzxDpy2H0hhKviSzE3-RexfyPnNx8526K15sCS7DmLxT2l2Y0JArNVE9Iac473Uk-NBogLlGsszKhlPtqnQ8Reu5Zmwkk2MHKP1yln4KGf3gT0hino8w9-kkwLn2ZBpEkwGIDrGEA-xdxVFGNQfoslr62DWAZDAG-HXTFfCYHxKmJaJIQdakIVKsklDFhTjQPYXL39UQfl7hQt_JhVTBJYus-RewZrAJXZew.DqM6UGJONpBLEP1LxG3gOCcbN4lfibGEAKQ4JhapgDI&dib_tag=se&keywords=drill+machine+cordless&qid=1782657146&sr=8-9",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:32.851Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [],
+    "_isComplete": true,
+    "_imputedFrom": {
+      "material": "exact (Tool Accessories|Drill Bits|Drill Bit|BOSCH)",
+      "size": "exact (Tool Accessories|Drill Bits|Drill Bit|BOSCH)",
+      "finish": "exact (Tool Accessories|Drill Bits|Drill Bit|BOSCH)",
+      "usage": "exact (Tool Accessories|Drill Bits|Drill Bit|BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:54:16.446Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/81HluC39I2L._AC_UL960_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/81HluC39I2L._AC_UL960_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 100,
+    "_quality": {
+      "score": 52,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0CHWGSRWR",
+    "name": "Wood Screws",
+    "brand": "Unknown",
+    "category": "Fasteners",
+    "subcategory": "Screws",
+    "price": 1899,
+    "mrp": 3700,
+    "discount": 49,
+    "material": "",
+    "type": "Screw",
+    "size": "10mm",
+    "packSize": "",
+    "finish": "",
+    "usage": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/71HiCUqECVL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Cordless-Powerful-Reversible-Batteries-XE-CD1210/dp/B0CHWGSRWR/ref=sr_1_10?dib=eyJ2IjoiMSJ9.FFfjKy1DXiW6dlud_p7AFAUW7RRjeFAhP9QssHhhqAvSUmSLwr9jqMcCZPallMMFsrboH-7RzxDpy2H0hhKviSzE3-RexfyPnNx8526K15sCS7DmLxT2l2Y0JArNVE9Iac473Uk-NBogLlGsszKhlPtqnQ8Reu5Zmwkk2MHKP1yln4KGf3gT0hino8w9-kkwLn2ZBpEkwGIDrGEA-xdxVFGNQfoslr62DWAZDAG-HXTFfCYHxKmJaJIQdakIVKsklDFhTjQPYXL39UQfl7hQt_JhVTBJYus-RewZrAJXZew.DqM6UGJONpBLEP1LxG3gOCcbN4lfibGEAKQ4JhapgDI&dib_tag=se&keywords=drill+machine+cordless&qid=1782657146&sr=8-10",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:32.851Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv",
+      "mega-collection.json",
+      "mega-collection.csv"
+    ],
+    "_missingFields": [
+      "material",
+      "packSize",
+      "finish",
+      "usage"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {},
+    "_confidence": {
+      "brand": 0,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:54:26.431Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/41ywcpabpqL._SY300_SX300_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/41ywcpabpqL._SY300_SX300_QL70_FMwebp_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "TWO SPEED PERFORMANCE: This cordless drilling machine offers a significant advantage with its two-speed settings. High torque is perfect for demanding tasks that require more power, such as drilling through tough materials like hardwood or metal. On the other hand, the low torque setting is designed for precision work, allowing you to maintain control when working with delicate materials or when driving screws.",
+      "TWO SPEED PERFORMANCE: This cordless drilling machine offers a significant advantage with its two-speed settings. High torque is perfect for demanding tasks that require more power, such as drilling through tough materials like hardwood or metal. On the other hand, the low torque setting is designed for precision work, allowing you to maintain control when working with delicate materials or when driving screws.",
+      "BUILT-IN LED LIGHT: The inclusion of an LED light is a thoughtful feature that enhances your drilling experience. It provides illumination to your workspace, ensuring that you have a clear view of your drilling area even in poorly lit conditions. This feature adds accuracy and convenience to your projects.",
+      "BUILT-IN LED LIGHT: The inclusion of an LED light is a thoughtful feature that enhances your drilling experience. It provides illumination to your workspace, ensuring that you have a clear view of your drilling area even in poorly lit conditions. This feature adds accuracy and convenience to your projects.",
+      "WIDE APPLICATION: Versatility is key, and this cordless drill 12v machine doesn't disappoint. It's suitable for a wide range of materials, including wood, metal, and PVC. This versatility makes it an excellent choice for various home improvement and DIY projects, eliminating the need for multiple tools.",
+      "WIDE APPLICATION: Versatility is key, and this cordless drill 12v machine doesn't disappoint. It's suitable for a wide range of materials, including wood, metal, and PVC. This versatility makes it an excellent choice for various home improvement and DIY projects, eliminating the need for multiple tools.",
+      "HEAVY-DUTY RELIABILITY: Designed for home use, this cordless drill machine 12v is built to withstand the demands of DIY projects. Its construction ensures durability and longevity, making it a reliable and long-lasting addition to your toolkit.",
+      "HEAVY-DUTY RELIABILITY: Designed for home use, this cordless drill machine 12v is built to withstand the demands of DIY projects. Its construction ensures durability and longevity, making it a reliable and long-lasting addition to your toolkit.",
+      "SPECIFICATIONS: No load speed - 0-1500rpm, Rated Charging - 07.5A/48mins, Chuck Size - 1-10mm, Currents - 0-25A, 6 Months Warranty Cordless Drill Machine",
+      "SPECIFICATIONS: No load speed - 0-1500rpm, Rated Charging - 07.5A/48mins, Chuck Size - 1-10mm, Currents - 0-25A, 6 Months Warranty Cordless Drill Machine"
+    ],
+    "videos": [],
+    "_completeness": 58,
+    "_quality": {
+      "score": 56,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0CQNZVLLZ",
+    "name": "Drill Bits",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Drill Bits",
+    "price": 1749,
+    "mrp": 174900,
+    "discount": 99,
+    "material": "Steel",
+    "type": "Drill Bit",
+    "size": "10Mm",
+    "packSize": "13pcs",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/61adw3jYqkL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Cordless-Drilling-Machine-Battery-0-8-10Mm/dp/B0CQNZVLLZ/ref=sr_1_11?dib=eyJ2IjoiMSJ9.FFfjKy1DXiW6dlud_p7AFAUW7RRjeFAhP9QssHhhqAvSUmSLwr9jqMcCZPallMMFsrboH-7RzxDpy2H0hhKviSzE3-RexfyPnNx8526K15sCS7DmLxT2l2Y0JArNVE9Iac473Uk-NBogLlGsszKhlPtqnQ8Reu5Zmwkk2MHKP1yln4KGf3gT0hino8w9-kkwLn2ZBpEkwGIDrGEA-xdxVFGNQfoslr62DWAZDAG-HXTFfCYHxKmJaJIQdakIVKsklDFhTjQPYXL39UQfl7hQt_JhVTBJYus-RewZrAJXZew.DqM6UGJONpBLEP1LxG3gOCcbN4lfibGEAKQ4JhapgDI&dib_tag=se&keywords=drill+machine+cordless&qid=1782657146&sr=8-11",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:32.851Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [],
+    "_isComplete": true,
+    "_imputedFrom": {
+      "material": "exact (Tool Accessories|Drill Bits|Drill Bit|BOSCH)",
+      "packSize": "exact (Tool Accessories|Drill Bits|Drill Bit|BOSCH)",
+      "finish": "exact (Tool Accessories|Drill Bits|Drill Bit|BOSCH)",
+      "usage": "exact (Tool Accessories|Drill Bits|Drill Bit|BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:54:30.752Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/61adw3jYqkL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/61adw3jYqkL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "[USB Type-C Design] Equipped with innovative USB charging design, INGCO 12V cordless drill machine can be charged with a USB cable at any time. What you need is only a mobile phone charging cable! Stable and efficient lithium battery help you get job done.",
+      "[USB Type-C Design] Equipped with innovative USB charging design, INGCO 12V cordless drill machine can be charged with a USB cable at any time. What you need is only a mobile phone charging cable! Stable and efficient lithium battery help you get job done.",
+      "[User-Friendly Design] The lightweight design of INGCO 12V drilling machine reduces fatigue in a long time working, especially when working in high or tight spaces. The LED light will be automatically triggered to turn on, providing you with additional security.",
+      "[User-Friendly Design] The lightweight design of INGCO 12V drilling machine reduces fatigue in a long time working, especially when working in high or tight spaces. The LED light will be automatically triggered to turn on, providing you with additional security.",
+      "[Quick Chuck & 15+1 Position Clutch] Max up to 3/8\" (10mm) keyless chuck helps you change multi size bits quickly. 15+1 torque (Max torque: 20NM) settings provide precise control for driving in/out screws to prevent overdriving and stripping screws, and drilling into wood, ceramics, drywall, plastics, and even metal with ease.",
+      "[Quick Chuck & 15+1 Position Clutch] Max up to 3/8\" (10mm) keyless chuck helps you change multi size bits quickly. 15+1 torque (Max torque: 20NM) settings provide precise control for driving in/out screws to prevent overdriving and stripping screws, and drilling into wood, ceramics, drywall, plastics, and even metal with ease.",
+      "[What You Can Get] 1* INGCO 12V Lithium-ion Cordless Drill, 1* 1.5Ah battery pack, 1* Cr-V 65mm Drill Bit.",
+      "[What You Can Get] 1* INGCO 12V Lithium-ion Cordless Drill, 1* 1.5Ah battery pack, 1* Cr-V 65mm Drill Bit.",
+      "[INGCO WARRANTY] INGCO products have a six-month warranty, if you have any questions, feel free to contact us, we will answer you as soon as possible.",
+      "[INGCO WARRANTY] INGCO products have a six-month warranty, if you have any questions, feel free to contact us, we will answer you as soon as possible."
+    ],
+    "videos": [],
+    "_completeness": 100,
+    "_quality": {
+      "score": 77,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0DB8NG9PX",
+    "name": "Wood Screws",
+    "brand": "Unknown",
+    "category": "Fasteners",
+    "subcategory": "Screws",
+    "price": 2589,
+    "mrp": 4599,
+    "discount": 44,
+    "material": "",
+    "type": "Screw",
+    "size": "10Mm",
+    "packSize": "",
+    "finish": "",
+    "usage": "",
+    "imageUrl": "https://m.media-amazon.com/images/I/81TxzPC-q2L._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Lifelong-Cordless-accessories-Screwdriver-Multiple/dp/B0DB8NG9PX/ref=sr_1_12?dib=eyJ2IjoiMSJ9.FFfjKy1DXiW6dlud_p7AFAUW7RRjeFAhP9QssHhhqAvSUmSLwr9jqMcCZPallMMFsrboH-7RzxDpy2H0hhKviSzE3-RexfyPnNx8526K15sCS7DmLxT2l2Y0JArNVE9Iac473Uk-NBogLlGsszKhlPtqnQ8Reu5Zmwkk2MHKP1yln4KGf3gT0hino8w9-kkwLn2ZBpEkwGIDrGEA-xdxVFGNQfoslr62DWAZDAG-HXTFfCYHxKmJaJIQdakIVKsklDFhTjQPYXL39UQfl7hQt_JhVTBJYus-RewZrAJXZew.DqM6UGJONpBLEP1LxG3gOCcbN4lfibGEAKQ4JhapgDI&dib_tag=se&keywords=drill+machine+cordless&qid=1782657146&sr=8-12",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:32.851Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv",
+      "mega-collection.json",
+      "mega-collection.csv"
+    ],
+    "_missingFields": [
+      "material",
+      "packSize",
+      "finish",
+      "usage"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {},
+    "_confidence": {
+      "brand": 0,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:54:36.493Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/81TxzPC-q2L._AC_UL960_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/81TxzPC-q2L._AC_UL960_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 58,
+    "_quality": {
+      "score": 31,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0CW66H3S3",
+    "name": "Drill Bits",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Drill Bits",
+    "price": 2898,
+    "mrp": 7999,
+    "discount": 64,
+    "material": "Steel",
+    "type": "",
+    "size": "10MM",
+    "packSize": "24Pcs",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/616QbI+I5LL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/JPT-Heavy-Duty-Cordless-0-2000RPM-Accessories/dp/B0CW66H3S3/ref=sr_1_13?dib=eyJ2IjoiMSJ9.FFfjKy1DXiW6dlud_p7AFAUW7RRjeFAhP9QssHhhqAvSUmSLwr9jqMcCZPallMMFsrboH-7RzxDpy2H0hhKviSzE3-RexfyPnNx8526K15sCS7DmLxT2l2Y0JArNVE9Iac473Uk-NBogLlGsszKhlPtqnQ8Reu5Zmwkk2MHKP1yln4KGf3gT0hino8w9-kkwLn2ZBpEkwGIDrGEA-xdxVFGNQfoslr62DWAZDAG-HXTFfCYHxKmJaJIQdakIVKsklDFhTjQPYXL39UQfl7hQt_JhVTBJYus-RewZrAJXZew.DqM6UGJONpBLEP1LxG3gOCcbN4lfibGEAKQ4JhapgDI&dib_tag=se&keywords=drill+machine+cordless&qid=1782657146&sr=8-13",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:32.851Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:54:43.571Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/616QbI+I5LL._AC_UL960_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/616QbI+I5LL._AC_UL960_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 48,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0G3J63XP9",
+    "name": "Drill Bits",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Drill Bits",
+    "price": 4390,
+    "mrp": 5389,
+    "discount": 19,
+    "material": "Steel",
+    "type": "",
+    "size": "10mm",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "DIY Crafts",
+    "imageUrl": "https://m.media-amazon.com/images/I/81ijRle7XqL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/BUILDSKILL-Cordless-Drilling-Forward-Reverse-Professional/dp/B0G3J63XP9/ref=sr_1_14?dib=eyJ2IjoiMSJ9.FFfjKy1DXiW6dlud_p7AFAUW7RRjeFAhP9QssHhhqAvSUmSLwr9jqMcCZPallMMFsrboH-7RzxDpy2H0hhKviSzE3-RexfyPnNx8526K15sCS7DmLxT2l2Y0JArNVE9Iac473Uk-NBogLlGsszKhlPtqnQ8Reu5Zmwkk2MHKP1yln4KGf3gT0hino8w9-kkwLn2ZBpEkwGIDrGEA-xdxVFGNQfoslr62DWAZDAG-HXTFfCYHxKmJaJIQdakIVKsklDFhTjQPYXL39UQfl7hQt_JhVTBJYus-RewZrAJXZew.DqM6UGJONpBLEP1LxG3gOCcbN4lfibGEAKQ4JhapgDI&dib_tag=se&keywords=drill+machine+cordless&qid=1782657146&sr=8-14",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:32.851Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-29T02:54:50.368Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/81ijRle7XqL._AC_UL960_FMwebp_QL65_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/81ijRle7XqL._AC_UL960_FMwebp_QL65_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [],
+    "videos": [],
+    "_completeness": 83,
+    "_quality": {
+      "score": 43.5,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B007MZEIY0",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 6299,
+    "mrp": 9738,
+    "discount": 35,
+    "material": "Steel",
+    "type": "SawBlades",
+    "size": "7'",
+    "packSize": "",
+    "finish": "Black",
+    "usage": "General workshop and DIY applications",
+    "imageUrl": "https://m.media-amazon.com/images/I/711VNoC3HOL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Black-Decker-CS1500-Cutting-Circular/dp/B007MZEIY0/ref=sr_1_5?dib=eyJ2IjoiMSJ9.CDFmMijUmYGndvK6uUlQwqXUvlfnv-nEpTh_y-ddYEuSv9dQNvIPCe5sk3TR1WviISkJFnWwFA1uEwpcM8rdjCKpML0lhUw7F5adTHZJ3a78jD843BncaQp1uV_rQ8Noq5Ih5SIWlIFU_6JiSUwA8drSz1n0080h4O7Ie9_aez1-jy-ToGJPZb96_y0SIIh1LM4JZTewJF1NKSeW7y8FcOlSrqVhZcjsEO1Y-uROMCJ3ktyD4nF0Fg9QbtfELC1kfzS_ebeAHxJiKR-dfQuDgG8vHo8Otahl3I6L50u1DiY.CQsn0rTe2gJBC8lwZCQoPJG9fu3Wh_PTgIsWPTzEnsU&dib_tag=se&keywords=circular+saw+wood&qid=1782657159&sr=8-5",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:50.158Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 35,
+    "stock_quantity": 38,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0021",
+    "created_at": "2026-06-30T13:38:22.787Z",
+    "updated_at": "2026-06-30T13:38:22.787Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:38:29.563Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/711VNoC3HOL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/711VNoC3HOL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "Power: 1500 Watts, Blade Size: 185mm, Speed: 5500 RPM, Depth of Cut at 90 Degree: 62mm, Depth of Cut at 45 Degree: 46mm, Beveling Shoe: 0 - 45 Degree, Cable Length: 2 Meter, For Cutting Wood",
+      "Power: 1500 Watts, Blade Size: 185mm, Speed: 5500 RPM, Depth of Cut at 90 Degree: 62mm, Depth of Cut at 45 Degree: 46mm, Beveling Shoe: 0 - 45 Degree, Cable Length: 2 Meter, For Cutting Wood",
+      "No Load Speed: 4300 RPM ; Bevel Cut: 0-45° ; Max Cutting Depth: 63 mm",
+      "No Load Speed: 4300 RPM ; Bevel Cut: 0-45° ; Max Cutting Depth: 63 mm",
+      "Ergonomic Handle for Maximum Control and Comfort.",
+      "Ergonomic Handle for Maximum Control and Comfort.",
+      "Beveling Shoe for Angled Cuts. 36 Teeth Carbide Blade for fast Cutting",
+      "Beveling Shoe for Angled Cuts. 36 Teeth Carbide Blade for fast Cutting",
+      "Includes: Circular Saw, 2 x 36 Teeth Carbide Saw Blade, Wrench and Parallel Guide",
+      "Includes: Circular Saw, 2 x 36 Teeth Carbide Saw Blade, Wrench and Parallel Guide"
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B09FGV5F2S",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 5393,
+    "mrp": 8500,
+    "discount": 37,
+    "material": "Steel",
+    "type": "SawBlades",
+    "size": "185mm",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/71SamlOH+EL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/IBELL-CS85-71-1400W-4800RPM-Circular/dp/B09FGV5F2S/ref=sr_1_6?dib=eyJ2IjoiMSJ9.CDFmMijUmYGndvK6uUlQwqXUvlfnv-nEpTh_y-ddYEuSv9dQNvIPCe5sk3TR1WviISkJFnWwFA1uEwpcM8rdjCKpML0lhUw7F5adTHZJ3a78jD843BncaQp1uV_rQ8Noq5Ih5SIWlIFU_6JiSUwA8drSz1n0080h4O7Ie9_aez1-jy-ToGJPZb96_y0SIIh1LM4JZTewJF1NKSeW7y8FcOlSrqVhZcjsEO1Y-uROMCJ3ktyD4nF0Fg9QbtfELC1kfzS_ebeAHxJiKR-dfQuDgG8vHo8Otahl3I6L50u1DiY.CQsn0rTe2gJBC8lwZCQoPJG9fu3Wh_PTgIsWPTzEnsU&dib_tag=se&keywords=circular+saw+wood&qid=1782657159&sr=8-6",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:50.158Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 1,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 37,
+    "stock_quantity": 20,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0022",
+    "created_at": "2026-06-30T13:38:29.607Z",
+    "updated_at": "2026-06-30T13:38:29.607Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:38:35.392Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/71SamlOH+EL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71SamlOH+EL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {
+      "Manufacturer": "Manufacturer",
+      "Country of Origin": "Country of Origin",
+      "Item model number": "Item model number",
+      "Product Dimensions": "Product Dimensions",
+      "ASIN": "ASIN"
+    },
+    "features": [
+      "[SPECIFICATIONS] Rated voltage : 230V~50Hz; Rated Input Power : 1400 W; Rated no load speed : 4800 rpm; Cutting wheel diameter : 185mm~7.2”; Maximum Cutting Depth : 58 mm; Weight : 5.3 Kg",
+      "[SPECIFICATIONS] Rated voltage : 230V~50Hz; Rated Input Power : 1400 W; Rated no load speed : 4800 rpm; Cutting wheel diameter : 185mm~7.2”; Maximum Cutting Depth : 58 mm; Weight : 5.3 Kg",
+      "[GENERAL PURPOSE] CS85-71 is a circular power-saw using a toothed blade to cut materials using a rotary motion spinning around an arbor. This can be used for cutting materials such as wood, masonry, plastic, sometimes light metal.",
+      "[GENERAL PURPOSE] CS85-71 is a circular power-saw using a toothed blade to cut materials using a rotary motion spinning around an arbor. This can be used for cutting materials such as wood, masonry, plastic, sometimes light metal.",
+      "[EFFICIENT & PRECISE CUTS] This is a powerful and compact tool for cutting that works quite precisely and fast. The cutting wheel(blade) has a position that gives the best reach to the workpiece and improves the efficiency of cutting. The blade is spindle mounted so we can fix and remove it quickly.",
+      "[EFFICIENT & PRECISE CUTS] This is a powerful and compact tool for cutting that works quite precisely and fast. The cutting wheel(blade) has a position that gives the best reach to the workpiece and improves the efficiency of cutting. The blade is spindle mounted so we can fix and remove it quickly.",
+      "[DESIGN] The design allows good control over the angle and the depth of reach at all times. We can make a clean cut so that the end product needs a lesser amount of finishing.",
+      "[DESIGN] The design allows good control over the angle and the depth of reach at all times. We can make a clean cut so that the end product needs a lesser amount of finishing.",
+      "[BIVELLING /ANGLE CUT] The Saw can be adjusted to cut at angles between 0° and 45°. Tilt the body of the tool until the required angle (0°-45°)is reached using the bevel scale as a guide. Pre-set stops are available at 0°, 15° ,30° & 45° for quick, accurate bevel settings.",
+      "[BIVELLING /ANGLE CUT] The Saw can be adjusted to cut at angles between 0° and 45°. Tilt the body of the tool until the required angle (0°-45°)is reached using the bevel scale as a guide. Pre-set stops are available at 0°, 15° ,30° & 45° for quick, accurate bevel settings.",
+      "[RIP FENCE] The Rip fence (Straight edge guide) allows sawing parallel to an edge at a max distance of about 15 cm. Use the guide when making long or wide rip or cross cuts.",
+      "[RIP FENCE] The Rip fence (Straight edge guide) allows sawing parallel to an edge at a max distance of about 15 cm. Use the guide when making long or wide rip or cross cuts."
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B09VNZ4QHC",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 4214,
+    "mrp": 7321,
+    "discount": 42,
+    "material": "Steel",
+    "type": "SawBlades",
+    "size": "185mm",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Woodworking",
+    "imageUrl": "https://m.media-amazon.com/images/I/71S7LKHpe2L._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Circular-Electric-Adjustable-Decoration-Woodworking/dp/B09VNZ4QHC/ref=sr_1_7?dib=eyJ2IjoiMSJ9.CDFmMijUmYGndvK6uUlQwqXUvlfnv-nEpTh_y-ddYEuSv9dQNvIPCe5sk3TR1WviISkJFnWwFA1uEwpcM8rdjCKpML0lhUw7F5adTHZJ3a78jD843BncaQp1uV_rQ8Noq5Ih5SIWlIFU_6JiSUwA8drSz1n0080h4O7Ie9_aez1-jy-ToGJPZb96_y0SIIh1LM4JZTewJF1NKSeW7y8FcOlSrqVhZcjsEO1Y-uROMCJ3ktyD4nF0Fg9QbtfELC1kfzS_ebeAHxJiKR-dfQuDgG8vHo8Otahl3I6L50u1DiY.CQsn0rTe2gJBC8lwZCQoPJG9fu3Wh_PTgIsWPTzEnsU&dib_tag=se&keywords=circular+saw+wood&qid=1782657159&sr=8-7",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:50.158Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 42,
+    "stock_quantity": 14,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0023",
+    "created_at": "2026-06-30T13:38:35.409Z",
+    "updated_at": "2026-06-30T13:38:35.409Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:38:38.999Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/71S7LKHpe2L._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71S7LKHpe2L._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "➤【High Peroformance】Powerful 1400W motor produces up to 4800RPM – powerful enough for a professional. Heat resistant copper wire motor allows long working time without burning the machine. The high-performance electric circular saw helps to increase your efficiency.",
+      "➤【High Peroformance】Powerful 1400W motor produces up to 4800RPM – powerful enough for a professional. Heat resistant copper wire motor allows long working time without burning the machine. The high-performance electric circular saw helps to increase your efficiency.",
+      "➤【Adjustable Cutting Angle】0-45 degree bevel capacity allows for aggressive bevel cuts for a multitude of applications. Max cutting depth to 65mm; 44mm at 45 degree",
+      "➤【Adjustable Cutting Angle】0-45 degree bevel capacity allows for aggressive bevel cuts for a multitude of applications. Max cutting depth to 65mm; 44mm at 45 degree",
+      "➤【Humanized Design】Cutting Guide Ruler makes accurate cuts； Spindle lock allows for quick and easy blade changes; Light design helps keep you comfortable and in control while minimizing muscle fatigue; Corded design offers unlimited runtime for even the biggest jobs.",
+      "➤【Humanized Design】Cutting Guide Ruler makes accurate cuts； Spindle lock allows for quick and easy blade changes; Light design helps keep you comfortable and in control while minimizing muscle fatigue; Corded design offers unlimited runtime for even the biggest jobs.",
+      "➤【Integrated Dust Extraction】An integrated dust blower allows the user to clear its line of sight while cutting. Dust extraction facility for maintaining a clean work area and keeps the cut line free of dust for improved visibility.",
+      "➤【Integrated Dust Extraction】An integrated dust blower allows the user to clear its line of sight while cutting. Dust extraction facility for maintaining a clean work area and keeps the cut line free of dust for improved visibility.",
+      "➤【Quality First】 Strict quality inspection make each of our products high performance. This circular saw is covered by our lifetime warranty and 30 days money-back. If you have any issues with the quality or usage, please don't hesitate to contact us, we will offer you a best solution in 24 hours",
+      "➤【Quality First】 Strict quality inspection make each of our products high performance. This circular saw is covered by our lifetime warranty and 30 days money-back. If you have any issues with the quality or usage, please don't hesitate to contact us, we will offer you a best solution in 24 hours"
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B00J5ELW4A",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 9688,
+    "mrp": 16950,
+    "discount": 43,
+    "material": "Steel",
+    "type": "SawBlades",
+    "size": "184mm",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/71xUhyj+noL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Professional-Circular-Parallel-Cutting-Warranty/dp/B00J5ELW4A/ref=sr_1_8?dib=eyJ2IjoiMSJ9.CDFmMijUmYGndvK6uUlQwqXUvlfnv-nEpTh_y-ddYEuSv9dQNvIPCe5sk3TR1WviISkJFnWwFA1uEwpcM8rdjCKpML0lhUw7F5adTHZJ3a78jD843BncaQp1uV_rQ8Noq5Ih5SIWlIFU_6JiSUwA8drSz1n0080h4O7Ie9_aez1-jy-ToGJPZb96_y0SIIh1LM4JZTewJF1NKSeW7y8FcOlSrqVhZcjsEO1Y-uROMCJ3ktyD4nF0Fg9QbtfELC1kfzS_ebeAHxJiKR-dfQuDgG8vHo8Otahl3I6L50u1DiY.CQsn0rTe2gJBC8lwZCQoPJG9fu3Wh_PTgIsWPTzEnsU&dib_tag=se&keywords=circular+saw+wood&qid=1782657159&sr=8-8",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:50.158Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 43,
+    "stock_quantity": 39,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0024",
+    "created_at": "2026-06-30T13:38:39.014Z",
+    "updated_at": "2026-06-30T13:38:39.014Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:38:43.623Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/71xUhyj+noL._SX425_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71xUhyj+noL._SX425_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "Sturdy Circular Saw Build – Designed for heavy-duty jobsite and workshop tasks, the Bosch GKS 190 circular saw offers unmatched strength, power, and long-term durability.",
+      "Sturdy Circular Saw Build – Designed for heavy-duty jobsite and workshop tasks, the Bosch GKS 190 circular saw offers unmatched strength, power, and long-term durability.",
+      "Adjustable Cutting Depth – Easily adjust depth up to 67mm with the hand-held saw, allowing flexible and precise performance for varied construction needs.",
+      "Adjustable Cutting Depth – Easily adjust depth up to 67mm with the hand-held saw, allowing flexible and precise performance for varied construction needs.",
+      "Quick Blade Change Mechanism – With a spindle lock system, the Bosch circular saw enables fast and hassle-free blade replacements for uninterrupted workflow.",
+      "Quick Blade Change Mechanism – With a spindle lock system, the Bosch circular saw enables fast and hassle-free blade replacements for uninterrupted workflow.",
+      "Clear View Air Blower – Built-in air blower clears dust and chips from the cutting line, ensuring better visibility and accurate cuts during woodworking tasks.",
+      "Clear View Air Blower – Built-in air blower clears dust and chips from the cutting line, ensuring better visibility and accurate cuts during woodworking tasks.",
+      "Left-Hand Friendly Design – Lightweight at 4.1 kg and engineered for comfortable use, this Bosch power tool is suitable for both right- and left-handed professionals.",
+      "Left-Hand Friendly Design – Lightweight at 4.1 kg and engineered for comfortable use, this Bosch power tool is suitable for both right- and left-handed professionals."
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B09JYPH2VM",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 4898,
+    "mrp": 8856,
+    "discount": 45,
+    "material": "Steel",
+    "type": "Lock",
+    "size": "7 Inch",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/41y4gWrX--L._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/PROFESSIONAL-Adjustable-remodelers-carpenters-contractors/dp/B09JYPH2VM/ref=sr_1_9?dib=eyJ2IjoiMSJ9.CDFmMijUmYGndvK6uUlQwqXUvlfnv-nEpTh_y-ddYEuSv9dQNvIPCe5sk3TR1WviISkJFnWwFA1uEwpcM8rdjCKpML0lhUw7F5adTHZJ3a78jD843BncaQp1uV_rQ8Noq5Ih5SIWlIFU_6JiSUwA8drSz1n0080h4O7Ie9_aez1-jy-ToGJPZb96_y0SIIh1LM4JZTewJF1NKSeW7y8FcOlSrqVhZcjsEO1Y-uROMCJ3ktyD4nF0Fg9QbtfELC1kfzS_ebeAHxJiKR-dfQuDgG8vHo8Otahl3I6L50u1DiY.CQsn0rTe2gJBC8lwZCQoPJG9fu3Wh_PTgIsWPTzEnsU&dib_tag=se&keywords=circular+saw+wood&qid=1782657159&sr=8-9",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:50.158Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 1,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 45,
+    "stock_quantity": 36,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0025",
+    "created_at": "2026-06-30T13:38:43.637Z",
+    "updated_at": "2026-06-30T13:38:43.637Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:38:46.886Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/41y4gWrX--L._SX342_SY445_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/41y4gWrX--L._SX342_SY445_QL70_FMwebp_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {
+      "Brand": "Brand",
+      "Manufacturer": "Manufacturer",
+      "Model number": "Model number",
+      "Colour": "Colour",
+      "Number of Memory Sticks": "Number of Memory Sticks",
+      "Special Feature": "Special Feature",
+      "Item Weight": "Item Weight",
+      "Product Dimensions": "Product Dimensions",
+      "Item model number": "Item model number",
+      "Item Height": "Item Height",
+      "Item Width": "Item Width",
+      "Wattage": "Wattage",
+      "Power Source": "Power Source",
+      "Included Components": "Included Components"
+    },
+    "features": [
+      "PACKAGE CONTENTS: 1 pc Circular Saw, 1 pc Depth Gauge, 1 pc Safety Nut Opener, 1 pc Wood Cutting Blade, 1 pc Instruction Manual, and 1 pc warranty certificate",
+      "PACKAGE CONTENTS: 1 pc Circular Saw, 1 pc Depth Gauge, 1 pc Safety Nut Opener, 1 pc Wood Cutting Blade, 1 pc Instruction Manual, and 1 pc warranty certificate",
+      "POWERFUL & DURABLE: The 1500W motor delivers optimum power transmission for superior performance even in the toughest of applications.",
+      "POWERFUL & DURABLE: The 1500W motor delivers optimum power transmission for superior performance even in the toughest of applications.",
+      "ERGONOMIC & SAFE: Spindle lock helps quick changing of saw blades while Ergonomic grip and handle increases user comfort. Aluminium Die-Cast body and adjustable base plate gives the tool a longer life.",
+      "ERGONOMIC & SAFE: Spindle lock helps quick changing of saw blades while Ergonomic grip and handle increases user comfort. Aluminium Die-Cast body and adjustable base plate gives the tool a longer life.",
+      "CONVENIENT: Can be operated with a 45° bevel via base plate. Comes with an infinitely Variable cutting depth setting and Cutting Capacity of 67mm (90°) & 44mm (45°).",
+      "CONVENIENT: Can be operated with a 45° bevel via base plate. Comes with an infinitely Variable cutting depth setting and Cutting Capacity of 67mm (90°) & 44mm (45°).",
+      "IDEAL FOR: Most commonly used to make straight-line cuts on lumber. Popular with framers, remodelers, roofers, carpenters and general contractors",
+      "IDEAL FOR: Most commonly used to make straight-line cuts on lumber. Popular with framers, remodelers, roofers, carpenters and general contractors"
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B09T8YRVS5",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 1829,
+    "mrp": 1829,
+    "discount": 0,
+    "material": "Steel",
+    "type": "SawBlades",
+    "size": "",
+    "packSize": "2Pcs",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/81f8YAJdvKL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Hillgrove-HGCM81M1-Cutting-Machine-Googles/dp/B09T8YRVS5/ref=sr_1_10?dib=eyJ2IjoiMSJ9.CDFmMijUmYGndvK6uUlQwqXUvlfnv-nEpTh_y-ddYEuSv9dQNvIPCe5sk3TR1WviISkJFnWwFA1uEwpcM8rdjCKpML0lhUw7F5adTHZJ3a78jD843BncaQp1uV_rQ8Noq5Ih5SIWlIFU_6JiSUwA8drSz1n0080h4O7Ie9_aez1-jy-ToGJPZb96_y0SIIh1LM4JZTewJF1NKSeW7y8FcOlSrqVhZcjsEO1Y-uROMCJ3ktyD4nF0Fg9QbtfELC1kfzS_ebeAHxJiKR-dfQuDgG8vHo8Otahl3I6L50u1DiY.CQsn0rTe2gJBC8lwZCQoPJG9fu3Wh_PTgIsWPTzEnsU&dib_tag=se&keywords=circular+saw+wood&qid=1782657159&sr=8-10",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:50.158Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "size"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 0,
+    "stock_quantity": 12,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0026",
+    "created_at": "2026-06-30T13:38:46.899Z",
+    "updated_at": "2026-06-30T13:38:46.899Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:38:51.212Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/81f8YAJdvKL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/81f8YAJdvKL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "Versatile cutting machine designed for wood, tile, marble, and metal applications. Delivers clean, precise cuts, making it ideal for home improvement, carpentry, and construction projects with professional-level results.",
+      "Versatile cutting machine designed for wood, tile, marble, and metal applications. Delivers clean, precise cuts, making it ideal for home improvement, carpentry, and construction projects with professional-level results.",
+      "Powerful 1050W motor with high-speed performance ensures smooth and efficient cutting through various materials. Built for consistent output, reducing effort and saving time on demanding cutting tasks.",
+      "Powerful 1050W motor with high-speed performance ensures smooth and efficient cutting through various materials. Built for consistent output, reducing effort and saving time on demanding cutting tasks.",
+      "Durable metal body construction with robust components enhances stability and long-term performance. Ergonomic handle design provides better control, reduced vibration, and improved safety during extended use.",
+      "Durable metal body construction with robust components enhances stability and long-term performance. Ergonomic handle design provides better control, reduced vibration, and improved safety during extended use.",
+      "Complete value kit includes 2 cutting blades along with safety goggles and gloves. Ready-to-use package supports multiple cutting needs while ensuring user protection and convenience straight out of the box.",
+      "Complete value kit includes 2 cutting blades along with safety goggles and gloves. Ready-to-use package supports multiple cutting needs while ensuring user protection and convenience straight out of the box.",
+      "Ideal for DIY users, carpenters, and professionals working on furniture, flooring, tiling, and renovation projects. Suitable for workshops, construction sites, and home maintenance tasks.",
+      "Ideal for DIY users, carpenters, and professionals working on furniture, flooring, tiling, and renovation projects. Suitable for workshops, construction sites, and home maintenance tasks."
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0FVSZQB5C",
+    "name": "Hardware Item",
+    "brand": "HETTICH",
+    "category": "Furniture Hardware",
+    "subcategory": "General",
+    "price": 3936,
+    "mrp": 4600,
+    "discount": 14,
+    "material": "Steel",
+    "type": "Screw",
+    "size": "125mm",
+    "packSize": "60 pcs",
+    "finish": "Zinc Plated",
+    "usage": "Furniture Hardware",
+    "imageUrl": "https://m.media-amazon.com/images/I/71KTaS3wLbL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/VR-WC25-30-Dust-Free-Cutting-Warranty/dp/B0FVSZQB5C/ref=sr_1_11?dib=eyJ2IjoiMSJ9.CDFmMijUmYGndvK6uUlQwqXUvlfnv-nEpTh_y-ddYEuSv9dQNvIPCe5sk3TR1WviISkJFnWwFA1uEwpcM8rdjCKpML0lhUw7F5adTHZJ3a78jD843BncaQp1uV_rQ8Noq5Ih5SIWlIFU_6JiSUwA8drSz1n0080h4O7Ie9_aez1-jy-ToGJPZb96_y0SIIh1LM4JZTewJF1NKSeW7y8FcOlSrqVhZcjsEO1Y-uROMCJ3ktyD4nF0Fg9QbtfELC1kfzS_ebeAHxJiKR-dfQuDgG8vHo8Otahl3I6L50u1DiY.CQsn0rTe2gJBC8lwZCQoPJG9fu3Wh_PTgIsWPTzEnsU&dib_tag=se&keywords=circular+saw+wood&qid=1782657159&sr=8-11",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:50.158Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [],
+    "_isComplete": true,
+    "_imputedFrom": {
+      "material": "catSub (Furniture Hardware|General)",
+      "type": "catSub (Furniture Hardware|General)",
+      "packSize": "catSubType (Furniture Hardware|General|Screw)",
+      "finish": "catSubType (Furniture Hardware|General|Screw)",
+      "usage": "catSubType (Furniture Hardware|General|Screw)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 1,
+      "verification": 0
+    },
+    "description": "HETTICH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 14,
+    "stock_quantity": 16,
+    "status": "Active",
+    "warranty": "Standard Warranty",
+    "sku": "BM-GE-0027",
+    "created_at": "2026-06-30T13:38:51.225Z",
+    "updated_at": "2026-06-30T13:38:51.225Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:38:54.078Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/71KTaS3wLbL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71KTaS3wLbL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {
+      "Manufacturer": "Manufacturer",
+      "Country of Origin": "Country of Origin",
+      "Item model number": "Item model number",
+      "Product Dimensions": "Product Dimensions",
+      "ASIN": "ASIN"
+    },
+    "features": [
+      "Powerful 1250W Motor – Ensures smooth, fast, and precise cutting performance for wood and board materials, suitable for both DIY and professional woodworking tasks.",
+      "Powerful 1250W Motor – Ensures smooth, fast, and precise cutting performance for wood and board materials, suitable for both DIY and professional woodworking tasks.",
+      "High-Speed Operation – With a no-load speed of 13,000 RPM, it delivers clean and efficient cuts with minimal effort.",
+      "High-Speed Operation – With a no-load speed of 13,000 RPM, it delivers clean and efficient cuts with minimal effort.",
+      "Dust-Free Cutting System – Reduces airborne particles, keeping your workspace clean and ensuring clearer visibility while cutting.",
+      "Dust-Free Cutting System – Reduces airborne particles, keeping your workspace clean and ensuring clearer visibility while cutting.",
+      "Compact & Ergonomic Design – Lightweight build and comfortable grip minimize fatigue during long hours of operation.",
+      "Compact & Ergonomic Design – Lightweight build and comfortable grip minimize fatigue during long hours of operation.",
+      "Durable & Safe Build – Features Class II protection, providing long-lasting reliability and user safety for continuous cutting jobs.",
+      "Durable & Safe Build – Features Class II protection, providing long-lasting reliability and user safety for continuous cutting jobs.",
+      "iBELL Provides a 12 months service warranty limited to Armature and Field only. 6 months standard warranty + 6 Months additional warranty on registration ( Registration should be done within 30 days from the date of Purchase). Terms and conditions apply as specified in the warranty card.",
+      "iBELL Provides a 12 months service warranty limited to Armature and Field only. 6 months standard warranty + 6 Months additional warranty on registration ( Registration should be done within 30 days from the date of Purchase). Terms and conditions apply as specified in the warranty card."
+    ],
+    "videos": [],
+    "_completeness": 100,
+    "_quality": {
+      "score": 77,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0D83PVJD2",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 4638,
+    "mrp": 5999,
+    "discount": 23,
+    "material": "Steel",
+    "type": "SawBlades",
+    "size": "140mm",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/711C3pd++IL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Cordless-Circular-Brushless-Adjustable-Cutting/dp/B0D83PVJD2/ref=sr_1_12?dib=eyJ2IjoiMSJ9.CDFmMijUmYGndvK6uUlQwqXUvlfnv-nEpTh_y-ddYEuSv9dQNvIPCe5sk3TR1WviISkJFnWwFA1uEwpcM8rdjCKpML0lhUw7F5adTHZJ3a78jD843BncaQp1uV_rQ8Noq5Ih5SIWlIFU_6JiSUwA8drSz1n0080h4O7Ie9_aez1-jy-ToGJPZb96_y0SIIh1LM4JZTewJF1NKSeW7y8FcOlSrqVhZcjsEO1Y-uROMCJ3ktyD4nF0Fg9QbtfELC1kfzS_ebeAHxJiKR-dfQuDgG8vHo8Otahl3I6L50u1DiY.CQsn0rTe2gJBC8lwZCQoPJG9fu3Wh_PTgIsWPTzEnsU&dib_tag=se&keywords=circular+saw+wood&qid=1782657159&sr=8-12",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:50.158Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 23,
+    "stock_quantity": 21,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0028",
+    "created_at": "2026-06-30T13:38:54.095Z",
+    "updated_at": "2026-06-30T13:38:54.095Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:38:58.673Z"
+    },
+    "_availability": "UNKNOWN",
+    "thumbnail": "https://m.media-amazon.com/images/I/711C3pd++IL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/711C3pd++IL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "➤【Brushless motor】 INGCO circular saw uses a brushless motor that eliminates the need to replace carbon brushes. Powerful Brushless motor produces up to 6300RPM – powerful enough for a professional.",
+      "➤【Brushless motor】 INGCO circular saw uses a brushless motor that eliminates the need to replace carbon brushes. Powerful Brushless motor produces up to 6300RPM – powerful enough for a professional.",
+      "➤【Adjustable Cutting Angle】0-45 degree bevel capacity allows for aggressive bevel cuts for a multitude of applications. Customize the cutting depth to 50mm at 90 degrees; 33mm at 45 degree.",
+      "➤【Adjustable Cutting Angle】0-45 degree bevel capacity allows for aggressive bevel cuts for a multitude of applications. Customize the cutting depth to 50mm at 90 degrees; 33mm at 45 degree.",
+      "➤【Humanized Design】Cutting Guide Ruler makes accurate cuts； Spindle lock allows for quick and easy blade changes; Light design helps keep you comfortable and in control while minimizing muscle fatigue; Cordless design offers unlimited line for even the outdoor jobs.",
+      "➤【Humanized Design】Cutting Guide Ruler makes accurate cuts； Spindle lock allows for quick and easy blade changes; Light design helps keep you comfortable and in control while minimizing muscle fatigue; Cordless design offers unlimited line for even the outdoor jobs.",
+      "➤【Body Only】:1 pcs INGCO Cordless Circular Saw, 1 Pcs 140mm blade, and charger sold separately",
+      "➤【Body Only】:1 pcs INGCO Cordless Circular Saw, 1 Pcs 140mm blade, and charger sold separately",
+      "➤【No Worry Service】 Strict quality inspection make each of our products, 7*24 online support servic. try it, totally risk free",
+      "➤【No Worry Service】 Strict quality inspection make each of our products, 7*24 online support servic. try it, totally risk free"
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B07R4W6GNR",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 8890,
+    "mrp": 9780,
+    "discount": 9,
+    "material": "Steel",
+    "type": "SawBlades",
+    "size": "4'",
+    "packSize": "",
+    "finish": "Black",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/712etwSiscL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Stanley-SC16-1600W-Circular-Saw/dp/B07R4W6GNR/ref=sr_1_13?dib=eyJ2IjoiMSJ9.CDFmMijUmYGndvK6uUlQwqXUvlfnv-nEpTh_y-ddYEuSv9dQNvIPCe5sk3TR1WviISkJFnWwFA1uEwpcM8rdjCKpML0lhUw7F5adTHZJ3a78jD843BncaQp1uV_rQ8Noq5Ih5SIWlIFU_6JiSUwA8drSz1n0080h4O7Ie9_aez1-jy-ToGJPZb96_y0SIIh1LM4JZTewJF1NKSeW7y8FcOlSrqVhZcjsEO1Y-uROMCJ3ktyD4nF0Fg9QbtfELC1kfzS_ebeAHxJiKR-dfQuDgG8vHo8Otahl3I6L50u1DiY.CQsn0rTe2gJBC8lwZCQoPJG9fu3Wh_PTgIsWPTzEnsU&dib_tag=se&keywords=circular+saw+wood&qid=1782657159&sr=8-13",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:50.158Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 9,
+    "stock_quantity": 20,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0029",
+    "created_at": "2026-06-30T13:38:58.710Z",
+    "updated_at": "2026-06-30T13:38:58.710Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:39:01.739Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/712etwSiscL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/712etwSiscL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "These versatile saws are considered the pillar of electric-powered saws, and offers uses for everything from major construction projects, to simple tasks in and around the home. They are capable of handling a number of different materials that go well beyond just wood.",
+      "These versatile saws are considered the pillar of electric-powered saws, and offers uses for everything from major construction projects, to simple tasks in and around the home. They are capable of handling a number of different materials that go well beyond just wood.",
+      "Max. Cutting/Sawing Depth: 65 mm(2.55 \") - Enough to get through your rip, cross and bevel cuts.",
+      "Max. Cutting/Sawing Depth: 65 mm(2.55 \") - Enough to get through your rip, cross and bevel cuts.",
+      "Bevel Capacity: 0-50 Degrees - Pivots up to 50°, with 2 detents for most commonly used angles.",
+      "Bevel Capacity: 0-50 Degrees - Pivots up to 50°, with 2 detents for most commonly used angles.",
+      "Blade Diameter:190 mm(7.48\"); Power Source: Corded; Power Input: 1600 W; Weight: 3.9 kg",
+      "Blade Diameter:190 mm(7.48\"); Power Source: Corded; Power Input: 1600 W; Weight: 3.9 kg",
+      "VACUUM CLEANER CONNECTION: For efficient dust extraction and less time cleaning. SPINDLE LOCK: Spindle lock allows for quick and easy blade change.",
+      "VACUUM CLEANER CONNECTION: For efficient dust extraction and less time cleaning. SPINDLE LOCK: Spindle lock allows for quick and easy blade change."
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0CF1WBQ5B",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 6835,
+    "mrp": 12000,
+    "discount": 43,
+    "material": "Steel",
+    "type": "SawBlades",
+    "size": "",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/61Crg6qtA9L._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Bosch-Professional-GKS-130-Circular/dp/B0CF1WBQ5B/ref=sr_1_14?dib=eyJ2IjoiMSJ9.CDFmMijUmYGndvK6uUlQwqXUvlfnv-nEpTh_y-ddYEuSv9dQNvIPCe5sk3TR1WviISkJFnWwFA1uEwpcM8rdjCKpML0lhUw7F5adTHZJ3a78jD843BncaQp1uV_rQ8Noq5Ih5SIWlIFU_6JiSUwA8drSz1n0080h4O7Ie9_aez1-jy-ToGJPZb96_y0SIIh1LM4JZTewJF1NKSeW7y8FcOlSrqVhZcjsEO1Y-uROMCJ3ktyD4nF0Fg9QbtfELC1kfzS_ebeAHxJiKR-dfQuDgG8vHo8Otahl3I6L50u1DiY.CQsn0rTe2gJBC8lwZCQoPJG9fu3Wh_PTgIsWPTzEnsU&dib_tag=se&keywords=circular+saw+wood&qid=1782657159&sr=8-14",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:32:50.158Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "size",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 43,
+    "stock_quantity": 33,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0030",
+    "created_at": "2026-06-30T13:39:01.754Z",
+    "updated_at": "2026-06-30T13:39:01.754Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:39:06.484Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/61Crg6qtA9L._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/61Crg6qtA9L._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "Simple but reliable design for continuous cutting job",
+      "Simple but reliable design for continuous cutting job",
+      "Fast cutting speed thanks to the powerful 1300W motor",
+      "Fast cutting speed thanks to the powerful 1300W motor",
+      "Ease of use for multi cutting materials such as plywood, softwood, and both MDF and OSB board types",
+      "Ease of use for multi cutting materials such as plywood, softwood, and both MDF and OSB board types",
+      "Always visible cutting mark on the workpiece thanks to integrated dust blower function",
+      "Always visible cutting mark on the workpiece thanks to integrated dust blower function",
+      "Easily expandable with GKS 190 dust extractor; Hold tool securely with comfortable auxiliary handle; Easy operating depth adjustment by Quick-lock switch",
+      "Easily expandable with GKS 190 dust extractor; Hold tool securely with comfortable auxiliary handle; Easy operating depth adjustment by Quick-lock switch"
+    ],
+    "videos": [],
+    "_completeness": 85,
+    "_quality": {
+      "score": 69.5,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B07SG1JSLP",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 2656,
+    "mrp": 3500,
+    "discount": 24,
+    "material": "Steel",
+    "type": "SawBlades",
+    "size": "65mm",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "General workshop and DIY applications",
+    "imageUrl": "https://m.media-amazon.com/images/I/818XB8GrpWL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/IBELL-JS10-65-Professional-Heavy-Duty-Extraction/dp/B07SG1JSLP/ref=sr_1_5?dib=eyJ2IjoiMSJ9.wYG7euBKghFQReEF5CYnHmV9J8-UGJ9IfYhKk9yYNQ8gubMq7dJBRzXKOT-4gh7ec5uvmEMFQouKvYW2lgR5lH2wxCloXYsHbrcrvB4NuMqkzvl-byPuejfVydZNtT2qU72WG6ecXJMt0IHyqFkuHxQw7pMcSlu95UOJ595hTLiLcvf8cM2dxjRnXyK9GYxDQDCZKtw1N27hBlax9TUpb8oZHGRTlh9Di5xe6wae0BRXYBwhPz3sq_qRVOZk6-exr2bdfhulwZsVTNJiAw0g0h9DPde7AlDaZJsRNYoRy5s.2JeU3t3Oeye3yQQUazlflurZdNuf22PCvgdbooZGhhw&dib_tag=se&keywords=jigsaw+power+tool&qid=1782657175&sr=8-5",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:03.778Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 24,
+    "stock_quantity": 9,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0031",
+    "created_at": "2026-06-30T13:39:06.503Z",
+    "updated_at": "2026-06-30T13:39:06.503Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:39:09.653Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/818XB8GrpWL._SX522_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/818XB8GrpWL._SX522_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "Powerful 650W Copper Armature Motor: Delivers strong cutting performance for both wood (up to 65mm) and steel (up to 6mm), ensuring smooth and precise cuts even under load.",
+      "Powerful 650W Copper Armature Motor: Delivers strong cutting performance for both wood (up to 65mm) and steel (up to 6mm), ensuring smooth and precise cuts even under load.",
+      "Variable Speed Control (800–3000 RPM): Adjustable speed allows better control and precision across various materials—ideal for cutting wood, metal, and plastic.",
+      "Variable Speed Control (800–3000 RPM): Adjustable speed allows better control and precision across various materials—ideal for cutting wood, metal, and plastic.",
+      "Adjustable Cutting Angle & Base Plate: Tilt the base plate for bevel cuts, ensuring accuracy in angled cutting applications for furniture, carpentry, and DIY projects.",
+      "Adjustable Cutting Angle & Base Plate: Tilt the base plate for bevel cuts, ensuring accuracy in angled cutting applications for furniture, carpentry, and DIY projects.",
+      "Dust Extraction Port for Clean Operation: Integrated dust port keeps your workspace cleaner and improves visibility while cutting.",
+      "Dust Extraction Port for Clean Operation: Integrated dust port keeps your workspace cleaner and improves visibility while cutting.",
+      "Ergonomic & Lightweight Design (2.52 Kg): Compact, comfortable grip with balanced weight distribution for reduced fatigue during long working hours.",
+      "Ergonomic & Lightweight Design (2.52 Kg): Compact, comfortable grip with balanced weight distribution for reduced fatigue during long working hours.",
+      "Durable Build & Safety Assured: Class II double insulation ensures user safety, and the robust copper winding motor guarantees longer tool life and reliability.",
+      "Durable Build & Safety Assured: Class II double insulation ensures user safety, and the robust copper winding motor guarantees longer tool life and reliability."
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B09TRT111K",
+    "name": "Drill Bits",
+    "brand": "Unknown",
+    "category": "Tool Accessories",
+    "subcategory": "Drill Bits",
+    "price": 439,
+    "mrp": 1500,
+    "discount": 71,
+    "material": "Steel",
+    "type": "Twist Drill Bit Set",
+    "size": "",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Woodworking",
+    "imageUrl": "https://m.media-amazon.com/images/I/71eeMowUFUL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/DUMDAAR-Jigsaw-Adapter-Woodworking-Cutter/dp/B09TRT111K/ref=sr_1_6?dib=eyJ2IjoiMSJ9.wYG7euBKghFQReEF5CYnHmV9J8-UGJ9IfYhKk9yYNQ8gubMq7dJBRzXKOT-4gh7ec5uvmEMFQouKvYW2lgR5lH2wxCloXYsHbrcrvB4NuMqkzvl-byPuejfVydZNtT2qU72WG6ecXJMt0IHyqFkuHxQw7pMcSlu95UOJ595hTLiLcvf8cM2dxjRnXyK9GYxDQDCZKtw1N27hBlax9TUpb8oZHGRTlh9Di5xe6wae0BRXYBwhPz3sq_qRVOZk6-exr2bdfhulwZsVTNJiAw0g0h9DPde7AlDaZJsRNYoRy5s.2JeU3t3Oeye3yQQUazlflurZdNuf22PCvgdbooZGhhw&dib_tag=se&keywords=jigsaw+power+tool&qid=1782657175&sr=8-6",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:03.778Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv",
+      "mega-collection.json",
+      "mega-collection.csv"
+    ],
+    "_missingFields": [
+      "type",
+      "size",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "catSub (Tool Accessories|Drill Bits)",
+      "finish": "catSub (Tool Accessories|Drill Bits)"
+    },
+    "_confidence": {
+      "brand": 0,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "Unknown Drill Bits made from premium Steel. Ideal for Wood Drilling, Metal Drilling, Furniture Assembly, DIY Crafts.",
+    "discount_percent": 71,
+    "stock_quantity": 29,
+    "status": "Active",
+    "warranty": "Standard Warranty",
+    "sku": "BM-DB-0032",
+    "created_at": "2026-06-30T13:39:09.665Z",
+    "updated_at": "2026-06-30T13:39:09.665Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:39:13.532Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/71eeMowUFUL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71eeMowUFUL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "Converts Drill to Jigsaw – Easily transforms your power drill into a corded jigsaw for woodworking tasks.",
+      "Converts Drill to Jigsaw – Easily transforms your power drill into a corded jigsaw for woodworking tasks.",
+      "Precise & Smooth Cutting – Enables straight and curved cuts on wood, plywood, and similar materials.",
+      "Precise & Smooth Cutting – Enables straight and curved cuts on wood, plywood, and similar materials.",
+      "Durable & Reliable Build – Made from high-quality materials for long-lasting performance.",
+      "Durable & Reliable Build – Made from high-quality materials for long-lasting performance.",
+      "Compact & Ergonomic Design – Provides better control, reduced vibration, and comfortable handling.",
+      "Compact & Ergonomic Design – Provides better control, reduced vibration, and comfortable handling."
+    ],
+    "videos": [],
+    "_completeness": 77,
+    "_quality": {
+      "score": 65.5,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0CJ91GCRR",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 2579,
+    "mrp": 3449,
+    "discount": 25,
+    "material": "Steel",
+    "type": "SawBlades",
+    "size": "",
+    "packSize": "",
+    "finish": "Black",
+    "usage": "General workshop and DIY applications",
+    "imageUrl": "https://m.media-amazon.com/images/I/71YMxOF-UtL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/BLACK-DECKER-Variable-Materials-Professional/dp/B0CJ91GCRR/ref=sr_1_7?dib=eyJ2IjoiMSJ9.wYG7euBKghFQReEF5CYnHmV9J8-UGJ9IfYhKk9yYNQ8gubMq7dJBRzXKOT-4gh7ec5uvmEMFQouKvYW2lgR5lH2wxCloXYsHbrcrvB4NuMqkzvl-byPuejfVydZNtT2qU72WG6ecXJMt0IHyqFkuHxQw7pMcSlu95UOJ595hTLiLcvf8cM2dxjRnXyK9GYxDQDCZKtw1N27hBlax9TUpb8oZHGRTlh9Di5xe6wae0BRXYBwhPz3sq_qRVOZk6-exr2bdfhulwZsVTNJiAw0g0h9DPde7AlDaZJsRNYoRy5s.2JeU3t3Oeye3yQQUazlflurZdNuf22PCvgdbooZGhhw&dib_tag=se&keywords=jigsaw+power+tool&qid=1782657175&sr=8-7",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:03.778Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "size",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {},
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 25,
+    "stock_quantity": 23,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0033",
+    "created_at": "2026-06-30T13:39:13.547Z",
+    "updated_at": "2026-06-30T13:39:13.547Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:39:16.825Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/71YMxOF-UtL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71YMxOF-UtL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "TECHNICAL SPECIFICATIONS: Input Watts: 400W | No load speed: 0-3000 RPM | Voltage: 220-240V | Weight: 1.6Kg.",
+      "TECHNICAL SPECIFICATIONS: Input Watts: 400W | No load speed: 0-3000 RPM | Voltage: 220-240V | Weight: 1.6Kg.",
+      "45 DEGREE TILT: Tilt the saw blade 45° to make miter cuts.",
+      "45 DEGREE TILT: Tilt the saw blade 45° to make miter cuts.",
+      "MAX DEPTH OF CUT: Wood 65mm; Steel 6mm; Aluminium 10mm.",
+      "MAX DEPTH OF CUT: Wood 65mm; Steel 6mm; Aluminium 10mm.",
+      "APPLICATIONS: BES603 jig saw has been designed for sawing wood, plastics and sheet metal. This compact and ergonomic saw offers excellent comfort by giving optimal and constant visibility of the blade while you work, to obtain the most precise cut possible.",
+      "APPLICATIONS: BES603 jig saw has been designed for sawing wood, plastics and sheet metal. This compact and ergonomic saw offers excellent comfort by giving optimal and constant visibility of the blade while you work, to obtain the most precise cut possible.",
+      "FINISH: Comes with rubber coating and extra grip to prevent the hand from approaching the cutting area.",
+      "FINISH: Comes with rubber coating and extra grip to prevent the hand from approaching the cutting area."
+    ],
+    "videos": [],
+    "_completeness": 85,
+    "_quality": {
+      "score": 69.5,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0CHC7JWGC",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 4199,
+    "mrp": 6100,
+    "discount": 31,
+    "material": "Steel",
+    "type": "SawBlades",
+    "size": "68mm",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/610H61kxBCL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Electric-800-3100-Lightweight-Portable-Included/dp/B0CHC7JWGC/ref=sr_1_8?dib=eyJ2IjoiMSJ9.wYG7euBKghFQReEF5CYnHmV9J8-UGJ9IfYhKk9yYNQ8gubMq7dJBRzXKOT-4gh7ec5uvmEMFQouKvYW2lgR5lH2wxCloXYsHbrcrvB4NuMqkzvl-byPuejfVydZNtT2qU72WG6ecXJMt0IHyqFkuHxQw7pMcSlu95UOJ595hTLiLcvf8cM2dxjRnXyK9GYxDQDCZKtw1N27hBlax9TUpb8oZHGRTlh9Di5xe6wae0BRXYBwhPz3sq_qRVOZk6-exr2bdfhulwZsVTNJiAw0g0h9DPde7AlDaZJsRNYoRy5s.2JeU3t3Oeye3yQQUazlflurZdNuf22PCvgdbooZGhhw&dib_tag=se&keywords=jigsaw+power+tool&qid=1782657175&sr=8-8",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:03.778Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 31,
+    "stock_quantity": 24,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0034",
+    "created_at": "2026-06-30T13:39:16.838Z",
+    "updated_at": "2026-06-30T13:39:16.838Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:39:21.312Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/610H61kxBCL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/610H61kxBCL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "Powerful Motor: The 500W motor of the electric jigsaw provides exceptional cutting power, enabling faster and more precise performance across various materials, including solid wood, metal, and plastic.",
+      "Powerful Motor: The 500W motor of the electric jigsaw provides exceptional cutting power, enabling faster and more precise performance across various materials, including solid wood, metal, and plastic.",
+      "Adjustable Speed Control: The pre-selection speed wheel of the Bosch tool allows users to customize the cutting speed to suit the material, ensuring optimal precision and efficiency for every project.",
+      "Adjustable Speed Control: The pre-selection speed wheel of the Bosch tool allows users to customize the cutting speed to suit the material, ensuring optimal precision and efficiency for every project.",
+      "Orbital Action: The adjustable orbital settings, the jigsaw delivers both aggressive and clean cuts, catering to diverse cutting needs from rough cuts to smooth finishes.",
+      "Orbital Action: The adjustable orbital settings, the jigsaw delivers both aggressive and clean cuts, catering to diverse cutting needs from rough cuts to smooth finishes.",
+      "Tool-Free Blade Change: This feature of Bosch corded tool allows quick and effortless blade replacement, minimizing downtime and enhancing convenience during continuous operations.",
+      "Tool-Free Blade Change: This feature of Bosch corded tool allows quick and effortless blade replacement, minimizing downtime and enhancing convenience during continuous operations.",
+      "Ergonomic Handle Design: The soft rubber grip ensures a secure, comfortable hold, reducing hand fatigue and improving control during prolonged use. The electric jigsaw’s ability to handle straight, curved, and angled cuts makes it perfect for a wide range of applications for professional construction.",
+      "Ergonomic Handle Design: The soft rubber grip ensures a secure, comfortable hold, reducing hand fatigue and improving control during prolonged use. The electric jigsaw’s ability to handle straight, curved, and angled cuts makes it perfect for a wide range of applications for professional construction."
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0B2RJY7J7",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 2239,
+    "mrp": 4999,
+    "discount": 55,
+    "material": "Brass",
+    "type": "Saw Blade",
+    "size": "6.35mm",
+    "packSize": "3pcs",
+    "finish": "Silver",
+    "usage": "General workshop and DIY applications",
+    "imageUrl": "https://m.media-amazon.com/images/I/712YvjvgALL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/800-3000rpm-Pendulum-Function-Variable-Control/dp/B0B2RJY7J7/ref=sr_1_9?dib=eyJ2IjoiMSJ9.wYG7euBKghFQReEF5CYnHmV9J8-UGJ9IfYhKk9yYNQ8gubMq7dJBRzXKOT-4gh7ec5uvmEMFQouKvYW2lgR5lH2wxCloXYsHbrcrvB4NuMqkzvl-byPuejfVydZNtT2qU72WG6ecXJMt0IHyqFkuHxQw7pMcSlu95UOJ595hTLiLcvf8cM2dxjRnXyK9GYxDQDCZKtw1N27hBlax9TUpb8oZHGRTlh9Di5xe6wae0BRXYBwhPz3sq_qRVOZk6-exr2bdfhulwZsVTNJiAw0g0h9DPde7AlDaZJsRNYoRy5s.2JeU3t3Oeye3yQQUazlflurZdNuf22PCvgdbooZGhhw&dib_tag=se&keywords=jigsaw+power+tool&qid=1782657175&sr=8-9",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:03.778Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [],
+    "_isComplete": true,
+    "_imputedFrom": {
+      "material": "catSubType (Tool Accessories|Saw Blades|Saw Blade)",
+      "size": "catSubType (Tool Accessories|Saw Blades|Saw Blade)",
+      "finish": "catSubType (Tool Accessories|Saw Blades|Saw Blade)",
+      "usage": "catSubType (Tool Accessories|Saw Blades|Saw Blade)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Brass. Ideal for General workshop and DIY applications.",
+    "discount_percent": 55,
+    "stock_quantity": 41,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0035",
+    "created_at": "2026-06-30T13:39:21.334Z",
+    "updated_at": "2026-06-30T13:39:21.334Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:39:24.184Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/712YvjvgALL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/712YvjvgALL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "【5 Variable Speed up to 3000rpm】Equipped with 570W copper motor generates strong power and up to 3000rpm cutting speed for high working efficiency. 5-speed dial enables various cutting speeds for different cutting needs.",
+      "【5 Variable Speed up to 3000rpm】Equipped with 570W copper motor generates strong power and up to 3000rpm cutting speed for high working efficiency. 5-speed dial enables various cutting speeds for different cutting needs.",
+      "【45° Bevel Cutting & 4 Orbital Settings】Adjustable bottom plate can tilt up to 45° for bevel cutting need. 4 position orbital setting allows you adapt the cutting motion to fit different type of cuts and materials. The higher gear is suitable for softer materials and faster cutting; lower gear for harder materials and slower cutting.",
+      "【45° Bevel Cutting & 4 Orbital Settings】Adjustable bottom plate can tilt up to 45° for bevel cutting need. 4 position orbital setting allows you adapt the cutting motion to fit different type of cuts and materials. The higher gear is suitable for softer materials and faster cutting; lower gear for harder materials and slower cutting.",
+      "【Multifunction & Tool-Free Blade Change】Equipped with 3 blades separately for cutting different materials, including: wood, PVC, metal, gypsum board, etc. The max cutting capacity is: Wood:65mm; Steel: 8mml. Tool-free blade clamp allows for easy and quick blade changing.",
+      "【Multifunction & Tool-Free Blade Change】Equipped with 3 blades separately for cutting different materials, including: wood, PVC, metal, gypsum board, etc. The max cutting capacity is: Wood:65mm; Steel: 8mml. Tool-free blade clamp allows for easy and quick blade changing.",
+      "【Practical & Safe Design】Scale ruler is designed for precise cutting. Soft rubber non-slip handle for more comfortable grip. Lock-on button avoids accidental startup.",
+      "【Practical & Safe Design】Scale ruler is designed for precise cutting. Soft rubber non-slip handle for more comfortable grip. Lock-on button avoids accidental startup."
+    ],
+    "videos": [],
+    "_completeness": 100,
+    "_quality": {
+      "score": 77,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0BJF2KJ1J",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 4268,
+    "mrp": 5000,
+    "discount": 15,
+    "material": "Steel",
+    "type": "SawBlades",
+    "size": "65Mm",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/61Hfv8DEgKL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/IBELL-Professional-Armature-500-3000SPM-Variable/dp/B0BJF2KJ1J/ref=sr_1_10?dib=eyJ2IjoiMSJ9.wYG7euBKghFQReEF5CYnHmV9J8-UGJ9IfYhKk9yYNQ8gubMq7dJBRzXKOT-4gh7ec5uvmEMFQouKvYW2lgR5lH2wxCloXYsHbrcrvB4NuMqkzvl-byPuejfVydZNtT2qU72WG6ecXJMt0IHyqFkuHxQw7pMcSlu95UOJ595hTLiLcvf8cM2dxjRnXyK9GYxDQDCZKtw1N27hBlax9TUpb8oZHGRTlh9Di5xe6wae0BRXYBwhPz3sq_qRVOZk6-exr2bdfhulwZsVTNJiAw0g0h9DPde7AlDaZJsRNYoRy5s.2JeU3t3Oeye3yQQUazlflurZdNuf22PCvgdbooZGhhw&dib_tag=se&keywords=jigsaw+power+tool&qid=1782657175&sr=8-10",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:03.778Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 15,
+    "stock_quantity": 13,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0036",
+    "created_at": "2026-06-30T13:39:24.199Z",
+    "updated_at": "2026-06-30T13:39:24.199Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:39:28.899Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/61Hfv8DEgKL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/61Hfv8DEgKL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "Sander Type: Straight-line Sander",
+      "Sander Type: Straight-line Sander",
+      "Usage Type: Home & Professional",
+      "Usage Type: Home & Professional",
+      "Pad Size: 3 inch",
+      "Pad Size: 3 inch",
+      "Power Source: Corded",
+      "Power Source: Corded"
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0BQRLWZVV",
+    "name": "Drill Bits",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Drill Bits",
+    "price": 439,
+    "mrp": 1000,
+    "discount": 56,
+    "material": "Steel",
+    "type": "Twist Drill Bit Set",
+    "size": "",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Woodworking",
+    "imageUrl": "https://m.media-amazon.com/images/I/41UF8cPZJUL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Inditrust-attachment-Adapter-convert-Woodworking/dp/B0BQRLWZVV/ref=sr_1_11?dib=eyJ2IjoiMSJ9.wYG7euBKghFQReEF5CYnHmV9J8-UGJ9IfYhKk9yYNQ8gubMq7dJBRzXKOT-4gh7ec5uvmEMFQouKvYW2lgR5lH2wxCloXYsHbrcrvB4NuMqkzvl-byPuejfVydZNtT2qU72WG6ecXJMt0IHyqFkuHxQw7pMcSlu95UOJ595hTLiLcvf8cM2dxjRnXyK9GYxDQDCZKtw1N27hBlax9TUpb8oZHGRTlh9Di5xe6wae0BRXYBwhPz3sq_qRVOZk6-exr2bdfhulwZsVTNJiAw0g0h9DPde7AlDaZJsRNYoRy5s.2JeU3t3Oeye3yQQUazlflurZdNuf22PCvgdbooZGhhw&dib_tag=se&keywords=jigsaw+power+tool&qid=1782657175&sr=8-11",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:03.778Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "size",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Drill Bits made from premium Steel. Ideal for Wood Drilling, Metal Drilling, Furniture Assembly, DIY Crafts.",
+    "discount_percent": 56,
+    "stock_quantity": 38,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-DB-0037",
+    "created_at": "2026-06-30T13:39:28.914Z",
+    "updated_at": "2026-06-30T13:39:28.914Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:39:31.835Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/41UF8cPZJUL.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/41UF8cPZJUL.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "Inditrust NEW Jigsaw attachment Adapter to convert Power Drill To Jig Saw Woodworking Tool Wood Cutter",
+      "Inditrust NEW Jigsaw attachment Adapter to convert Power Drill To Jig Saw Woodworking Tool Wood Cutter",
+      "Type: Wood Cutter",
+      "Type: Wood Cutter",
+      "Home & Professional Usage",
+      "Home & Professional Usage",
+      "Type Wood Cutter",
+      "Type Wood Cutter",
+      "Jigsaw attachment Adapter to convert Power Drill To Jig Saw Woodworking Tool",
+      "Jigsaw attachment Adapter to convert Power Drill To Jig Saw Woodworking Tool"
+    ],
+    "videos": [],
+    "_completeness": 85,
+    "_quality": {
+      "score": 69.5,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0DH3J1JQ3",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 2099,
+    "mrp": 2410,
+    "discount": 99,
+    "material": "Steel",
+    "type": "SawBlades",
+    "size": "",
+    "packSize": "1PC",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/716uhb4Vo+L._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Inditrust-Electric-Machine-WARRANTY-Variable/dp/B0DH3J1JQ3/ref=sr_1_13?dib=eyJ2IjoiMSJ9.wYG7euBKghFQReEF5CYnHmV9J8-UGJ9IfYhKk9yYNQ8gubMq7dJBRzXKOT-4gh7ec5uvmEMFQouKvYW2lgR5lH2wxCloXYsHbrcrvB4NuMqkzvl-byPuejfVydZNtT2qU72WG6ecXJMt0IHyqFkuHxQw7pMcSlu95UOJ595hTLiLcvf8cM2dxjRnXyK9GYxDQDCZKtw1N27hBlax9TUpb8oZHGRTlh9Di5xe6wae0BRXYBwhPz3sq_qRVOZk6-exr2bdfhulwZsVTNJiAw0g0h9DPde7AlDaZJsRNYoRy5s.2JeU3t3Oeye3yQQUazlflurZdNuf22PCvgdbooZGhhw&dib_tag=se&keywords=jigsaw+power+tool&qid=1782657175&sr=8-13",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:03.778Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "size"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 99,
+    "stock_quantity": 19,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0038",
+    "created_at": "2026-06-30T13:39:31.853Z",
+    "updated_at": "2026-06-30T13:39:31.853Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:39:35.894Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/716uhb4Vo+L._SX522_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/716uhb4Vo+L._SX522_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "Package Contents: 1 x Corded Electric Jigsaw",
+      "Package Contents: 1 x Corded Electric Jigsaw",
+      "Excellent cutting experience with the ergonomic handle design using soft rubber",
+      "Excellent cutting experience with the ergonomic handle design using soft rubber",
+      "Rated Input Power : 710 W; Rated no load speed : 3000 rpm",
+      "Rated Input Power : 710 W; Rated no load speed : 3000 rpm",
+      "Adjustable speed for different materials with the pre-selection speed wheel",
+      "Adjustable speed for different materials with the pre-selection speed wheel",
+      "Easy cutting in solid wood, metal, and other materials with this powerful corded jigsaw",
+      "Easy cutting in solid wood, metal, and other materials with this powerful corded jigsaw",
+      "Faster and more precise cutting experience with powerful 710 W motor",
+      "Faster and more precise cutting experience with powerful 710 W motor",
+      "Customer care details are present in the product image",
+      "Customer care details are present in the product image",
+      "Only armature and coil covered in warranty",
+      "Only armature and coil covered in warranty"
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0BR18HC5N",
+    "name": "Drill Bits",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Drill Bits",
+    "price": 436,
+    "mrp": 1000,
+    "discount": 56,
+    "material": "Steel",
+    "type": "Twist Drill Bit Set",
+    "size": "",
+    "packSize": "",
+    "finish": "Black",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/41CaecZdGPL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Inditrust-attachment-machine-convert-connect/dp/B0BR18HC5N/ref=sr_1_14?dib=eyJ2IjoiMSJ9.wYG7euBKghFQReEF5CYnHmV9J8-UGJ9IfYhKk9yYNQ8gubMq7dJBRzXKOT-4gh7ec5uvmEMFQouKvYW2lgR5lH2wxCloXYsHbrcrvB4NuMqkzvl-byPuejfVydZNtT2qU72WG6ecXJMt0IHyqFkuHxQw7pMcSlu95UOJ595hTLiLcvf8cM2dxjRnXyK9GYxDQDCZKtw1N27hBlax9TUpb8oZHGRTlh9Di5xe6wae0BRXYBwhPz3sq_qRVOZk6-exr2bdfhulwZsVTNJiAw0g0h9DPde7AlDaZJsRNYoRy5s.2JeU3t3Oeye3yQQUazlflurZdNuf22PCvgdbooZGhhw&dib_tag=se&keywords=jigsaw+power+tool&qid=1782657175&sr=8-14",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:03.778Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "size",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 1,
+      "verification": 0
+    },
+    "description": "BOSCH Drill Bits made from premium Steel. Ideal for Wood Drilling, Metal Drilling, Furniture Assembly, DIY Crafts.",
+    "discount_percent": 56,
+    "stock_quantity": 21,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-DB-0039",
+    "created_at": "2026-06-30T13:39:35.908Z",
+    "updated_at": "2026-06-30T13:39:35.908Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:39:38.526Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/41CaecZdGPL.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/41CaecZdGPL.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {
+      "Manufacturer": "Manufacturer",
+      "Country of Origin": "Country of Origin",
+      "Product Dimensions": "Product Dimensions",
+      "ASIN": "ASIN"
+    },
+    "features": [
+      "Inditrust NEW Black Jigsaw attachment for drill machine to convert to jigsaw with blades For Drill machine and Hammer machine Easily connect Wood Cutter",
+      "Inditrust NEW Black Jigsaw attachment for drill machine to convert to jigsaw with blades For Drill machine and Hammer machine Easily connect Wood Cutter",
+      "Jig saw Adapter tool",
+      "Jig saw Adapter tool",
+      "Type Wood Cutter",
+      "Type Wood Cutter",
+      "Handle Material Plastic",
+      "Handle Material Plastic",
+      "Designed For wood cutting",
+      "Designed For wood cutting"
+    ],
+    "videos": [],
+    "_completeness": 85,
+    "_quality": {
+      "score": 69.5,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0D4Z1LZWD",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Saw Blades",
+    "price": 2890,
+    "mrp": 4999,
+    "discount": 42,
+    "material": "Brass",
+    "type": "Saw Blade",
+    "size": "6.35mm",
+    "packSize": "3pcs",
+    "finish": "Silver",
+    "usage": "General workshop and DIY applications",
+    "imageUrl": "https://m.media-amazon.com/images/I/71+MC1TFxhL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/3000rpm-Pendulum-Function-Variable-Control/dp/B0D4Z1LZWD/ref=sr_1_15?dib=eyJ2IjoiMSJ9.wYG7euBKghFQReEF5CYnHmV9J8-UGJ9IfYhKk9yYNQ8gubMq7dJBRzXKOT-4gh7ec5uvmEMFQouKvYW2lgR5lH2wxCloXYsHbrcrvB4NuMqkzvl-byPuejfVydZNtT2qU72WG6ecXJMt0IHyqFkuHxQw7pMcSlu95UOJ595hTLiLcvf8cM2dxjRnXyK9GYxDQDCZKtw1N27hBlax9TUpb8oZHGRTlh9Di5xe6wae0BRXYBwhPz3sq_qRVOZk6-exr2bdfhulwZsVTNJiAw0g0h9DPde7AlDaZJsRNYoRy5s.2JeU3t3Oeye3yQQUazlflurZdNuf22PCvgdbooZGhhw&dib_tag=se&keywords=jigsaw+power+tool&qid=1782657175&sr=8-15",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:03.778Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [],
+    "_isComplete": true,
+    "_imputedFrom": {
+      "material": "catSubType (Tool Accessories|Saw Blades|Saw Blade)",
+      "size": "catSubType (Tool Accessories|Saw Blades|Saw Blade)",
+      "finish": "catSubType (Tool Accessories|Saw Blades|Saw Blade)",
+      "usage": "catSubType (Tool Accessories|Saw Blades|Saw Blade)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Brass. Ideal for General workshop and DIY applications.",
+    "discount_percent": 42,
+    "stock_quantity": 14,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-SB-0040",
+    "created_at": "2026-06-30T13:39:38.562Z",
+    "updated_at": "2026-06-30T13:39:38.562Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:39:42.382Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/71+MC1TFxhL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71+MC1TFxhL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "【5 Variable Speed up to 3000rpm】Equipped with 570W copper motor generates strong power and up to 3000rpm cutting speed for high working efficiency. 5-speed dial enables various cutting speeds for different cutting needs.",
+      "【5 Variable Speed up to 3000rpm】Equipped with 570W copper motor generates strong power and up to 3000rpm cutting speed for high working efficiency. 5-speed dial enables various cutting speeds for different cutting needs.",
+      "【45° Bevel Cutting & 4 Orbital Settings】Adjustable bottom plate can tilt up to 45° for bevel cutting need. 4 position orbital setting allows you adapt the cutting motion to fit different type of cuts and materials. The higher gear is suitable for softer materials and faster cutting; lower gear for harder materials and slower cutting.",
+      "【45° Bevel Cutting & 4 Orbital Settings】Adjustable bottom plate can tilt up to 45° for bevel cutting need. 4 position orbital setting allows you adapt the cutting motion to fit different type of cuts and materials. The higher gear is suitable for softer materials and faster cutting; lower gear for harder materials and slower cutting.",
+      "【Multifunction & Tool-Free Blade Change】Equipped with 3 blades separately for cutting different materials, including: wood, PVC, metal, gypsum board, etc. The max cutting capacity is: Wood:65mm; Steel: 8mml. Tool-free blade clamp allows for easy and quick blade changing.",
+      "【Multifunction & Tool-Free Blade Change】Equipped with 3 blades separately for cutting different materials, including: wood, PVC, metal, gypsum board, etc. The max cutting capacity is: Wood:65mm; Steel: 8mml. Tool-free blade clamp allows for easy and quick blade changing.",
+      "【Practical & Safe Design】Scale ruler is designed for precise cutting. Soft rubber non-slip handle for more comfortable grip. Lock-on button avoids accidental startup.",
+      "【Practical & Safe Design】Scale ruler is designed for precise cutting. Soft rubber non-slip handle for more comfortable grip. Lock-on button avoids accidental startup.",
+      "【INGCO WARRANTY】 INGCO products have a six-month warranty, if you have any questions, feel free to contact us, we will answer you as soon as possible.",
+      "【INGCO WARRANTY】 INGCO products have a six-month warranty, if you have any questions, feel free to contact us, we will answer you as soon as possible."
+    ],
+    "videos": [],
+    "_completeness": 100,
+    "_quality": {
+      "score": 77,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0BP2QZ9M3",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Grinding Discs",
+    "price": 2827,
+    "mrp": 2827,
+    "discount": 0,
+    "material": "Steel",
+    "type": "GrindingDiscs",
+    "size": "100 mm",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/71xW+4ya1qL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Professional-Grinder-Versatile-Grinding-Warranty/dp/B0BP2QZ9M3/ref=sr_1_5?dib=eyJ2IjoiMSJ9.HXIZ9Yv5BWidfQwPw3fOzqAQpsfKjYNnoQ2HPjfcRkIOYZ08bbchPPQruO-bi2QDDFX5Io_Fyq2Jr6Ip-pmeIIjql65dzf_skbxeXyft_DoCY1L5WRvqef6bBEeUsTih0rRmh-h987QaRIUNrYGLL_5V0urwPSM7kkcA4VMgPFS_Gk0KAtqHCKiazKMlet1yWiMqWx6N04_gLZVNuF8wZtIWs_RDVRsxfgLaLLAe7vC8uyt6x44_mLKlCeIc1r55KUbmVUIKw7rorcN7S1D_PUYRo_aZ_41wu--UNK_wf-g.yxMtqzng4NhMMJxrfmrOcep91IH3JBFGuEQEOuqpThI&dib_tag=se&keywords=angle+grinder&qid=1782657189&sr=8-5",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:15.792Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 0,
+    "stock_quantity": 26,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-GD-0041",
+    "created_at": "2026-06-30T13:39:42.417Z",
+    "updated_at": "2026-06-30T13:39:42.417Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:39:46.153Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/71xW+4ya1qL._SX425_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71xW+4ya1qL._SX425_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "Powerful Machine Design: BOSCH Professional GWS 800 Angle Grinder is equipped with a strong brush motor and a sleek, lightweight design to promote comfortable working. Powerful and effective motor with outstanding overload capacity. Its durable construction ensures long-lasting performance, making it ideal for both professional applications.",
+      "Powerful Machine Design: BOSCH Professional GWS 800 Angle Grinder is equipped with a strong brush motor and a sleek, lightweight design to promote comfortable working. Powerful and effective motor with outstanding overload capacity. Its durable construction ensures long-lasting performance, making it ideal for both professional applications.",
+      "Technical Specifications: The GWS 800 Angle Grinder has a 100 mm disc diameter and a no-load speed of 11,000 RPM, making it suitable for various tasks. It is equipped with an M10 spindle thread for compatibility with different attachments. Weighing just 1.7 kg, it combines lightweight portability with durability, ensuring ease of maneuverability for any task.",
+      "Technical Specifications: The GWS 800 Angle Grinder has a 100 mm disc diameter and a no-load speed of 11,000 RPM, making it suitable for various tasks. It is equipped with an M10 spindle thread for compatibility with different attachments. Weighing just 1.7 kg, it combines lightweight portability with durability, ensuring ease of maneuverability for any task.",
+      "Ergonomic and User-Friendly: Durable even under dust conditions. Back switch for more anti-dust protection and longer service life. Featuring a 2-position detachable side handle, this machine ensures durability and improved control during use. Compact design with slim, palm-sized, rounded grip for easy handling. Key features include a spindle lock for quick accessory changes.",
+      "Ergonomic and User-Friendly: Durable even under dust conditions. Back switch for more anti-dust protection and longer service life. Featuring a 2-position detachable side handle, this machine ensures durability and improved control during use. Compact design with slim, palm-sized, rounded grip for easy handling. Key features include a spindle lock for quick accessory changes.",
+      "Superior User Protection: The protective guard provides user safety and remains in place even if the disc brakes. This feature minimizes the risk of accidents, ensuring safe operation across various applications.",
+      "Superior User Protection: The protective guard provides user safety and remains in place even if the disc brakes. This feature minimizes the risk of accidents, ensuring safe operation across various applications.",
+      "Applications: The GWS 800 Angle Grinder is a versatile tool for multiple tasks. Whether you're cutting through metal, grinding surfaces for a smooth finish or deburring edges to eliminate sharpness, this tool handles it all with ease.",
+      "Applications: The GWS 800 Angle Grinder is a versatile tool for multiple tasks. Whether you're cutting through metal, grinding surfaces for a smooth finish or deburring edges to eliminate sharpness, this tool handles it all with ease."
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B00IM6XR5E",
+    "name": "Drawer Slides",
+    "brand": "HETTICH",
+    "category": "Furniture Hardware",
+    "subcategory": "Drawer Slides",
+    "price": 1740,
+    "mrp": 3316,
+    "discount": 48,
+    "material": "",
+    "type": "Handle",
+    "size": "4 inch",
+    "packSize": "",
+    "finish": "Black",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/71FuS3LQaaL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Grinding-Polishing-Position-side-handle-Warranty/dp/B00IM6XR5E/ref=sr_1_6?dib=eyJ2IjoiMSJ9.HXIZ9Yv5BWidfQwPw3fOzqAQpsfKjYNnoQ2HPjfcRkIOYZ08bbchPPQruO-bi2QDDFX5Io_Fyq2Jr6Ip-pmeIIjql65dzf_skbxeXyft_DoCY1L5WRvqef6bBEeUsTih0rRmh-h987QaRIUNrYGLL_5V0urwPSM7kkcA4VMgPFS_Gk0KAtqHCKiazKMlet1yWiMqWx6N04_gLZVNuF8wZtIWs_RDVRsxfgLaLLAe7vC8uyt6x44_mLKlCeIc1r55KUbmVUIKw7rorcN7S1D_PUYRo_aZ_41wu--UNK_wf-g.yxMtqzng4NhMMJxrfmrOcep91IH3JBFGuEQEOuqpThI&dib_tag=se&keywords=angle+grinder&qid=1782657189&sr=8-6",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:15.792Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "material",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "usage": "catSub (Furniture Hardware|Drawer Slides)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "HETTICH Drawer Slides made from premium High-Quality Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 48,
+    "stock_quantity": 19,
+    "status": "Active",
+    "warranty": "Standard Warranty",
+    "sku": "BM-DS-0042",
+    "created_at": "2026-06-30T13:39:46.174Z",
+    "updated_at": "2026-06-30T13:39:46.174Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:39:51.843Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/41KUcBzzEfL._SX300_SY300_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/41KUcBzzEfL._SX300_SY300_QL70_FMwebp_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "Powerful angle grinder machine for home & professional use with a 4 inch (100mm) Cutting Wheel Size, Spindle Size of M10 and a Cable Length of 2 metres",
+      "Powerful angle grinder machine for home & professional use with a 4 inch (100mm) Cutting Wheel Size, Spindle Size of M10 and a Cable Length of 2 metres",
+      "Rated Input of 820 Watts and No Load Speed of 1100 RPM makes the product ideal for grinding, polishing and cutting in home and professional environments",
+      "Rated Input of 820 Watts and No Load Speed of 1100 RPM makes the product ideal for grinding, polishing and cutting in home and professional environments",
+      "Lightweight design mitigates fatigue and reduces risk of errors and injury",
+      "Lightweight design mitigates fatigue and reduces risk of errors and injury",
+      "Tool body (layered with special material for firm grip), 3 Position side-handle and Lock On Switch (Dust Sealed) enables easy, comfortable and continuous operation",
+      "Tool body (layered with special material for firm grip), 3 Position side-handle and Lock On Switch (Dust Sealed) enables easy, comfortable and continuous operation",
+      "The product is manufactured by Stanley Black & Decker with registered trademarks of Stanley, Dewalt & Black+Decker",
+      "The product is manufactured by Stanley Black & Decker with registered trademarks of Stanley, Dewalt & Black+Decker"
+    ],
+    "videos": [],
+    "_completeness": 85,
+    "_quality": {
+      "score": 69.5,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0CSFZJT29",
+    "name": "Hardware Item",
+    "brand": "HETTICH",
+    "category": "Furniture Hardware",
+    "subcategory": "General",
+    "price": 999,
+    "mrp": 4000,
+    "discount": 75,
+    "material": "Steel",
+    "type": "Screw",
+    "size": "7x",
+    "packSize": "1pc",
+    "finish": "Zinc Plated",
+    "usage": "Furniture Hardware",
+    "imageUrl": "https://m.media-amazon.com/images/I/61C1PWYN2wL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Inditrust-Dumaar-Electric-grinder-machine/dp/B0CSFZJT29/ref=sr_1_7?dib=eyJ2IjoiMSJ9.HXIZ9Yv5BWidfQwPw3fOzqAQpsfKjYNnoQ2HPjfcRkIOYZ08bbchPPQruO-bi2QDDFX5Io_Fyq2Jr6Ip-pmeIIjql65dzf_skbxeXyft_DoCY1L5WRvqef6bBEeUsTih0rRmh-h987QaRIUNrYGLL_5V0urwPSM7kkcA4VMgPFS_Gk0KAtqHCKiazKMlet1yWiMqWx6N04_gLZVNuF8wZtIWs_RDVRsxfgLaLLAe7vC8uyt6x44_mLKlCeIc1r55KUbmVUIKw7rorcN7S1D_PUYRo_aZ_41wu--UNK_wf-g.yxMtqzng4NhMMJxrfmrOcep91IH3JBFGuEQEOuqpThI&dib_tag=se&keywords=angle+grinder&qid=1782657189&sr=8-7",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:15.792Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [],
+    "_isComplete": true,
+    "_imputedFrom": {
+      "material": "catSub (Furniture Hardware|General)",
+      "type": "catSub (Furniture Hardware|General)",
+      "size": "catSubType (Furniture Hardware|General|Screw)",
+      "finish": "catSubType (Furniture Hardware|General|Screw)",
+      "usage": "catSubType (Furniture Hardware|General|Screw)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "HETTICH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 75,
+    "stock_quantity": 10,
+    "status": "Active",
+    "warranty": "Standard Warranty",
+    "sku": "BM-GE-0043",
+    "created_at": "2026-06-30T13:39:51.876Z",
+    "updated_at": "2026-06-30T13:39:51.876Z",
+    "_verification": {
+      "verified": false,
+      "score": 4,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:39:54.976Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/41M6t9SewrL._SX300_SY300_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/41M6t9SewrL._SX300_SY300_QL70_FMwebp_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "In the Box- 1pc Angle grinder machine with 2pc Flap wheel set",
+      "In the Box- 1pc Angle grinder machine with 2pc Flap wheel set",
+      "950 Watts; No Load Speed of 11000 RPM ideal for grinding, polishing and cutting in home environment.",
+      "950 Watts; No Load Speed of 11000 RPM ideal for grinding, polishing and cutting in home environment.",
+      "Lightweight design mitigates fatigue and reduces risk of errors and injury",
+      "Lightweight design mitigates fatigue and reduces risk of errors and injury",
+      "Grinder is ideal for grinding metal, stone, granite or for cutting metal sheets",
+      "Grinder is ideal for grinding metal, stone, granite or for cutting metal sheets",
+      "Powerful angle grinder machine for home use with a 4 inch (100mm) Cutting Wheel Size.",
+      "Powerful angle grinder machine for home use with a 4 inch (100mm) Cutting Wheel Size.",
+      "Side-handle and Lock On Switch (Dust Sealed) enable easy, comfortable operation",
+      "Side-handle and Lock On Switch (Dust Sealed) enable easy, comfortable operation",
+      "This angle Grinder is not suitable for Wall Cutting jobs",
+      "This angle Grinder is not suitable for Wall Cutting jobs"
+    ],
+    "videos": [],
+    "_completeness": 100,
+    "_quality": {
+      "score": 52,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0B4VRLVP9",
+    "name": "Hardware Item",
+    "brand": "Unknown",
+    "category": "Tool Accessories",
+    "subcategory": "Grinding Discs",
+    "price": 1929,
+    "mrp": 2501,
+    "discount": 23,
+    "material": "",
+    "type": "GrindingDiscs",
+    "size": "100mm",
+    "packSize": "",
+    "finish": "",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/71CCKo73oAL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/IBELL-Grinder-AG10-68-Armature-Grinding/dp/B0B4VRLVP9/ref=sr_1_8?dib=eyJ2IjoiMSJ9.HXIZ9Yv5BWidfQwPw3fOzqAQpsfKjYNnoQ2HPjfcRkIOYZ08bbchPPQruO-bi2QDDFX5Io_Fyq2Jr6Ip-pmeIIjql65dzf_skbxeXyft_DoCY1L5WRvqef6bBEeUsTih0rRmh-h987QaRIUNrYGLL_5V0urwPSM7kkcA4VMgPFS_Gk0KAtqHCKiazKMlet1yWiMqWx6N04_gLZVNuF8wZtIWs_RDVRsxfgLaLLAe7vC8uyt6x44_mLKlCeIc1r55KUbmVUIKw7rorcN7S1D_PUYRo_aZ_41wu--UNK_wf-g.yxMtqzng4NhMMJxrfmrOcep91IH3JBFGuEQEOuqpThI&dib_tag=se&keywords=angle+grinder&qid=1782657189&sr=8-8",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:15.792Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv",
+      "mega-collection.json",
+      "mega-collection.csv"
+    ],
+    "_missingFields": [
+      "material",
+      "type",
+      "packSize",
+      "finish"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "usage": "category (Tool Accessories)"
+    },
+    "_confidence": {
+      "brand": 0,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "Unknown Hardware Item made from premium High-Quality Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 23,
+    "stock_quantity": 30,
+    "status": "Active",
+    "warranty": "Standard Warranty",
+    "sku": "BM-GD-0044",
+    "created_at": "2026-06-30T13:39:54.989Z",
+    "updated_at": "2026-06-30T13:39:54.989Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:40:01.691Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/41F5EsdpAPL._SX342_SY445_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/41F5EsdpAPL._SX342_SY445_QL70_FMwebp_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "Rated voltage: 230V-50Hz",
+      "Rated voltage: 230V-50Hz",
+      "Rated input Power: 680 W; Rated no load speed : 11000 rpm",
+      "Rated input Power: 680 W; Rated no load speed : 11000 rpm",
+      "Disc diameter: 100 mm",
+      "Disc diameter: 100 mm",
+      "Weight: 1.65 Kg",
+      "Weight: 1.65 Kg",
+      "Protection class: Class II",
+      "Protection class: Class II",
+      "iBELL provides a 6 months service warranty limited to Armature and Field only. Terms and conditions apply as specified in the warranty card.",
+      "iBELL provides a 6 months service warranty limited to Armature and Field only. Terms and conditions apply as specified in the warranty card."
+    ],
+    "videos": [],
+    "_completeness": 69,
+    "_quality": {
+      "score": 61.5,
+      "grade": "D"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0H29GKM26",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Grinding Discs",
+    "price": 1297,
+    "mrp": 1490,
+    "discount": 99,
+    "material": "Steel",
+    "type": "GrindingDiscs",
+    "size": "4 Inch",
+    "packSize": "",
+    "finish": "Silver",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/61sMtmBV1vL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/ULTRAFIST-UF-AG801-Grinder-Electric-Grinding/dp/B0H29GKM26/ref=sr_1_9?dib=eyJ2IjoiMSJ9.HXIZ9Yv5BWidfQwPw3fOzqAQpsfKjYNnoQ2HPjfcRkIOYZ08bbchPPQruO-bi2QDDFX5Io_Fyq2Jr6Ip-pmeIIjql65dzf_skbxeXyft_DoCY1L5WRvqef6bBEeUsTih0rRmh-h987QaRIUNrYGLL_5V0urwPSM7kkcA4VMgPFS_Gk0KAtqHCKiazKMlet1yWiMqWx6N04_gLZVNuF8wZtIWs_RDVRsxfgLaLLAe7vC8uyt6x44_mLKlCeIc1r55KUbmVUIKw7rorcN7S1D_PUYRo_aZ_41wu--UNK_wf-g.yxMtqzng4NhMMJxrfmrOcep91IH3JBFGuEQEOuqpThI&dib_tag=se&keywords=angle+grinder&qid=1782657189&sr=8-9",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:15.792Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 99,
+    "stock_quantity": 13,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-GD-0045",
+    "created_at": "2026-06-30T13:40:01.821Z",
+    "updated_at": "2026-06-30T13:40:01.821Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:40:08.198Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/61sMtmBV1vL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/61sMtmBV1vL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "850W Powerful Angle Grinder – ULTRAFIST Silver UF-AG801 angle grinder comes with an 850W motor and 4 Amp capacity for smooth cutting, grinding and finishing work on metal surfaces.",
+      "850W Powerful Angle Grinder – ULTRAFIST Silver UF-AG801 angle grinder comes with an 850W motor and 4 Amp capacity for smooth cutting, grinding and finishing work on metal surfaces.",
+      "4 Inch / 100mm Wheel Size – Suitable for 4 inch grinding and cutting wheels, this grinder supports 100mm blade capacity and works efficiently for cutting metals such as iron, steel, aluminium and copper.",
+      "4 Inch / 100mm Wheel Size – Suitable for 4 inch grinding and cutting wheels, this grinder supports 100mm blade capacity and works efficiently for cutting metals such as iron, steel, aluminium and copper.",
+      "High Speed 11000 RPM Performance – With no-load speed of 11000 RPM, the grinder delivers fast material removal and smooth operation for workshop, fabrication, repair and DIY applications.",
+      "High Speed 11000 RPM Performance – With no-load speed of 11000 RPM, the grinder delivers fast material removal and smooth operation for workshop, fabrication, repair and DIY applications.",
+      "Spindle Lock for Easy Wheel Change – Built-in spindle lock helps in quick and convenient wheel replacement. The package also includes a spanner for tightening and removing wheels safely.",
+      "Spindle Lock for Easy Wheel Change – Built-in spindle lock helps in quick and convenient wheel replacement. The package also includes a spanner for tightening and removing wheels safely.",
+      "2-Position Auxiliary Handle & Protective Guard – The side handle can be fitted on both left and right sides for better grip, comfort and control. The protective guard helps reduce direct spark and debris exposure during operation.",
+      "2-Position Auxiliary Handle & Protective Guard – The side handle can be fitted on both left and right sides for better grip, comfort and control. The protective guard helps reduce direct spark and debris exposure during operation.",
+      "Complete Package with Accessories – Package includes 1 angle grinder, 1 side handle, 1 spanner, 2 carbon brushes, 2 grinding wheels and 2 cutting wheels. Compact and lightweight body makes it easy to handle during long working hours.",
+      "Complete Package with Accessories – Package includes 1 angle grinder, 1 side handle, 1 spanner, 2 carbon brushes, 2 grinding wheels and 2 cutting wheels. Compact and lightweight body makes it easy to handle during long working hours."
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0F53PF4G3",
+    "name": "Hardware Item",
+    "brand": "HETTICH",
+    "category": "Furniture Hardware",
+    "subcategory": "General",
+    "price": 2099,
+    "mrp": 2410,
+    "discount": 99,
+    "material": "Steel",
+    "type": "Screw",
+    "size": "7x",
+    "packSize": "60 pcs",
+    "finish": "Zinc Plated",
+    "usage": "Furniture Hardware",
+    "imageUrl": "https://m.media-amazon.com/images/I/41ZTfP4QRbL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Bosch-WS-650-Professional-Grinder/dp/B0F53PF4G3/ref=sr_1_10?dib=eyJ2IjoiMSJ9.HXIZ9Yv5BWidfQwPw3fOzqAQpsfKjYNnoQ2HPjfcRkIOYZ08bbchPPQruO-bi2QDDFX5Io_Fyq2Jr6Ip-pmeIIjql65dzf_skbxeXyft_DoCY1L5WRvqef6bBEeUsTih0rRmh-h987QaRIUNrYGLL_5V0urwPSM7kkcA4VMgPFS_Gk0KAtqHCKiazKMlet1yWiMqWx6N04_gLZVNuF8wZtIWs_RDVRsxfgLaLLAe7vC8uyt6x44_mLKlCeIc1r55KUbmVUIKw7rorcN7S1D_PUYRo_aZ_41wu--UNK_wf-g.yxMtqzng4NhMMJxrfmrOcep91IH3JBFGuEQEOuqpThI&dib_tag=se&keywords=angle+grinder&qid=1782657189&sr=8-10",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:15.792Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [],
+    "_isComplete": true,
+    "_imputedFrom": {
+      "material": "catSub (Furniture Hardware|General)",
+      "type": "catSub (Furniture Hardware|General)",
+      "size": "catSubType (Furniture Hardware|General|Screw)",
+      "packSize": "catSubType (Furniture Hardware|General|Screw)",
+      "finish": "catSubType (Furniture Hardware|General|Screw)",
+      "usage": "catSubType (Furniture Hardware|General|Screw)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "HETTICH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 99,
+    "stock_quantity": 44,
+    "status": "Active",
+    "warranty": "Standard Warranty",
+    "sku": "BM-GE-0046",
+    "created_at": "2026-06-30T13:40:08.209Z",
+    "updated_at": "2026-06-30T13:40:08.209Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:40:13.056Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/41ZTfP4QRbL._SX342_SY445_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/41ZTfP4QRbL._SX342_SY445_QL70_FMwebp_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "Bosch WS 650W",
+      "Bosch WS 650W"
+    ],
+    "videos": [],
+    "_completeness": 100,
+    "_quality": {
+      "score": 77,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0FGHWVN48",
+    "name": "Hardware Item",
+    "brand": "HETTICH",
+    "category": "Furniture Hardware",
+    "subcategory": "General",
+    "price": 1599,
+    "mrp": 1999,
+    "discount": 20,
+    "material": "Steel",
+    "type": "Screw",
+    "size": "100mm",
+    "packSize": "1Pair",
+    "finish": "Zinc Plated",
+    "usage": "Furniture Hardware",
+    "imageUrl": "https://m.media-amazon.com/images/I/71xehT81hNL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Inditrust-Dumdaar-Grinder-Diameter-Gloves/dp/B0FGHWVN48/ref=sr_1_11?dib=eyJ2IjoiMSJ9.HXIZ9Yv5BWidfQwPw3fOzqAQpsfKjYNnoQ2HPjfcRkIOYZ08bbchPPQruO-bi2QDDFX5Io_Fyq2Jr6Ip-pmeIIjql65dzf_skbxeXyft_DoCY1L5WRvqef6bBEeUsTih0rRmh-h987QaRIUNrYGLL_5V0urwPSM7kkcA4VMgPFS_Gk0KAtqHCKiazKMlet1yWiMqWx6N04_gLZVNuF8wZtIWs_RDVRsxfgLaLLAe7vC8uyt6x44_mLKlCeIc1r55KUbmVUIKw7rorcN7S1D_PUYRo_aZ_41wu--UNK_wf-g.yxMtqzng4NhMMJxrfmrOcep91IH3JBFGuEQEOuqpThI&dib_tag=se&keywords=angle+grinder&qid=1782657189&sr=8-11",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:15.792Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [],
+    "_isComplete": true,
+    "_imputedFrom": {
+      "material": "catSub (Furniture Hardware|General)",
+      "type": "catSub (Furniture Hardware|General)",
+      "finish": "catSubType (Furniture Hardware|General|Screw)",
+      "usage": "catSubType (Furniture Hardware|General|Screw)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "HETTICH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 20,
+    "stock_quantity": 12,
+    "status": "Active",
+    "warranty": "Standard Warranty",
+    "sku": "BM-GE-0047",
+    "created_at": "2026-06-30T13:40:13.088Z",
+    "updated_at": "2026-06-30T13:40:13.088Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:40:17.564Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/71xehT81hNL._SX569_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71xehT81hNL._SX569_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "POWERFUL MOTOR: 950-watt copper-wound motor delivers reliable performance for demanding cutting and grinding tasks",
+      "POWERFUL MOTOR: 950-watt copper-wound motor delivers reliable performance for demanding cutting and grinding tasks",
+      "COMPLETE SET: Includes angle grinder, 11 cutting wheels, and protective gloves for immediate use and safety",
+      "COMPLETE SET: Includes angle grinder, 11 cutting wheels, and protective gloves for immediate use and safety",
+      "In the Box :- 1pc Electric Angle grinder Machine 850W with 2pc Vecro pad 1pc 4inch (Felt, Flap, Metal Cutting, Grinding, Marble,Wood Wheel ) 1pc 5inch Backing Pad 2pc 3inch Golden and Twisted Cup brush set",
+      "In the Box :- 1pc Electric Angle grinder Machine 850W with 2pc Vecro pad 1pc 4inch (Felt, Flap, Metal Cutting, Grinding, Marble,Wood Wheel ) 1pc 5inch Backing Pad 2pc 3inch Golden and Twisted Cup brush set",
+      "VERSATILE APPLICATION: Suitable for cutting and grinding metal, masonry, and other materials with variable speed control",
+      "VERSATILE APPLICATION: Suitable for cutting and grinding metal, masonry, and other materials with variable speed control",
+      "ERGONOMIC DESIGN: Comfortable grip handle with side-mounted switch for enhanced control and user safety during operation",
+      "ERGONOMIC DESIGN: Comfortable grip handle with side-mounted switch for enhanced control and user safety during operation",
+      "This angle Grinder is not suitable for Wall Cutting jobs",
+      "This angle Grinder is not suitable for Wall Cutting jobs"
+    ],
+    "videos": [],
+    "_completeness": 100,
+    "_quality": {
+      "score": 77,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0FM7XBLVY",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Grinding Discs",
+    "price": 1189,
+    "mrp": 3999,
+    "discount": 70,
+    "material": "Steel",
+    "type": "GrindingDiscs",
+    "size": "100mm",
+    "packSize": "5Pcs",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/71xFmIUd73L._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/WONDERCUT-Grinder-WC-AG6-100-B-Armature-Cutting/dp/B0FM7XBLVY/ref=sr_1_12?dib=eyJ2IjoiMSJ9.HXIZ9Yv5BWidfQwPw3fOzqAQpsfKjYNnoQ2HPjfcRkIOYZ08bbchPPQruO-bi2QDDFX5Io_Fyq2Jr6Ip-pmeIIjql65dzf_skbxeXyft_DoCY1L5WRvqef6bBEeUsTih0rRmh-h987QaRIUNrYGLL_5V0urwPSM7kkcA4VMgPFS_Gk0KAtqHCKiazKMlet1yWiMqWx6N04_gLZVNuF8wZtIWs_RDVRsxfgLaLLAe7vC8uyt6x44_mLKlCeIc1r55KUbmVUIKw7rorcN7S1D_PUYRo_aZ_41wu--UNK_wf-g.yxMtqzng4NhMMJxrfmrOcep91IH3JBFGuEQEOuqpThI&dib_tag=se&keywords=angle+grinder&qid=1782657189&sr=8-12",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:15.792Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 1,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 70,
+    "stock_quantity": 39,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-GD-0048",
+    "created_at": "2026-06-30T13:40:17.577Z",
+    "updated_at": "2026-06-30T13:40:17.577Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:40:20.285Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/41UMDmTFdTL._SX342_SY445_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/41UMDmTFdTL._SX342_SY445_QL70_FMwebp_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {
+      "Brand": "Brand",
+      "Manufacturer": "Manufacturer",
+      "Country of Origin": "Country of Origin",
+      "Model number": "Model number",
+      "Colour": "Colour",
+      "Number of Memory Sticks": "Number of Memory Sticks",
+      "Item Weight": "Item Weight",
+      "Product Dimensions": "Product Dimensions",
+      "Item model number": "Item model number",
+      "Item Height": "Item Height",
+      "Item Width": "Item Width",
+      "Maximum Rotational Speed": "Maximum Rotational Speed",
+      "Voltage": "Voltage",
+      "Wattage": "Wattage",
+      "Power Source": "Power Source",
+      "Included Components": "Included Components"
+    },
+    "features": [
+      "Powerful Performance - The high-speed 11000 RPM motor makes this angle grinder, grinder cutter machine and calendar machine ideal for demanding grinding and cutting tasks.",
+      "Powerful Performance - The high-speed 11000 RPM motor makes this angle grinder, grinder cutter machine and calendar machine ideal for demanding grinding and cutting tasks.",
+      "Ergonomic Handling - Designed for comfort and control, this hand grinder machine and grinding machine features an ergonomic handle to reduce fatigue during extended use.",
+      "Ergonomic Handling - Designed for comfort and control, this hand grinder machine and grinding machine features an ergonomic handle to reduce fatigue during extended use.",
+      "Versatile Cutting - With a 100mm disc, this hand cutting machine and iron cutting machine easily tackle a wide range of materials like metal, tile, concrete and more.",
+      "Versatile Cutting - With a 100mm disc, this hand cutting machine and iron cutting machine easily tackle a wide range of materials like metal, tile, concrete and more.",
+      "Quick Disc Changes - The easy-to-use disc change system on this hand cutter machine and metal cutting tool minimizes downtime, so you can complete jobs faster.",
+      "Quick Disc Changes - The easy-to-use disc change system on this hand cutter machine and metal cutting tool minimizes downtime, so you can complete jobs faster.",
+      "Adjustable Safety Guard - The adjustable guard on this iron cutter machine and power tool machine can be positioned for optimal debris deflection and user protection.",
+      "Adjustable Safety Guard - The adjustable guard on this iron cutter machine and power tool machine can be positioned for optimal debris deflection and user protection."
+    ],
+    "videos": [],
+    "_completeness": 100,
+    "_quality": {
+      "score": 77,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0CSFRP388",
+    "name": "Hardware Item",
+    "brand": "HETTICH",
+    "category": "Furniture Hardware",
+    "subcategory": "General",
+    "price": 999,
+    "mrp": 4000,
+    "discount": 75,
+    "material": "Steel",
+    "type": "Screw",
+    "size": "7x",
+    "packSize": "2pc",
+    "finish": "Zinc Plated",
+    "usage": "Furniture Hardware",
+    "imageUrl": "https://m.media-amazon.com/images/I/71xaLn1lnmL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/Inditrust-Electric-Sliding-grinder-machine/dp/B0CSFRP388/ref=sr_1_13?dib=eyJ2IjoiMSJ9.HXIZ9Yv5BWidfQwPw3fOzqAQpsfKjYNnoQ2HPjfcRkIOYZ08bbchPPQruO-bi2QDDFX5Io_Fyq2Jr6Ip-pmeIIjql65dzf_skbxeXyft_DoCY1L5WRvqef6bBEeUsTih0rRmh-h987QaRIUNrYGLL_5V0urwPSM7kkcA4VMgPFS_Gk0KAtqHCKiazKMlet1yWiMqWx6N04_gLZVNuF8wZtIWs_RDVRsxfgLaLLAe7vC8uyt6x44_mLKlCeIc1r55KUbmVUIKw7rorcN7S1D_PUYRo_aZ_41wu--UNK_wf-g.yxMtqzng4NhMMJxrfmrOcep91IH3JBFGuEQEOuqpThI&dib_tag=se&keywords=angle+grinder&qid=1782657189&sr=8-13",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:15.792Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [],
+    "_isComplete": true,
+    "_imputedFrom": {
+      "material": "catSub (Furniture Hardware|General)",
+      "type": "catSub (Furniture Hardware|General)",
+      "size": "catSubType (Furniture Hardware|General|Screw)",
+      "finish": "catSubType (Furniture Hardware|General|Screw)",
+      "usage": "catSubType (Furniture Hardware|General|Screw)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 0,
+      "verification": 0
+    },
+    "description": "HETTICH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 75,
+    "stock_quantity": 41,
+    "status": "Active",
+    "warranty": "Standard Warranty",
+    "sku": "BM-GE-0049",
+    "created_at": "2026-06-30T13:40:20.302Z",
+    "updated_at": "2026-06-30T13:40:20.302Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:40:24.004Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/41BrRYlbrcL._SX342_SY445_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/41BrRYlbrcL._SX342_SY445_QL70_FMwebp_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {},
+    "features": [
+      "In the Box- 1pc Sliding Angle grinder machine with 2pc Flap wheel set",
+      "In the Box- 1pc Sliding Angle grinder machine with 2pc Flap wheel set",
+      "950 Watts; No Load Speed of 11000 RPM ideal for grinding, polishing and cutting in home environment.",
+      "950 Watts; No Load Speed of 11000 RPM ideal for grinding, polishing and cutting in home environment.",
+      "Lightweight design mitigates fatigue and reduces risk of errors and injury",
+      "Lightweight design mitigates fatigue and reduces risk of errors and injury",
+      "Grinder is ideal for grinding metal, stone, granite or for cutting metal sheets",
+      "Grinder is ideal for grinding metal, stone, granite or for cutting metal sheets",
+      "Powerful angle grinder machine for home use with a 4 inch (100mm) Cutting Wheel Size.",
+      "Powerful angle grinder machine for home use with a 4 inch (100mm) Cutting Wheel Size.",
+      "Side-handle and Lock On Switch (Dust Sealed) enable easy, comfortable operation",
+      "Side-handle and Lock On Switch (Dust Sealed) enable easy, comfortable operation"
+    ],
+    "videos": [],
+    "_completeness": 100,
+    "_quality": {
+      "score": 77,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  },
+  {
+    "productId": "B0CZDHC3ZY",
+    "name": "Hardware Item",
+    "brand": "BOSCH",
+    "category": "Tool Accessories",
+    "subcategory": "Grinding Discs",
+    "price": 2584,
+    "mrp": 3450,
+    "discount": 25,
+    "material": "Steel",
+    "type": "GrindingDiscs",
+    "size": "100mm",
+    "packSize": "",
+    "finish": "Nickel Plated",
+    "usage": "Kitchen Cabinets",
+    "imageUrl": "https://m.media-amazon.com/images/I/71X7xqDACnL._AC_UL960_FMwebp_QL65_.jpg",
+    "productUrl": "https://www.amazon.in/iBELL-Grinder-AG10-06-Months-Warranty/dp/B0CZDHC3ZY/ref=sr_1_14?dib=eyJ2IjoiMSJ9.HXIZ9Yv5BWidfQwPw3fOzqAQpsfKjYNnoQ2HPjfcRkIOYZ08bbchPPQruO-bi2QDDFX5Io_Fyq2Jr6Ip-pmeIIjql65dzf_skbxeXyft_DoCY1L5WRvqef6bBEeUsTih0rRmh-h987QaRIUNrYGLL_5V0urwPSM7kkcA4VMgPFS_Gk0KAtqHCKiazKMlet1yWiMqWx6N04_gLZVNuF8wZtIWs_RDVRsxfgLaLLAe7vC8uyt6x44_mLKlCeIc1r55KUbmVUIKw7rorcN7S1D_PUYRo_aZ_41wu--UNK_wf-g.yxMtqzng4NhMMJxrfmrOcep91IH3JBFGuEQEOuqpThI&dib_tag=se&keywords=angle+grinder&qid=1782657189&sr=8-14",
+    "source": "Amazon India",
+    "scrapedAt": "2026-06-28T14:33:15.792Z",
+    "_sources": [
+      "Power-hand-cutting-measuring-fasteners.json",
+      "Power-hand-cutting-measuring-fasteners.csv"
+    ],
+    "_inferredBrand": true,
+    "_missingFields": [
+      "type",
+      "packSize"
+    ],
+    "_isComplete": false,
+    "_imputedFrom": {
+      "material": "brand (BOSCH)",
+      "finish": "brand (BOSCH)",
+      "usage": "brand (BOSCH)"
+    },
+    "_confidence": {
+      "brand": 1,
+      "images": 1,
+      "specifications": 1,
+      "verification": 0
+    },
+    "description": "BOSCH Hardware Item made from premium Steel. Ideal for General workshop and DIY applications.",
+    "discount_percent": 25,
+    "stock_quantity": 36,
+    "status": "Active",
+    "warranty": "6 Months Manufacturer Warranty",
+    "sku": "BM-GD-0050",
+    "created_at": "2026-06-30T13:40:24.023Z",
+    "updated_at": "2026-06-30T13:40:24.023Z",
+    "_verification": {
+      "verified": false,
+      "score": 54,
+      "level": "REJECTED",
+      "failureReason": "Score below threshold",
+      "verifiedAt": "2026-06-30T13:40:27.017Z"
+    },
+    "_availability": "AVAILABLE",
+    "thumbnail": "https://m.media-amazon.com/images/I/71X7xqDACnL._SX425_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71X7xqDACnL._SX425_.jpg"
+    ],
+    "imageCount": 1,
+    "specifications": {
+      "Brand": "Brand",
+      "Manufacturer": "Manufacturer",
+      "Country of Origin": "Country of Origin",
+      "Model number": "Model number",
+      "Colour": "Colour",
+      "Number of Memory Sticks": "Number of Memory Sticks",
+      "Item Weight": "Item Weight",
+      "Product Dimensions": "Product Dimensions",
+      "Item model number": "Item model number",
+      "Item Height": "Item Height",
+      "Item Width": "Item Width",
+      "Maximum Rotational Speed": "Maximum Rotational Speed",
+      "Voltage": "Voltage",
+      "Wattage": "Wattage",
+      "Power Source": "Power Source",
+      "Included Components": "Included Components"
+    },
+    "features": [
+      "Powerful 1100W Motor: Delivers consistent power for heavy-duty cutting, grinding, polishing, and surface preparation.",
+      "Powerful 1100W Motor: Delivers consistent power for heavy-duty cutting, grinding, polishing, and surface preparation.",
+      "Variable Speed Control: Adjustable speed up to 11,000 RPM for precision work on metal, stone, wood, tiles, and concrete.",
+      "Variable Speed Control: Adjustable speed up to 11,000 RPM for precision work on metal, stone, wood, tiles, and concrete.",
+      "Unique Slim Shape & Ergonomic Grip: Specially designed body shape with a comfortable slim grip ensures better handling, balance, and reduced fatigue during prolonged use.",
+      "Unique Slim Shape & Ergonomic Grip: Specially designed body shape with a comfortable slim grip ensures better handling, balance, and reduced fatigue during prolonged use.",
+      "Versatile Cutting & Grinding Tool: Ideal for cutting rods, pipes, tiles, bricks, as well as removing rust, welding marks, and polishing surfaces.",
+      "Versatile Cutting & Grinding Tool: Ideal for cutting rods, pipes, tiles, bricks, as well as removing rust, welding marks, and polishing surfaces.",
+      "Durable Build with M10 Spindle Thread: Heavy-duty housing and M10 spindle support standard 100mm discs for long-lasting reliability.",
+      "Durable Build with M10 Spindle Thread: Heavy-duty housing and M10 spindle support standard 100mm discs for long-lasting reliability.",
+      "Safe & Easy Operation: Comes with a protective guard and simple switch control for safer and more efficient working.",
+      "Safe & Easy Operation: Comes with a protective guard and simple switch control for safer and more efficient working.",
+      "iBELL provides a 6 months service warranty limited to Armature and Field only. Terms and conditions apply as specified in the warranty card.",
+      "iBELL provides a 6 months service warranty limited to Armature and Field only. Terms and conditions apply as specified in the warranty card."
+    ],
+    "videos": [],
+    "_completeness": 92,
+    "_quality": {
+      "score": 73,
+      "grade": "C"
+    },
+    "_urlGenerated": null,
+    "_urlMethod": "existing"
+  }
+]

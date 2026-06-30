@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build Mart — Product Editor</title>
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #f0f2f5; color: #1a1a2e; min-height: 100vh; overflow-x: hidden; }
+    a { text-decoration: none; color: inherit; }
+    button { cursor: pointer; font-family: inherit; }
+    input, select, textarea { font-family: inherit; }
+
+    /* ===== APP SHELL ===== */
+    .app-shell { display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+
+    /* ===== TOP HEADER ===== */
+    .top-header { background: white; border-bottom: 1px solid #e9ecef; padding: 12px 20px; display: flex; align-items: center; gap: 14px; flex-shrink: 0; z-index: 100; }
+    .brand { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .brand-icon { width: 34px; height: 34px; background: linear-gradient(135deg, #0984e3, #6c5ce7); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 17px; }
+    .brand-title { font-size: 1.1rem; font-weight: 700; white-space: nowrap; }
+    .brand-title small { font-weight: 400; font-size: 0.75rem; color: #868e96; margin-left: 6px; }
+    .header-stats { display: flex; gap: 18px; flex-wrap: wrap; }
+    .h-stat { display: flex; flex-direction: column; align-items: center; }
+    .h-stat-val { font-weight: 700; font-size: 1.1rem; line-height: 1; }
+    .h-stat-lbl { font-size: 0.58rem; color: #868e96; text-transform: uppercase; letter-spacing: 0.4px; }
+    .c-green { color: #00b894; } .c-blue { color: #0984e3; } .c-orange { color: #e17055; } .c-red { color: #d63031; } .c-purple { color: #6c5ce7; }
+    .header-sep { width: 1px; height: 32px; background: #e9ecef; flex-shrink: 0; }
+    .header-right { display: flex; align-items: center; gap: 8px; margin-left: auto; flex-wrap: wrap; }
+    .autosave-txt { font-size: 0.72rem; color: #adb5bd; white-space: nowrap; }
+    .autosave-txt.ok { color: #00b894; }
+
+    /* Progress bar */
+    .prog-wrap { flex: 1; min-width: 150px; max-width: 280px; }
+    .prog-bar { height: 6px; border-radius: 99px; background: #e9ecef; overflow: hidden; display: flex; }
+    .prog-seg { height: 100%; transition: width 0.5s ease; }
+    .prog-seg.v { background: #00b894; }
+    .prog-seg.h { background: #fdcb6e; }
+    .prog-seg.r { background: #e17055; }
+    .prog-seg.x { background: #d63031; }
+    .prog-lbl { font-size: 0.62rem; color: #868e96; text-align: right; margin-top: 2px; }
+
+    /* ===== MAIN BODY (sidebar + content) ===== */
+    .main-body { display: flex; flex: 1; overflow: hidden; }
+
+    /* ===== CATEGORY SIDEBAR ===== */
+    .cat-sidebar { width: 220px; flex-shrink: 0; background: white; border-right: 1px solid #e9ecef; display: flex; flex-direction: column; overflow: hidden; }
+    .cat-sidebar-head { padding: 12px 14px 8px; font-size: 0.7rem; font-weight: 700; color: #868e96; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid #f1f3f5; display: flex; align-items: center; justify-content: space-between; }
+    .cat-list { flex: 1; overflow-y: auto; padding: 6px 0; }
+    .cat-item { display: flex; align-items: center; padding: 7px 14px; cursor: pointer; border-radius: 0; transition: background 0.12s; position: relative; gap: 0; }
+    .cat-item:hover { background: #f8f9fa; }
+    .cat-item.active { background: #ebf3fd; }
+    .cat-item.active .cat-name { color: #0984e3; font-weight: 600; }
+    .cat-name { flex: 1; font-size: 0.82rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .cat-count { background: #e9ecef; color: #495057; font-size: 0.65rem; font-weight: 600; padding: 1px 7px; border-radius: 10px; flex-shrink: 0; }
+    .cat-item.active .cat-count { background: #0984e3; color: white; }
+    .cat-item .cat-rename { display: none; background: none; border: none; font-size: 0.75rem; color: #adb5bd; padding: 0 2px; flex-shrink: 0; }
+    .cat-item:hover .cat-rename { display: block; }
+    .cat-item .cat-rename:hover { color: #0984e3; }
+    .cat-sidebar-foot { padding: 10px 14px; border-top: 1px solid #f1f3f5; }
+    .cat-sidebar-foot button { width: 100%; padding: 7px; border: 1px dashed #dee2e6; border-radius: 7px; background: transparent; font-size: 0.8rem; color: #868e96; transition: 0.15s; }
+    .cat-sidebar-foot button:hover { background: #f8f9fa; border-color: #0984e3; color: #0984e3; }
+
+    /* Category scan badge */
+    .scan-badge { background: #fff3cd; color: #664d03; font-size: 0.72rem; padding: 5px 10px; border-radius: 6px; margin: 6px 14px; display: none; }
+    .scan-badge.show { display: block; }
+
+    /* ===== CONTENT AREA ===== */
+    .content { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+    /* Controls bar */
+    .controls { background: white; border-bottom: 1px solid #e9ecef; padding: 10px 16px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; flex-shrink: 0; }
+    .search-wrap { position: relative; flex: 1; min-width: 180px; }
+    .search-wrap input { width: 100%; padding: 7px 10px 7px 32px; border: 1px solid #dee2e6; border-radius: 8px; font-size: 0.85rem; outline: none; transition: 0.15s; }
+    .search-wrap input:focus { border-color: #0984e3; }
+    .search-icon { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 13px; color: #adb5bd; pointer-events: none; }
+    .ctrl-select { padding: 7px 10px; border: 1px solid #dee2e6; border-radius: 8px; font-size: 0.82rem; outline: none; background: white; cursor: pointer; }
+    .ctrl-select:focus { border-color: #0984e3; }
+    .view-btns { display: flex; gap: 2px; background: #f1f3f5; padding: 3px; border-radius: 7px; }
+    .view-btns button { background: transparent; border: none; padding: 5px 11px; border-radius: 5px; font-size: 0.8rem; color: #868e96; font-weight: 500; transition: 0.12s; }
+    .view-btns button.on { background: white; color: #1a1a2e; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+    .shown-badge { background: #e9ecef; padding: 4px 10px; border-radius: 20px; font-size: 0.77rem; color: #495057; font-weight: 500; white-space: nowrap; }
+    .btn { padding: 7px 13px; border-radius: 7px; border: none; font-size: 0.8rem; font-weight: 600; transition: 0.15s; display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+    .btn-dark { background: #2d3436; color: white; } .btn-dark:hover { background: #1a1a2e; }
+    .btn-blue { background: #0984e3; color: white; } .btn-blue:hover { background: #0773c5; }
+    .btn-green { background: #00b894; color: white; } .btn-green:hover { background: #00a381; }
+    .btn-ghost { background: #f1f3f5; color: #495057; border: 1px solid #dee2e6; } .btn-ghost:hover { background: #e9ecef; }
+    .btn-ghost:disabled { opacity: 0.38; cursor: not-allowed; }
+    .btn-red { background: #d63031; color: white; } .btn-red:hover { background: #c0392b; }
+    .btn-orange { background: #e17055; color: white; } .btn-orange:hover { background: #d35400; }
+    .btn-warn { background: #ffc107; color: #333; } .btn-warn:hover { background: #e6ac00; }
+
+    /* Bulk bar */
+    .bulk-bar { background: #fff8e1; border-bottom: 1px solid #ffe082; padding: 9px 16px; display: none; flex-wrap: wrap; gap: 8px; align-items: center; flex-shrink: 0; }
+    .bulk-bar.on { display: flex; }
+    .bulk-label { font-size: 0.82rem; font-weight: 600; color: #664d03; white-space: nowrap; }
+    .bulk-sep { width: 1px; height: 22px; background: #ffe082; }
+    .chip-row { display: flex; gap: 5px; flex-wrap: wrap; }
+    .chip { padding: 3px 11px; border-radius: 20px; border: 1px solid #dee2e6; background: white; font-size: 0.75rem; font-weight: 500; cursor: pointer; transition: 0.1s; }
+    .chip:hover { border-color: #0984e3; color: #0984e3; background: #ebf3fd; }
+    .chip.active { background: #0984e3; color: white; border-color: #0984e3; }
+    .bulk-field-row { display: flex; gap: 6px; align-items: center; }
+    .bulk-field-row select, .bulk-field-row input { padding: 5px 8px; border: 1px solid #dee2e6; border-radius: 6px; font-size: 0.8rem; }
+    .undo-badge { background: #6c5ce7; color: white; font-size: 0.62rem; padding: 1px 6px; border-radius: 10px; }
+
+    /* ===== SCROLLABLE PRODUCT AREA ===== */
+    .product-scroll { flex: 1; overflow-y: auto; padding: 16px; }
+
+    /* Grid */
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(248px, 1fr)); gap: 14px; }
+
+    /* ===== PRODUCT CARD ===== */
+    .pcard { background: white; border-radius: 11px; overflow: hidden; box-shadow: 0 1px 6px rgba(0,0,0,0.06); border: 2px solid transparent; transition: 0.18s; position: relative; }
+    .pcard:hover { transform: translateY(-2px); box-shadow: 0 4px 18px rgba(0,0,0,0.09); }
+    .pcard.sel { border-color: #0984e3; }
+    .pcard-chk { position: absolute; top: 8px; left: 8px; z-index: 3; width: 18px; height: 18px; accent-color: #0984e3; }
+    .pcard-img { height: 150px; background: #f8f9fa; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; cursor: pointer; }
+    .pcard-img img { max-height: 140px; max-width: 100%; object-fit: contain; padding: 6px; }
+    .pcard-img .no-img { font-size: 2rem; color: #dee2e6; }
+    .img-cnt { position: absolute; bottom: 5px; right: 5px; background: rgba(0,0,0,0.55); color: white; font-size: 0.6rem; padding: 1px 6px; border-radius: 8px; }
+    .pcard-body { padding: 10px 12px; }
+    .pc-title { font-weight: 600; font-size: 0.85rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.2em; }
+    .pc-brand { color: #0984e3; font-size: 0.73rem; margin: 3px 0 1px; font-weight: 500; }
+    .pc-price { font-weight: 700; font-size: 0.92rem; color: #1a1a2e; }
+    .pc-mrp { font-size: 0.68rem; color: #adb5bd; text-decoration: line-through; margin-left: 4px; }
+    .pc-meta { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; align-items: center; }
+    .vbadge { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: 0.6rem; font-weight: 700; }
+    .vbadge.VERIFIED { background: #d4edda; color: #155724; }
+    .vbadge.HIGH_CONFIDENCE { background: #fff3cd; color: #664d03; }
+    .vbadge.REVIEW_REQUIRED { background: #ffe5d0; color: #7c2d12; }
+    .vbadge.REJECTED { background: #f8d7da; color: #721c24; }
+    .vbadge.UNKNOWN { background: #e9ecef; color: #495057; }
+    .gbadge { padding: 2px 8px; border-radius: 20px; font-size: 0.6rem; font-weight: 700; background: #e9ecef; color: #495057; }
+    .gbadge.A { background: #d4edda; color: #155724; } .gbadge.B { background: #cce5ff; color: #004085; }
+    .gbadge.C { background: #fff3cd; color: #664d03; } .gbadge.D { background: #f8d7da; color: #721c24; }
+    .flags { display: flex; gap: 3px; flex-wrap: wrap; margin-top: 5px; }
+    .flag { font-size: 0.58rem; padding: 1px 7px; border-radius: 10px; font-weight: 600; background: #ff7675; color: white; }
+    .flag.dup { background: #6c5ce7; }
+    .pc-actions { display: flex; gap: 5px; margin-top: 8px; flex-wrap: wrap; }
+    .pc-actions a, .pc-actions button { font-size: 0.68rem; padding: 3px 9px; border-radius: 14px; border: none; transition: 0.12s; display: inline-flex; align-items: center; gap: 3px; font-weight: 500; }
+    .btn-amz { background: #fff3cd; color: #664d03; } .btn-amz:hover { background: #ffc107; }
+    .btn-edt { background: #e9ecef; color: #2d3436; } .btn-edt:hover { background: #2d3436; color: white; }
+    .btn-qv  { background: #d4edda; color: #155724; } .btn-qv:hover  { background: #00b894; color: white; }
+    .btn-rs  { background: #f0e6ff; color: #6c5ce7; } .btn-rs:hover  { background: #6c5ce7; color: white; }
+    .pc-id { font-size: 0.56rem; color: #ced4da; margin-top: 5px; }
+
+    /* ===== TABLE VIEW ===== */
+    .table-wrap { background: white; border-radius: 11px; box-shadow: 0 1px 6px rgba(0,0,0,0.05); overflow: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+    thead { position: sticky; top: 0; z-index: 5; }
+    th { background: #f8f9fa; text-align: left; padding: 9px 11px; border-bottom: 2px solid #dee2e6; white-space: nowrap; }
+    th.sort { cursor: pointer; user-select: none; }
+    th.sort:hover { background: #e9ecef; }
+    td { padding: 7px 11px; border-bottom: 1px solid #f1f3f5; vertical-align: middle; }
+    tr:hover td { background: #fafbfc; }
+    tr.sel-row td { background: #ebf3fd; }
+    .thumb-sm { width: 38px; height: 38px; object-fit: contain; border-radius: 4px; background: #f8f9fa; }
+    .ecell { cursor: pointer; padding: 2px 5px; border-radius: 4px; }
+    .ecell:hover { background: #e8f4fd; outline: 1px dashed #0984e3; }
+    .ecell input, .ecell select { width: 100%; border: 1.5px solid #0984e3; border-radius: 4px; padding: 2px 6px; font-size: 0.8rem; outline: none; }
+
+    /* ===== PAGINATION ===== */
+    .pagination { display: flex; align-items: center; justify-content: center; gap: 6px; padding: 14px 0 6px; flex-wrap: wrap; }
+    .pagination button { padding: 5px 10px; border-radius: 6px; border: 1px solid #dee2e6; background: white; font-size: 0.8rem; color: #495057; transition: 0.12s; }
+    .pagination button:hover:not(:disabled) { border-color: #0984e3; color: #0984e3; }
+    .pagination button.cur { background: #0984e3; color: white; border-color: #0984e3; font-weight: 700; }
+    .pagination button:disabled { opacity: 0.38; cursor: not-allowed; }
+    .pag-info { font-size: 0.75rem; color: #868e96; }
+    .pag-jump { width: 52px; padding: 4px 6px; border: 1px solid #dee2e6; border-radius: 6px; font-size: 0.8rem; text-align: center; }
+
+    /* ===== EDITOR MODAL ===== */
+    .moverlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 3000; display: none; align-items: center; justify-content: center; padding: 14px; }
+    .moverlay.open { display: flex; }
+    .modal { background: white; border-radius: 14px; width: 100%; max-width: 1120px; max-height: 94vh; display: flex; flex-direction: column; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+    .m-head { padding: 15px 20px 12px; border-bottom: 1px solid #f1f3f5; display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .m-head h2 { font-size: 1rem; font-weight: 700; flex: 1; }
+    .m-nav { display: flex; gap: 5px; }
+    .m-nav button { padding: 4px 10px; border-radius: 6px; border: 1px solid #dee2e6; background: white; font-size: 0.8rem; }
+    .m-nav button:hover:not(:disabled) { border-color: #0984e3; color: #0984e3; }
+    .m-nav button:disabled { opacity: 0.35; cursor: not-allowed; }
+    .m-pos { font-size: 0.75rem; color: #868e96; padding: 0 4px; align-self: center; }
+    .m-close { background: none; border: none; font-size: 1.4rem; color: #868e96; padding: 0 4px; line-height: 1; }
+    .m-close:hover { color: #d63031; }
+    /* Two-column body */
+    .m-body { flex: 1; overflow: hidden; display: grid; grid-template-columns: 340px 1fr; }
+    /* LEFT: preview + images */
+    .m-left { border-right: 1px solid #f1f3f5; display: flex; flex-direction: column; overflow-y: auto; }
+    /* Live preview card */
+    .preview-wrap { padding: 14px; background: #f8f9fa; border-bottom: 1px solid #f1f3f5; flex-shrink: 0; }
+    .preview-wrap h3 { font-size: 0.68rem; font-weight: 700; color: #868e96; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 9px; }
+    .preview-card { background: white; border-radius: 9px; overflow: hidden; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+    .prev-img { height: 130px; background: #f8f9fa; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .prev-img img { max-height: 120px; max-width: 100%; object-fit: contain; padding: 6px; }
+    .prev-body { padding: 9px 11px; }
+    .prev-title { font-weight: 600; font-size: 0.82rem; line-height: 1.3; margin-bottom: 3px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2em; }
+    .prev-brand { color: #0984e3; font-size: 0.7rem; font-weight: 500; margin-bottom: 3px; }
+    .prev-price { font-weight: 700; font-size: 0.88rem; }
+    .prev-mrp { font-size: 0.66rem; color: #adb5bd; text-decoration: line-through; margin-left: 4px; }
+    .prev-badges { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 5px; }
+    /* Images panel */
+    .imgs-panel { padding: 12px 14px; flex: 1; }
+    .imgs-panel h3 { font-size: 0.68rem; font-weight: 700; color: #868e96; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 8px; }
+    .img-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-bottom: 9px; }
+    .img-thumb { position: relative; aspect-ratio: 1; border-radius: 7px; overflow: hidden; background: #f8f9fa; border: 2px solid transparent; transition: 0.12s; }
+    .img-thumb:hover { border-color: #0984e3; }
+    .img-thumb.primary { border-color: #00b894; }
+    .img-thumb img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
+    .img-thumb .rm-btn { position: absolute; top: 2px; right: 2px; background: rgba(214,48,49,0.85); color: white; border: none; border-radius: 50%; width: 18px; height: 18px; font-size: 11px; display: none; align-items: center; justify-content: center; line-height: 1; }
+    .img-thumb:hover .rm-btn { display: flex; }
+    .img-thumb .pri-lbl { position: absolute; bottom: 2px; left: 2px; background: #00b894; color: white; font-size: 0.5rem; padding: 1px 4px; border-radius: 4px; font-weight: 700; }
+    .add-img-row { display: flex; gap: 5px; }
+    .add-img-row input { flex: 1; padding: 5px 8px; border: 1px solid #dee2e6; border-radius: 6px; font-size: 0.78rem; outline: none; }
+    .add-img-row input:focus { border-color: #0984e3; }
+    /* Compare box */
+    .compare-wrap { padding: 10px 14px; border-top: 1px solid #f1f3f5; flex-shrink: 0; }
+    .compare-wrap h3 { font-size: 0.68rem; font-weight: 700; color: #868e96; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 7px; }
+    .cmp-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 5px; }
+    .cmp-col label { font-size: 0.6rem; font-weight: 600; color: #868e96; text-transform: uppercase; display: block; margin-bottom: 2px; }
+    .cmp-val { font-size: 0.75rem; background: #f8f9fa; padding: 4px 7px; border-radius: 5px; border: 1px solid #dee2e6; word-break: break-word; min-height: 24px; }
+    .cmp-val.diff { border-color: #e17055; background: #fff5f5; }
+    .adopt-btn { font-size: 0.7rem; padding: 3px 9px; border-radius: 5px; background: #0984e3; color: white; border: none; margin-top: 4px; }
+    .cmp-amz-link { font-size: 0.72rem; color: #0984e3; display: block; margin-top: 5px; }
+
+    /* RIGHT: field tabs + fields */
+    .m-right { overflow-y: auto; display: flex; flex-direction: column; }
+    .field-tabs { display: flex; gap: 0; border-bottom: 2px solid #f1f3f5; flex-shrink: 0; padding: 0 16px; background: white; }
+    .ftab { padding: 10px 14px; font-size: 0.8rem; font-weight: 600; color: #868e96; border-bottom: 2px solid transparent; cursor: pointer; transition: 0.12s; margin-bottom: -2px; white-space: nowrap; }
+    .ftab:hover { color: #0984e3; }
+    .ftab.on { color: #0984e3; border-bottom-color: #0984e3; }
+    .field-panels { flex: 1; padding: 16px; }
+    .fpanel { display: none; }
+    .fpanel.on { display: block; }
+    .fsec { margin-bottom: 14px; }
+    .fsec-title { font-size: 0.65rem; font-weight: 700; color: #adb5bd; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 7px; padding-bottom: 4px; border-bottom: 1px solid #f1f3f5; }
+    .frow { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-bottom: 7px; }
+    .frow.full { grid-template-columns: 1fr; }
+    .frow.tri { grid-template-columns: 1fr 1fr 1fr; }
+    .fgrp { display: flex; flex-direction: column; }
+    .fgrp label { font-size: 0.7rem; font-weight: 600; color: #495057; margin-bottom: 3px; }
+    .fgrp input, .fgrp select, .fgrp textarea { padding: 6px 9px; border: 1px solid #dee2e6; border-radius: 6px; font-size: 0.83rem; outline: none; transition: border-color 0.14s; color: #1a1a2e; }
+    .fgrp input:focus, .fgrp select:focus, .fgrp textarea:focus { border-color: #0984e3; }
+    .fgrp input[disabled] { background: #f8f9fa; color: #868e96; }
+    .fgrp textarea { min-height: 65px; resize: vertical; }
+    /* Quick-pick chips under field */
+    .qpick { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+    .qp { padding: 2px 9px; border-radius: 12px; border: 1px solid #dee2e6; background: white; font-size: 0.7rem; font-weight: 500; cursor: pointer; transition: 0.1s; }
+    .qp:hover { background: #0984e3; color: white; border-color: #0984e3; }
+    /* Flag info box */
+    .flag-info-box { background: #f8f9fa; border-radius: 8px; padding: 10px 12px; font-size: 0.78rem; }
+    .fi-row { margin-bottom: 4px; color: #495057; }
+    .fi-row strong { color: #1a1a2e; }
+    /* Custom fields */
+    .custom-fields { margin-top: 6px; }
+    .cf-row { display: flex; gap: 6px; align-items: center; margin-bottom: 5px; }
+    .cf-row input { flex: 1; padding: 5px 8px; border: 1px solid #dee2e6; border-radius: 5px; font-size: 0.8rem; outline: none; }
+    .cf-row input:focus { border-color: #0984e3; }
+    .cf-rm { background: none; border: none; color: #d63031; font-size: 1rem; padding: 0 3px; }
+
+    /* m-foot */
+    .m-foot { padding: 12px 20px; border-top: 1px solid #f1f3f5; display: flex; gap: 8px; justify-content: flex-end; flex-shrink: 0; align-items: center; }
+    .m-foot .hint { font-size: 0.68rem; color: #adb5bd; flex: 1; }
+    kbd { background: #f1f3f5; padding: 1px 5px; border-radius: 4px; font-size: 0.65rem; font-family: monospace; border: 1px solid #dee2e6; }
+
+    /* ===== TOAST ===== */
+    .toast-wrap { position: fixed; bottom: 18px; right: 18px; z-index: 9999; display: flex; flex-direction: column; gap: 7px; pointer-events: none; }
+    .toast { background: white; border-radius: 9px; padding: 10px 16px; box-shadow: 0 4px 18px rgba(0,0,0,0.14); display: flex; align-items: center; gap: 9px; font-size: 0.82rem; font-weight: 500; pointer-events: auto; transform: translateX(110%); transition: 0.3s; opacity: 0; border-left: 4px solid #dee2e6; max-width: 340px; }
+    .toast.show { transform: translateX(0); opacity: 1; }
+    .toast.s { border-left-color: #00b894; } .toast.e { border-left-color: #d63031; }
+    .toast.i { border-left-color: #0984e3; } .toast.w { border-left-color: #e17055; }
+
+    /* ===== PIPELINE MODAL ===== */
+    .pipe-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 4000; display: none; align-items: center; justify-content: center; }
+    .pipe-overlay.open { display: flex; }
+    .pipe-box { background: white; border-radius: 13px; padding: 26px; width: 440px; max-width: 95vw; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+    .pipe-box h2 { margin-bottom: 14px; font-size: 1.05rem; }
+    .pipe-stat { background: #f0f7ff; border-radius: 7px; padding: 9px 13px; font-size: 0.8rem; color: #0984e3; margin-top: 10px; display: none; }
+    .pipe-stat.show { display: block; }
+
+    /* ===== SPINNER ===== */
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spin { display: inline-block; width: 13px; height: 13px; border: 2px solid rgba(255,255,255,0.4); border-top-color: white; border-radius: 50%; animation: spin 0.7s linear infinite; }
+
+    /* ===== EMPTY ===== */
+    .empty { grid-column: 1/-1; text-align: center; padding: 60px 20px; color: #adb5bd; }
+    .empty .ei { font-size: 2.5rem; margin-bottom: 10px; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .cat-sidebar { width: 0; overflow: hidden; }
+      .m-body { grid-template-columns: 1fr; }
+      .m-left { border-right: none; border-bottom: 1px solid #f1f3f5; max-height: 340px; }
+    }
+    @media (max-width: 600px) {
+      .header-stats { display: none; }
+    }
+  </style>
+</head>
+<body>
+<div class="app-shell">
+
+  <!-- ===== TOP HEADER ===== -->
+  <div class="top-header">
+    <div class="brand">
+      <div class="brand-icon">🛠️</div>
+      <div class="brand-title">Build Mart Editor <small id="pCount">0 products</small></div>
+    </div>
+    <div class="header-sep"></div>
+    <div class="header-stats">
+      <div class="h-stat"><span class="h-stat-val c-blue" id="sTotal">0</span><span class="h-stat-lbl">Total</span></div>
+      <div class="h-stat"><span class="h-stat-val c-green" id="sVerified">0</span><span class="h-stat-lbl">Verified</span></div>
+      <div class="h-stat"><span class="h-stat-val c-orange" id="sReview">0</span><span class="h-stat-lbl">Review</span></div>
+      <div class="h-stat"><span class="h-stat-val c-red" id="sRejected">0</span><span class="h-stat-lbl">Rejected</span></div>
+      <div class="h-stat"><span class="h-stat-val c-purple" id="sImages">0</span><span class="h-stat-lbl">Images</span></div>
+    </div>
+    <div class="prog-wrap">
+      <div class="prog-bar">
+        <div class="prog-seg v" id="psV" style="width:0%"></div>
+        <div class="prog-seg h" id="psH" style="width:0%"></div>
+        <div class="prog-seg r" id="psR" style="width:0%"></div>
+        <div class="prog-seg x" id="psX" style="width:0%"></div>
+      </div>
+      <div class="prog-lbl" id="progLbl">0 / 0 Verified</div>
+    </div>
+    <div class="header-sep"></div>
+    <div class="header-right">
+      <span class="autosave-txt" id="asBadge">💾 Auto-save on</span>
+      <button class="btn btn-ghost" id="undoBtn" onclick="undo()" disabled title="Ctrl+Z">↩ Undo <span class="undo-badge" id="uBadge" style="display:none">0</span></button>
+      <button class="btn btn-ghost" onclick="exportCSV()" title="Export CSV">⬇ CSV</button>
+      <span id="repoBadge" class="shown-badge" style="background:#f0e6ff;color:#6c5ce7;cursor:pointer;" onclick="openConfigModal()">GitHub Repo</span>
+      <button class="btn btn-orange" onclick="openPipeline()">🔄 Pipeline</button>
+      <button class="btn btn-green" onclick="saveToGitHub()">💾 Save to GitHub</button>
+    </div>
+  </div>
+
+  <!-- ===== MAIN BODY ===== -->
+  <div class="main-body">
+
+    <!-- CATEGORY SIDEBAR -->
+    <div class="cat-sidebar">
+      <div class="cat-sidebar-head">
+        <span>Categories</span>
+        <button onclick="scanCategories()" title="Scan for wrong categories" style="background:none;border:none;cursor:pointer;font-size:13px;" title="Scan categories">🔍</button>
+      </div>
+      <div class="cat-list" id="catList"></div>
+      <div class="scan-badge" id="scanBadge"></div>
+      <div class="cat-sidebar-foot">
+        <button onclick="addCategory()">＋ Add Category</button>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+      <!-- Controls -->
+      <div class="controls">
+        <div class="search-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search" placeholder="Search name, brand, ASIN…" oninput="applyFilters()">
+        </div>
+        <select class="ctrl-select" id="verFilter" onchange="applyFilters()">
+          <option value="">All Verification</option>
+          <option value="VERIFIED">Verified</option>
+          <option value="HIGH_CONFIDENCE">High Confidence</option>
+          <option value="REVIEW_REQUIRED">Review Required</option>
+          <option value="REJECTED">Rejected</option>
+          <option value="UNKNOWN">Unknown</option>
+        </select>
+        <select class="ctrl-select" id="flagFilter" onchange="applyFilters()">
+          <option value="">All Flags</option>
+          <option value="TitleMismatch">Title Mismatch</option>
+          <option value="BrandMismatch">Brand Mismatch</option>
+          <option value="ImageNameMismatch">Image Mismatch</option>
+          <option value="Duplicate">Duplicate</option>
+        </select>
+        <select class="ctrl-select" id="pgSize" onchange="curPage=1;renderProducts()">
+          <option value="25">25/page</option>
+          <option value="50" selected>50/page</option>
+          <option value="100">100/page</option>
+        </select>
+        <div class="view-btns">
+          <button class="on" data-v="grid" onclick="setView('grid')">📇 Grid</button>
+          <button data-v="table" onclick="setView('table')">📋 Table</button>
+        </div>
+        <span class="shown-badge" id="shownBadge">0 shown</span>
+      </div>
+
+      <!-- Bulk bar -->
+      <div class="bulk-bar" id="bulkBar">
+        <span class="bulk-label">☑ <span id="selCount">0</span> selected</span>
+        <div class="bulk-sep"></div>
+        <!-- Category -->
+        <select class="ctrl-select" id="bkCat" style="font-size:0.78rem;padding:5px 8px;"><option value="">Change Category…</option></select>
+        <button class="btn btn-dark" style="padding:5px 10px;font-size:0.78rem;" onclick="bulkSetCategory()">Apply</button>
+        <div class="bulk-sep"></div>
+        <!-- Field fixer -->
+        <div class="bulk-field-row">
+          <select id="bkField" style="font-size:0.78rem;padding:5px 8px;">
+            <option value="">Set Field…</option>
+            <option value="brand">Brand</option>
+            <option value="warranty">Warranty</option>
+            <option value="status">Status</option>
+            <option value="type">Type</option>
+            <option value="usage">Usage</option>
+            <option value="subcategory">Subcategory</option>
+          </select>
+          <input id="bkVal" type="text" placeholder="Value…" style="width:110px;padding:5px 8px;border:1px solid #dee2e6;border-radius:6px;font-size:0.78rem;">
+          <button class="btn btn-dark" style="padding:5px 10px;font-size:0.78rem;" onclick="bulkSetField()">Set All</button>
+        </div>
+        <div class="bulk-sep"></div>
+        <!-- Warranty quick chips -->
+        <div class="chip-row">
+          <span class="chip" onclick="bulkWarranty('6 Months Warranty')">6M</span>
+          <span class="chip" onclick="bulkWarranty('1 Year Warranty')">1Y</span>
+          <span class="chip" onclick="bulkWarranty('2 Years Warranty')">2Y</span>
+          <span class="chip" onclick="bulkWarranty('Standard Warranty')">Std</span>
+          <span class="chip" onclick="bulkWarranty('N/A')">N/A</span>
+        </div>
+        <div class="bulk-sep"></div>
+        <button class="btn btn-green" onclick="bulkVerify('VERIFIED')" style="padding:5px 10px;font-size:0.78rem;">✅ Verify</button>
+        <button class="btn btn-red" onclick="bulkVerify('REJECTED')" style="padding:5px 10px;font-size:0.78rem;">❌ Reject</button>
+        <button class="btn btn-ghost" onclick="bulkRandomStock()" style="padding:5px 10px;font-size:0.78rem;">🎲 Stock</button>
+        <button class="btn btn-ghost" onclick="detectDupes()" style="padding:5px 10px;font-size:0.78rem;">🔍 Dupes</button>
+        <button class="btn btn-ghost" onclick="clearSel()" style="margin-left:auto;padding:5px 10px;font-size:0.78rem;">✕ Clear</button>
+      </div>
+
+      <!-- Product area -->
+      <div class="product-scroll">
+        <div id="productArea"></div>
+        <div class="pagination" id="pagCtrl"></div>
+      </div>
+
+    </div><!-- /content -->
+  </div><!-- /main-body -->
+</div><!-- /app-shell -->
+
+<!-- ===== EDITOR MODAL ===== -->
+<div class="moverlay" id="moverlay" onclick="handleMOverlay(event)">
+  <div class="modal">
+    <div class="m-head">
+      <h2>✏️ Edit Product</h2>
+      <div class="m-nav">
+        <button id="mPrev" onclick="navigateModal(-1)" title="← Arrow">← Prev</button>
+        <span class="m-pos" id="mPos"></span>
+        <button id="mNext" onclick="navigateModal(1)" title="→ Arrow">Next →</button>
+      </div>
+      <button class="m-close" onclick="closeModal()">✕</button>
+    </div>
+
+    <div class="m-body">
+      <!-- LEFT PANEL -->
+      <div class="m-left">
+        <!-- Live Preview Card -->
+        <div class="preview-wrap">
+          <h3>👁 Live Preview</h3>
+          <div class="preview-card">
+            <div class="prev-img"><img id="prevImg" src="" onerror="this.style.display='none'" style="display:none"><span id="prevNoImg" style="font-size:2rem;color:#dee2e6">📷</span></div>
+            <div class="prev-body">
+              <div class="prev-title" id="prevTitle">—</div>
+              <div class="prev-brand" id="prevBrand">—</div>
+              <div><span class="prev-price" id="prevPrice">—</span><span class="prev-mrp" id="prevMrp"></span></div>
+              <div class="prev-badges" id="prevBadges"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Images -->
+        <div class="imgs-panel">
+          <h3>📸 Images (<span id="imgCountLbl">0</span>)</h3>
+          <div class="img-grid" id="imgGrid"></div>
+          <div class="add-img-row">
+            <input type="text" id="newImgUrl" placeholder="Paste image URL…" onkeydown="if(event.key==='Enter')addImg()">
+            <button class="btn btn-dark" onclick="addImg()" style="padding:5px 11px;font-size:0.78rem;">+ Add</button>
+          </div>
+        </div>
+
+        <!-- Compare -->
+        <div class="compare-wrap">
+          <h3>🔗 Compare with Amazon</h3>
+          <div class="cmp-row">
+            <div class="cmp-col"><label>Your Name</label><div class="cmp-val" id="cmpYN">—</div></div>
+            <div class="cmp-col"><label>Amazon Title</label><div class="cmp-val" id="cmpAN">—</div></div>
+          </div>
+          <div class="cmp-row">
+            <div class="cmp-col"><label>Your Brand</label><div class="cmp-val" id="cmpYB">—</div></div>
+            <div class="cmp-col"><label>Amazon Brand</label><div class="cmp-val" id="cmpAB">—</div></div>
+          </div>
+          <button class="adopt-btn" id="adoptBtn" onclick="adoptTitle()" style="display:none">→ Adopt Amazon Title</button>
+          <a class="cmp-amz-link" id="cmpLink" href="#" target="_blank">🔗 Open on Amazon ↗</a>
+        </div>
+      </div><!-- /m-left -->
+
+      <!-- RIGHT PANEL -->
+      <div class="m-right">
+        <!-- Tabs -->
+        <div class="field-tabs">
+          <div class="ftab on" onclick="switchTab('basic')">Basic Info</div>
+          <div class="ftab" onclick="switchTab('price')">Pricing & Stock</div>
+          <div class="ftab" onclick="switchTab('specs')">Specifications</div>
+          <div class="ftab" onclick="switchTab('quality')">Quality & Flags</div>
+          <div class="ftab" onclick="switchTab('custom')">Custom Fields</div>
+        </div>
+
+        <div class="field-panels">
+
+          <!-- TAB: Basic Info -->
+          <div class="fpanel on" id="fp-basic">
+            <div class="fsec">
+              <div class="frow">
+                <div class="fgrp"><label>Product ID (ASIN)</label><input type="text" id="e_pid" disabled></div>
+                <div class="fgrp"><label>SKU</label><input type="text" id="e_sku" oninput="livePreview()"></div>
+              </div>
+              <div class="frow full">
+                <div class="fgrp"><label>Name</label><input type="text" id="e_name" oninput="livePreview()"></div>
+              </div>
+              <div class="frow">
+                <div class="fgrp">
+                  <label>Brand</label><input type="text" id="e_brand" oninput="livePreview()">
+                  <div class="qpick" id="qp_brand"></div>
+                </div>
+                <div class="fgrp">
+                  <label>Category</label><input type="text" id="e_category" oninput="livePreview()">
+                  <div class="qpick" id="qp_category"></div>
+                </div>
+              </div>
+              <div class="frow">
+                <div class="fgrp">
+                  <label>Subcategory</label><input type="text" id="e_subcategory" oninput="livePreview()">
+                  <div class="qpick" id="qp_subcategory"></div>
+                </div>
+                <div class="fgrp">
+                  <label>Type</label><input type="text" id="e_type" oninput="livePreview()">
+                  <div class="qpick" id="qp_type"></div>
+                </div>
+              </div>
+              <div class="frow full">
+                <div class="fgrp"><label>Description</label><textarea id="e_desc" oninput="livePreview()"></textarea></div>
+              </div>
+              <div class="frow">
+                <div class="fgrp">
+                  <label>Usage</label><input type="text" id="e_usage">
+                </div>
+                <div class="fgrp">
+                  <label>Warranty</label><input type="text" id="e_warranty">
+                  <div class="qpick">
+                    <span class="qp" onclick="qfill('e_warranty','6 Months Warranty')">6M</span>
+                    <span class="qp" onclick="qfill('e_warranty','1 Year Warranty')">1Y</span>
+                    <span class="qp" onclick="qfill('e_warranty','2 Years Warranty')">2Y</span>
+                    <span class="qp" onclick="qfill('e_warranty','Standard Warranty')">Std</span>
+                    <span class="qp" onclick="qfill('e_warranty','N/A')">N/A</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB: Pricing & Stock -->
+          <div class="fpanel" id="fp-price">
+            <div class="fsec">
+              <div class="fsec-title">Pricing</div>
+              <div class="frow tri">
+                <div class="fgrp"><label>Price (₹)</label><input type="number" id="e_price" oninput="livePreview()"></div>
+                <div class="fgrp"><label>MRP (₹)</label><input type="number" id="e_mrp" oninput="livePreview()"></div>
+                <div class="fgrp"><label>Discount %</label><input type="number" id="e_disc" disabled></div>
+              </div>
+              <div class="frow">
+                <div class="fgrp"><label>Auto-compute MRP</label>
+                  <div class="qpick" style="margin-top:6px">
+                    <span class="qp" onclick="computeMrp(1.15)">×1.15</span>
+                    <span class="qp" onclick="computeMrp(1.25)">×1.25</span>
+                    <span class="qp" onclick="computeMrp(1.35)">×1.35</span>
+                    <span class="qp" onclick="computeMrp(1.50)">×1.50</span>
+                    <span class="qp" onclick="computeMrp(2.00)">×2.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="fsec">
+              <div class="fsec-title">Inventory</div>
+              <div class="frow tri">
+                <div class="fgrp"><label>Stock Qty</label><input type="number" id="e_stock" oninput="livePreview()"></div>
+                <div class="fgrp"><label>Status</label>
+                  <select id="e_status" oninput="livePreview()">
+                    <option value="Active">Active</option>
+                    <option value="Out of Stock">Out of Stock</option>
+                    <option value="Discontinued">Discontinued</option>
+                  </select>
+                  <div class="qpick">
+                    <span class="qp" onclick="qfill('e_status','Active')">Active</span>
+                    <span class="qp" onclick="qfill('e_status','Out of Stock')">OOS</span>
+                    <span class="qp" onclick="qfill('e_status','Discontinued')">Disc.</span>
+                  </div>
+                </div>
+                <div class="fgrp"><label>Random Stock</label>
+                  <button class="btn btn-warn" onclick="randomStock()" style="margin-top:3px;width:100%;font-size:0.78rem;">🎲 Randomize</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB: Specifications -->
+          <div class="fpanel" id="fp-specs">
+            <div class="fsec">
+              <div class="fsec-title">Physical Properties</div>
+              <div class="frow">
+                <div class="fgrp"><label>Material</label><input type="text" id="e_material"></div>
+                <div class="fgrp"><label>Size</label><input type="text" id="e_size"></div>
+              </div>
+              <div class="frow">
+                <div class="fgrp"><label>Pack Size</label><input type="text" id="e_packSize"></div>
+                <div class="fgrp"><label>Finish</label><input type="text" id="e_finish"></div>
+              </div>
+              <div class="frow">
+                <div class="fgrp"><label>Weight</label><input type="text" id="e_weight"></div>
+                <div class="fgrp"><label>Dimensions</label><input type="text" id="e_dimensions"></div>
+              </div>
+            </div>
+            <div class="fsec">
+              <div class="fsec-title">Electrical / Power</div>
+              <div class="frow">
+                <div class="fgrp"><label>Power Source</label><input type="text" id="e_powerSource">
+                  <div class="qpick">
+                    <span class="qp" onclick="qfill('e_powerSource','Corded Electric')">Corded</span>
+                    <span class="qp" onclick="qfill('e_powerSource','Battery')">Battery</span>
+                    <span class="qp" onclick="qfill('e_powerSource','Pneumatic')">Pneumatic</span>
+                    <span class="qp" onclick="qfill('e_powerSource','Manual')">Manual</span>
+                  </div>
+                </div>
+                <div class="fgrp"><label>Voltage</label><input type="text" id="e_voltage">
+                  <div class="qpick">
+                    <span class="qp" onclick="qfill('e_voltage','220V')">220V</span>
+                    <span class="qp" onclick="qfill('e_voltage','240V')">240V</span>
+                    <span class="qp" onclick="qfill('e_voltage','18V')">18V</span>
+                    <span class="qp" onclick="qfill('e_voltage','12V')">12V</span>
+                  </div>
+                </div>
+              </div>
+              <div class="frow">
+                <div class="fgrp"><label>Max RPM / Speed</label><input type="text" id="e_rpm"></div>
+              </div>
+            </div>
+            <div class="fsec">
+              <div class="fsec-title">Content</div>
+              <div class="frow full"><div class="fgrp"><label>About This Item</label><textarea id="e_aboutItem" style="min-height:80px"></textarea></div></div>
+              <div class="frow full"><div class="fgrp"><label>What's in the Box</label><textarea id="e_boxContents" style="min-height:50px"></textarea></div></div>
+            </div>
+          </div>
+
+          <!-- TAB: Quality & Flags -->
+          <div class="fpanel" id="fp-quality">
+            <div class="fsec">
+              <div class="flag-info-box" id="flagInfoBox"></div>
+            </div>
+            <div class="fsec">
+              <div class="fsec-title">Override Verification Level</div>
+              <div class="frow">
+                <div class="fgrp"><label>Verification Level</label>
+                  <select id="e_verlevel">
+                    <option value="VERIFIED">VERIFIED</option>
+                    <option value="HIGH_CONFIDENCE">HIGH_CONFIDENCE</option>
+                    <option value="REVIEW_REQUIRED">REVIEW_REQUIRED</option>
+                    <option value="REJECTED">REJECTED</option>
+                    <option value="UNKNOWN">UNKNOWN</option>
+                  </select>
+                  <div class="qpick">
+                    <span class="qp" onclick="qfill('e_verlevel','VERIFIED')" style="background:#d4edda;color:#155724;border-color:#c3e6cb">✅ Verified</span>
+                    <span class="qp" onclick="qfill('e_verlevel','REJECTED')" style="background:#f8d7da;color:#721c24;border-color:#f5c6cb">❌ Rejected</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB: Custom Fields -->
+          <div class="fpanel" id="fp-custom">
+            <div class="fsec">
+              <div class="fsec-title">Extra Fields (from Amazon or manual)</div>
+              <div class="custom-fields" id="customFieldsWrap"></div>
+              <button class="btn btn-ghost" onclick="addCustomField()" style="margin-top:8px;font-size:0.78rem;">＋ Add Custom Field</button>
+            </div>
+          </div>
+
+        </div><!-- /field-panels -->
+      </div><!-- /m-right -->
+    </div><!-- /m-body -->
+
+    <div class="m-foot">
+      <span class="hint">⌨️ <kbd>Esc</kbd> cancel · <kbd>Ctrl+S</kbd> save · <kbd>←/→</kbd> navigate</span>
+      <button class="btn btn-ghost" onclick="closeModal()">Cancel</button>
+      <button class="btn btn-blue" onclick="saveModal()">💾 Save Changes</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== PIPELINE MODAL ===== -->
+<div class="pipe-overlay" id="pipeOverlay" onclick="if(event.target===this)closePipeline()">
+  <div class="pipe-box">
+    <h2>🔄 Run Pipeline</h2>
+    <div class="fgrp" style="margin-bottom:10px"><label>Input File</label><input type="text" id="piInput" value="./final_catalog.json"></div>
+    <div class="fgrp" style="margin-bottom:10px"><label>Output File</label><input type="text" id="piOutput" value="./enriched.json"></div>
+    <div class="fgrp" style="margin-bottom:14px"><label>Limit (0 = all)</label><input type="number" id="piLimit" value="0" min="0"></div>
+    <div style="display:flex;gap:8px">
+      <button class="btn btn-blue" id="pipeRunBtn" onclick="runPipeline()">▶ Start</button>
+      <button class="btn btn-ghost" onclick="closePipeline()">Cancel</button>
+    </div>
+    <div class="pipe-stat" id="pipeStatus">Initializing…</div>
+  </div>
+</div>
+
+<!-- ===== GITHUB CONFIG MODAL ===== -->
+<div class="pipe-overlay" id="ghConfigOverlay" style="z-index: 5000;" onclick="if(event.target===this)closeGhConfig()">
+  <div class="pipe-box">
+    <h2>⚙️ GitHub Configuration</h2>
+    <div class="fgrp" style="margin-bottom:10px"><label>Personal Access Token</label><input type="password" id="ghToken" placeholder="ghp_..."></div>
+    <div class="fgrp" style="margin-bottom:10px"><label>Owner</label><input type="text" id="ghOwner" placeholder="e.g. octocat"></div>
+    <div class="fgrp" style="margin-bottom:10px"><label>Repository</label><input type="text" id="ghRepo" placeholder="e.g. my-data-repo"></div>
+    <div class="fgrp" style="margin-bottom:14px"><label>File Path</label><input type="text" id="ghPath" placeholder="e.g. data/products.json"></div>
+    <div style="display:flex;gap:8px">
+      <button class="btn btn-blue" onclick="saveGhConfig()">💾 Save & Load</button>
+      <button class="btn btn-ghost" onclick="closeGhConfig()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== TOAST CONTAINER ===== -->
+<div class="toast-wrap" id="toastWrap"></div>
+
+<script>
+// ================================================================
+// QUICK-PICK DATA
+// ================================================================
+const BRANDS = ['BOSCH','DEWALT','STANLEY','INGCO','MAKITA','HILTI','BLACK+DECKER','SKIL','METABO','TAPARIA','HETTICH','HAFELE','BUILDSKILL','PIDILITE','Generic'];
+const CATEGORIES = ['Power Tools','Hand Tools','Drill Bits & Accessories','Cutting Tools & Blades','Fasteners','Furniture Hardware','Abrasives & Finishing','Adhesives & Sealants','Measuring & Marking Tools','Safety Equipment','Tool Accessories'];
+const SUBCATEGORY_MAP = {
+  'Power Tools':['Drills','Grinders','Circular Saws','Jigsaws','Sanders','Rotary Tools','Impact Drivers'],
+  'Hand Tools':['Hammers','Screwdrivers','Wrenches','Pliers','Chisels','Files','Clamps','Tape Measures'],
+  'Drill Bits & Accessories':['Twist Drill Bits','Masonry Bits','Wood Bits','Step Drill Bits','Hole Saws','SDS Bits'],
+  'Cutting Tools & Blades':['Circular Saw Blades','Hacksaw Blades','Jigsaw Blades','Cutting Discs','Reciprocating Blades'],
+  'Fasteners':['Wood Screws','Machine Screws','Bolts','Nuts','Washers','Anchors','Rivets','Nails'],
+  'Furniture Hardware':['Hinges','Handles','Drawer Slides','Locks','Shelf Supports','Connectors','Knobs'],
+  'Abrasives & Finishing':['Sandpaper','Grinding Wheels','Flap Discs','Wire Brushes','Polishing Pads'],
+  'Adhesives & Sealants':['Wood Adhesive','Epoxy','Silicone Sealant','Contact Cement','PU Adhesive'],
+  'Measuring & Marking Tools':['Tape Measure','Spirit Level','Try Square','Vernier Caliper','Marking Gauge'],
+  'Safety Equipment':['Gloves','Safety Goggles','Helmets','Dust Masks','Ear Muffs','Safety Boots'],
+  'Tool Accessories':['Bit Sets','Socket Sets','Extension Bars','Tool Bags','Toolboxes','Chuck Keys'],
+};
+const TYPE_CHIPS_MAP = {
+  'Drills':['Corded Impact Drill','Cordless Drill','Hammer Drill','Rotary Hammer'],
+  'Hammers':['Claw Hammer','Ball Peen Hammer','Club Hammer','Sledge Hammer'],
+  'Wood Screws':['Countersunk Screw','Pan Head Screw','Hex Head Screw'],
+  'Hinges':['Concealed Hinge','Butt Hinge','Pivot Hinge','Soft Close Hinge'],
+  'Grinders':['Angle Grinder','Bench Grinder','Die Grinder'],
+};
+
+// ================================================================
+// GLOBALS
+// ================================================================
+let allProducts = [], filteredProducts = [], selectedIds = new Set();
+let curEditId = null, curView = 'grid', curPage = 1;
+let undoStack = [], redoStack = [];
+let curTab = 'basic', curCatFilter = '';
+let autoSaveInterval = null;
+let currentGhSha = null;
+let sortCol = null, sortDir = 1;
+let customFieldKeys = []; // for current editing product
+let previewDebounce = null;
+
+// ================================================================
+// HELPERS
+// ================================================================
+const getProductUrl = p => p.productUrl || p._urlGenerated || (p.productId?.length===10 ? `https://www.amazon.in/dp/${p.productId}` : '#');
+const pageSize = () => parseInt(document.getElementById('pgSize').value) || 50;
+const $ = id => document.getElementById(id);
+const gv = id => ($( id)?.value ?? '');
+const sv = (id, val) => { const el = $(id); if (el) el.value = val ?? ''; };
+const domQ = (sel) => document.querySelectorAll(sel);
+
+// ================================================================
+// TOAST
+// ================================================================
+function toast(msg, type = 'i', dur = 3500) {
+  const icons = {s:'✅',e:'❌',i:'ℹ️',w:'⚠️'};
+  const el = document.createElement('div');
+  el.className = `toast ${type}`;
+  el.innerHTML = `<span>${icons[type]||'ℹ️'}</span><span>${msg}</span>`;
+  $('toastWrap').appendChild(el);
+  requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('show')));
+  setTimeout(() => { el.classList.remove('show'); setTimeout(() => el.remove(), 350); }, dur);
+}
+
+// ================================================================
+// UNDO / REDO
+// ================================================================
+function pushUndo(label) {
+  undoStack.push({ label, snap: JSON.parse(JSON.stringify(allProducts)) });
+  if (undoStack.length > 20) undoStack.shift();
+  redoStack = [];
+  updateUndoUI();
+}
+function undo() {
+  if (!undoStack.length) return;
+  const e = undoStack.pop();
+  redoStack.push({ label: e.label, snap: JSON.parse(JSON.stringify(allProducts)) });
+  allProducts = e.snap;
+  refreshAll();
+  updateUndoUI();
+  toast(`↩ ${e.label}`, 'i');
+}
+function redo() {
+  if (!redoStack.length) return;
+  const e = redoStack.pop();
+  undoStack.push({ label: e.label, snap: JSON.parse(JSON.stringify(allProducts)) });
+  allProducts = e.snap;
+  refreshAll();
+  updateUndoUI();
+  toast(`↪ ${e.label}`, 'i');
+}
+function updateUndoUI() {
+  const btn = $('undoBtn');
+  btn.disabled = !undoStack.length;
+  const badge = $('uBadge');
+  badge.style.display = undoStack.length ? 'inline' : 'none';
+  badge.textContent = undoStack.length;
+}
+
+// ================================================================
+// AUTO-SAVE
+// ================================================================
+function startAutoSave() {
+  clearInterval(autoSaveInterval);
+  autoSaveInterval = setInterval(() => {
+    const b = $('asBadge');
+    b.textContent = '💾 Saving…'; b.className = 'autosave-txt';
+    try {
+      localStorage.setItem('localProducts', JSON.stringify(allProducts));
+      const t = new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
+      b.textContent = `✅ Local Save ${t}`; b.className = 'autosave-txt ok';
+      setTimeout(() => { b.textContent = '💾 Auto-save on'; b.className = 'autosave-txt'; }, 4000);
+    } catch { b.textContent = '⚠️ Save failed'; }
+  }, 120000);
+}
+
+// ================================================================
+// GITHUB CONFIG & LOAD DATA
+// ================================================================
+function loadGhConfig() {
+  const conf = localStorage.getItem('ghConfig');
+  if (conf) {
+    const c = JSON.parse(conf);
+    if(c.token && c.owner && c.repo && c.path) return c;
+  }
+  return null;
+}
+function openConfigModal() {
+  const c = loadGhConfig();
+  if (c) {
+    $('ghToken').value = c.token;
+    $('ghOwner').value = c.owner;
+    $('ghRepo').value = c.repo;
+    $('ghPath').value = c.path;
+  }
+  $('ghConfigOverlay').classList.add('open');
+}
+function closeGhConfig() { $('ghConfigOverlay').classList.remove('open'); }
+function saveGhConfig() {
+  const token = $('ghToken').value.trim();
+  const owner = $('ghOwner').value.trim();
+  const repo = $('ghRepo').value.trim();
+  const path = $('ghPath').value.trim();
+  if (!token || !owner || !repo || !path) return toast('All fields required', 'e');
+  localStorage.setItem('ghConfig', JSON.stringify({ token, owner, repo, path }));
+  closeGhConfig();
+  loadData();
+}
+
+async function loadData() {
+  const c = loadGhConfig();
+  if (!c) {
+    openConfigModal();
+    return;
+  }
+  $('repoBadge').textContent = `${c.owner}/${c.repo}`;
+  try {
+    const res = await fetch(`https://api.github.com/repos/${c.owner}/${c.repo}/contents/${c.path}`, {
+      headers: { 'Authorization': `Bearer ${c.token}`, 'Accept': 'application/vnd.github.v3+json' }
+    });
+    if (!res.ok) throw new Error(await res.text());
+    const data = await res.json();
+    currentGhSha = data.sha;
+    const content = decodeURIComponent(escape(atob(data.content)));
+    allProducts = JSON.parse(content);
+    
+    // Check for local unsaved changes
+    const local = localStorage.getItem('localProducts');
+    if (local && confirm('Found unsaved local changes. Do you want to load them? (Cancel to load from GitHub)')) {
+      allProducts = JSON.parse(local);
+    }
+    
+    $('pCount').textContent = `${allProducts.length} products`;
+    refreshAll();
+    startAutoSave();
+    toast('Loaded successfully', 's');
+  } catch(e) {
+    toast('Failed to load from GitHub', 'e');
+    console.error(e);
+  }
+}
+
+// ================================================================
+// REFRESH ALL (stats + sidebar + filters + render)
+// ================================================================
+function refreshAll() {
+  updateStats();
+  buildCategorySidebar();
+  applyFilters();
+}
+
+// ================================================================
+// STATS & PROGRESS
+// ================================================================
+function updateStats() {
+  const total = allProducts.length;
+  const v = allProducts.filter(p => p._verification?.level === 'VERIFIED').length;
+  const h = allProducts.filter(p => p._verification?.level === 'HIGH_CONFIDENCE').length;
+  const r = allProducts.filter(p => p._verification?.level === 'REVIEW_REQUIRED').length;
+  const x = allProducts.filter(p => p._verification?.level === 'REJECTED').length;
+  const imgs = allProducts.filter(p => p.images?.length > 0 || p.imageUrl).length;
+  $('sTotal').textContent = total; $('sVerified').textContent = v;
+  $('sReview').textContent = r + h; $('sRejected').textContent = x; $('sImages').textContent = imgs;
+  if (total > 0) {
+    const pct = n => ((n/total)*100).toFixed(1) + '%';
+    $('psV').style.width = pct(v); $('psH').style.width = pct(h);
+    $('psR').style.width = pct(r); $('psX').style.width = pct(x);
+    $('progLbl').textContent = `${v} / ${total} Verified`;
+  }
+}
+
+// ================================================================
+// CATEGORY SIDEBAR
+// ================================================================
+function buildCategorySidebar() {
+  const catCounts = {};
+  allProducts.forEach(p => { const c = p.category || 'Uncategorized'; catCounts[c] = (catCounts[c]||0)+1; });
+  const sorted = Object.entries(catCounts).sort((a,b) => b[1]-a[1]);
+  const list = $('catList');
+  list.innerHTML = `
+    <div class="cat-item ${curCatFilter===''?'active':''}" onclick="setCatFilter('')">
+      <span class="cat-name">🗂 All Products</span>
+      <span class="cat-count">${allProducts.length}</span>
+    </div>` +
+    sorted.map(([cat, cnt]) => `
+    <div class="cat-item ${curCatFilter===cat?'active':''}" onclick="setCatFilter('${cat.replace(/'/g,"\\'")}')">
+      <span class="cat-name">${cat}</span>
+      <span class="cat-count">${cnt}</span>
+      <button class="cat-rename" onclick="event.stopPropagation();renameCategory('${cat.replace(/'/g,"\\'")}')">✎</button>
+    </div>`).join('');
+
+  // Populate bulk category dropdown
+  const bk = $('bkCat');
+  const cur = bk.value;
+  bk.innerHTML = '<option value="">Change Category…</option>';
+  sorted.forEach(([cat]) => { const o = document.createElement('option'); o.value=cat; o.textContent=cat; bk.appendChild(o); });
+  if (cur) bk.value = cur;
+}
+
+function setCatFilter(cat) {
+  curCatFilter = cat;
+  curPage = 1;
+  buildCategorySidebar();
+  applyFilters();
+}
+
+function addCategory() {
+  const name = prompt('New category name:');
+  if (!name?.trim()) return;
+  // Just add it to quick-picks; actual products must be reassigned via editor
+  CATEGORIES.push(name.trim());
+  toast(`Category "${name}" added — assign products to it via the editor`, 's');
+}
+
+function renameCategory(oldName) {
+  const newName = prompt(`Rename "${oldName}" to:`, oldName);
+  if (!newName?.trim() || newName === oldName) return;
+  pushUndo(`Rename category: ${oldName} → ${newName}`);
+  allProducts.forEach(p => { if (p.category === oldName) p.category = newName; });
+  if (curCatFilter === oldName) curCatFilter = newName;
+  refreshAll();
+  sendToServer();
+  toast(`Renamed "${oldName}" → "${newName}"`, 's');
+}
+
+// ================================================================
+// SCAN CATEGORIES
+// ================================================================
+const KEYWORD_CATS = [
+  { cat:'Power Tools', kw:['drill','grinder','saw','sander','jigsaw','router','impact','rotary','circular'] },
+  { cat:'Hand Tools', kw:['hammer','wrench','screwdriver','plier','chisel','clamp','mallet','spanner'] },
+  { cat:'Drill Bits & Accessories', kw:['drill bit','masonry bit','step drill','hole saw','sds bit','chuck'] },
+  { cat:'Cutting Tools & Blades', kw:['blade','cutting disc','abrasive disc','hacksaw blade','jigsaw blade'] },
+  { cat:'Fasteners', kw:['screw','bolt','nut','washer','anchor','rivet','nail','dowel','rawl'] },
+  { cat:'Furniture Hardware', kw:['hinge','handle','drawer','slide','knob','latch','cabinet fitting'] },
+  { cat:'Abrasives & Finishing', kw:['sandpaper','abrasive','grinding wheel','flap disc','emery','grit'] },
+  { cat:'Adhesives & Sealants', kw:['adhesive','glue','sealant','silicone','epoxy','fevicol','putty'] },
+  { cat:'Measuring & Marking Tools', kw:['tape','measure','level','square','caliper','marker','ruler'] },
+];
+
+function detectCat(name) {
+  const lower = (name||'').toLowerCase();
+  for (const { cat, kw } of KEYWORD_CATS) {
+    if (kw.some(k => lower.includes(k))) return cat;
+  }
+  return null;
+}
+
+function scanCategories() {
+  const issues = allProducts.filter(p => {
+    const suggested = detectCat(p.name);
+    return suggested && suggested !== p.category;
+  });
+  const badge = $('scanBadge');
+  if (issues.length === 0) { badge.className = 'scan-badge'; toast('No category issues found!', 's'); return; }
+  badge.className = 'scan-badge show';
+  badge.textContent = `⚠️ ${issues.length} possible wrong categories`;
+  badge.onclick = () => showScanResults(issues);
+  toast(`${issues.length} products may be miscategorized — click badge to review`, 'w', 6000);
+}
+
+function showScanResults(issues) {
+  const lines = issues.slice(0,20).map(p => {
+    const sug = detectCat(p.name);
+    return `"${p.name?.substring(0,40)}" → currently: ${p.category} | Suggested: ${sug}`;
+  }).join('\n');
+  if (confirm(`${issues.length} products may be miscategorized:\n\n${lines}\n\nAuto-fix all?`)) {
+    pushUndo(`Auto-fix ${issues.length} categories`);
+    issues.forEach(p => { const sug = detectCat(p.name); if (sug) p.category = sug; });
+    refreshAll(); sendToServer();
+    toast(`Fixed ${issues.length} categories`, 's');
+  }
+}
+
+// ================================================================
+// FILTER, SORT & RENDER
+// ================================================================
+function applyFilters() {
+  const search = $('search').value.toLowerCase();
+  const ver = $('verFilter').value;
+  const flag = $('flagFilter').value;
+
+  filteredProducts = allProducts.filter(p => {
+    const sm = !search || [p.name,p.brand,p.productId,p.category].some(v => v?.toLowerCase().includes(search));
+    const cm = !curCatFilter || p.category === curCatFilter;
+    const vm = !ver || p._verification?.level === ver;
+    const fm = !flag || p._flags?.includes(flag);
+    return sm && cm && vm && fm;
+  });
+
+  if (sortCol) {
+    filteredProducts.sort((a,b) => {
+      const av = getDeep(a, sortCol), bv = getDeep(b, sortCol);
+      if (typeof av === 'number' && typeof bv === 'number') return sortDir * (av - bv);
+      return sortDir * String(av||'').localeCompare(String(bv||''));
+    });
+  }
+
+  curPage = 1;
+  $('shownBadge').textContent = `${filteredProducts.length} shown`;
+  renderProducts();
+}
+
+function getDeep(obj, path) { return path.split('.').reduce((o,k) => o?.[k], obj); }
+
+function sortBy(col) { if (sortCol===col) sortDir*=-1; else { sortCol=col; sortDir=1; } applyFilters(); }
+
+// ================================================================
+// RENDER
+// ================================================================
+function renderProducts() {
+  const area = $('productArea');
+  const ps = pageSize();
+  const total = filteredProducts.length;
+  const totalPgs = Math.max(1, Math.ceil(total/ps));
+  if (curPage > totalPgs) curPage = totalPgs;
+  const sliced = filteredProducts.slice((curPage-1)*ps, curPage*ps);
+
+  if (curView === 'grid') {
+    area.innerHTML = sliced.length
+      ? `<div class="product-grid">${sliced.map(createCard).join('')}</div>`
+      : `<div class="product-grid"><div class="empty"><div class="ei">📭</div><p>No products match filters.</p></div></div>`;
+  } else {
+    area.innerHTML = createTable(sliced);
+  }
+  renderPagination(totalPgs, total, ps);
+  updateBulkBar();
+}
+
+function createCard(p) {
+  const level = p._verification?.level || 'UNKNOWN';
+  const grade = p._quality?.grade || 'D';
+  const flags = (p._flags||[]).map(f=>`<span class="flag ${f==='Duplicate'?'dup':''}">${f}</span>`).join('');
+  const imgs = p.images||[];
+  const thumb = imgs[0]||p.imageUrl||'';
+  const pId = (p.productId||'').replace(/'/g,"&#39;");
+  const sel = selectedIds.has(p.productId);
+  const url = getProductUrl(p);
+  const price = p.price ? `₹${Number(p.price).toLocaleString()}` : 'N/A';
+  const mrp = p.mrp && p.mrp > p.price ? `₹${Number(p.mrp).toLocaleString()}` : '';
+  return `
+  <div class="pcard ${sel?'sel':''}" data-id="${pId}">
+    <input type="checkbox" class="pcard-chk" ${sel?'checked':''} onclick="event.stopPropagation();toggleSel('${pId}')">
+    <div class="pcard-img" onclick="toggleSel('${pId}')">
+      ${thumb?`<img src="${thumb}" loading="lazy" onerror="this.style.display='none'">`:''}<span class="no-img" style="${thumb?'display:none':''}">📷</span>
+      ${imgs.length>1?`<span class="img-cnt">📸 ${imgs.length}</span>`:''}
+    </div>
+    <div class="pcard-body">
+      <div class="pc-title">${p.name||'Unnamed'}</div>
+      <div class="pc-brand">${p.brand||'Unknown'}</div>
+      <div><span class="pc-price">${price}</span>${mrp?`<span class="pc-mrp">${mrp}</span>`:''}</div>
+      <div class="pc-meta">
+        <span class="vbadge ${level}">${level}</span>
+        <span class="gbadge ${grade}">Grade ${grade}</span>
+      </div>
+      <div class="flags">${flags}</div>
+      <div class="pc-actions">
+        <a href="${url}" target="_blank" class="btn-amz">🔗 Amazon</a>
+        <button class="btn-edt" onclick="event.stopPropagation();openModal('${pId}')">✎ Edit</button>
+        ${level!=='VERIFIED'?`<button class="btn-qv" onclick="event.stopPropagation();quickVerify('${pId}')">✅</button>`:''}
+        <button class="btn-rs" onclick="event.stopPropagation();quickRandomStock('${pId}')">🎲</button>
+      </div>
+      <div class="pc-id">${p.productId||''}</div>
+    </div>
+  </div>`;
+}
+
+function createTable(products) {
+  const cols = [
+    {key:'name',lbl:'Name'},{key:'brand',lbl:'Brand'},{key:'category',lbl:'Category'},
+    {key:'price',lbl:'Price'},{key:'mrp',lbl:'MRP'},{key:'stock_quantity',lbl:'Stock'},
+    {key:'warranty',lbl:'Warranty'},{key:'status',lbl:'Status'},
+    {key:'_verification.level',lbl:'Verification'},
+  ];
+  const si = c => sortCol===c?(sortDir===1?' ▲':' ▼'):'';
+  let html = `<div class="table-wrap"><table><thead><tr>
+    <th><input type="checkbox" onchange="toggleAll(event)"></th><th>Img</th>
+    ${cols.map(c=>`<th class="${['name','brand','category','price','mrp','stock_quantity'].includes(c.key)?'sort':''}" onclick="${['name','brand','category','price','mrp','stock_quantity'].includes(c.key)?`sortBy('${c.key}')`:''}">${c.lbl}${si(c.key)}</th>`).join('')}
+    <th>Flags</th><th>Link</th><th>Actions</th>
+  </tr></thead><tbody>`;
+  products.forEach(p => {
+    const level = p._verification?.level||'UNKNOWN';
+    const flags = (p._flags||[]).map(f=>`<span class="flag ${f==='Duplicate'?'dup':''}">${f}</span>`).join(' ');
+    const thumb = (p.images||[])[0]||p.imageUrl||'';
+    const pId = (p.productId||'').replace(/'/g,"&#39;");
+    const sel = selectedIds.has(p.productId);
+    html += `<tr class="${sel?'sel-row':''}" data-id="${pId}">
+      <td onclick="event.stopPropagation()"><input type="checkbox" ${sel?'checked':''} onchange="toggleSel('${pId}')"></td>
+      <td>${thumb?`<img src="${thumb}" class="thumb-sm" onerror="this.style.display='none'">`:''}</td>
+      ${inlineCell(pId,'name',p.name,'text')}
+      ${inlineCell(pId,'brand',p.brand,'text')}
+      ${inlineCell(pId,'category',p.category,'text')}
+      ${inlineCell(pId,'price',p.price,'number')}
+      ${inlineCell(pId,'mrp',p.mrp,'number')}
+      ${inlineCell(pId,'stock_quantity',p.stock_quantity,'number')}
+      ${inlineCell(pId,'warranty',p.warranty,'text')}
+      ${inlineCell(pId,'status',p.status,'sel-status')}
+      <td><span class="vbadge ${level}">${level}</span></td>
+      <td>${flags}</td>
+      <td><a href="${getProductUrl(p)}" target="_blank" style="color:#0984e3">🔗</a></td>
+      <td style="white-space:nowrap">
+        <button onclick="openModal('${pId}')" style="background:#0984e3;color:white;border:none;padding:3px 8px;border-radius:5px;cursor:pointer;font-size:0.73rem">✎</button>
+        ${level!=='VERIFIED'?`<button onclick="quickVerify('${pId}')" style="background:#00b894;color:white;border:none;padding:3px 8px;border-radius:5px;cursor:pointer;font-size:0.73rem;margin-left:3px">✅</button>`:''}
+        <button onclick="quickRandomStock('${pId}')" style="background:#f0e6ff;color:#6c5ce7;border:none;padding:3px 8px;border-radius:5px;cursor:pointer;font-size:0.73rem;margin-left:3px">🎲</button>
+      </td>
+    </tr>`;
+  });
+  return html + '</tbody></table></div>';
+}
+
+function inlineCell(pId, field, val, type) {
+  return `<td><div class="ecell" ondblclick="startInlineEdit(this,'${pId}','${field}','${type}')">${val!=null?val:''}</div></td>`;
+}
+
+function startInlineEdit(cell, pId, field, type) {
+  if (cell.querySelector('input,select')) return;
+  const p = allProducts.find(x=>x.productId===pId); if (!p) return;
+  const cur = getDeep(p, field);
+  let el;
+  if (type === 'sel-status') {
+    el = document.createElement('select');
+    ['Active','Out of Stock','Discontinued'].forEach(v=>{ const o=document.createElement('option'); o.value=v; o.textContent=v; if(v===cur)o.selected=true; el.appendChild(o); });
+  } else {
+    el = document.createElement('input'); el.type=type; el.value=cur!=null?cur:'';
+  }
+  const orig = cell.textContent; cell.textContent=''; cell.appendChild(el); el.focus();
+  const save = () => { pushUndo(`Edit ${field} on ${pId}`); p[field] = type==='number'?parseFloat(el.value):el.value; sendToServer(); renderProducts(); };
+  const cancel = () => { cell.textContent = orig; };
+  el.addEventListener('blur', save);
+  el.addEventListener('keydown', e => { if(e.key==='Enter'){e.preventDefault();save();} if(e.key==='Escape'){e.preventDefault();el.removeEventListener('blur',save);cancel();} });
+}
+
+// ================================================================
+// PAGINATION
+// ================================================================
+function renderPagination(totalPgs, total, ps) {
+  const ctrl = $('pagCtrl');
+  if (totalPgs <= 1) { ctrl.innerHTML=''; return; }
+  const start=(curPage-1)*ps+1, end=Math.min(curPage*ps,total);
+  let html=`<span class="pag-info">${start}–${end} of ${total}</span>`;
+  html+=`<button onclick="goPage(1)" ${curPage===1?'disabled':''}>«</button>`;
+  html+=`<button onclick="goPage(${curPage-1})" ${curPage===1?'disabled':''}>‹</button>`;
+  let sp=Math.max(1,curPage-2), ep=Math.min(totalPgs,sp+4);
+  if(ep-sp<4) sp=Math.max(1,ep-4);
+  for(let i=sp;i<=ep;i++) html+=`<button class="${i===curPage?'cur':''}" onclick="goPage(${i})">${i}</button>`;
+  html+=`<button onclick="goPage(${curPage+1})" ${curPage===totalPgs?'disabled':''}>›</button>`;
+  html+=`<button onclick="goPage(${totalPgs})" ${curPage===totalPgs?'disabled':''}>»</button>`;
+  html+=`<input class="pag-jump" type="number" min="1" max="${totalPgs}" value="${curPage}" onchange="goPage(parseInt(this.value))">`;
+  ctrl.innerHTML = html;
+}
+function goPage(n) {
+  const ps=pageSize(), tp=Math.max(1,Math.ceil(filteredProducts.length/ps));
+  curPage=Math.max(1,Math.min(n,tp));
+  renderProducts();
+  document.querySelector('.product-scroll').scrollTop=0;
+}
+
+// ================================================================
+// VIEW TOGGLE
+// ================================================================
+function setView(v) {
+  curView=v;
+  domQ('.view-btns button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));
+  renderProducts();
+}
+
+// ================================================================
+// SELECTION & BULK
+// ================================================================
+function toggleSel(id) { if(selectedIds.has(id))selectedIds.delete(id);else selectedIds.add(id); renderProducts(); }
+function toggleAll(e) { const ps=pageSize(); const sl=filteredProducts.slice((curPage-1)*ps,curPage*ps); sl.forEach(p=>{ if(e.target.checked)selectedIds.add(p.productId); else selectedIds.delete(p.productId); }); renderProducts(); }
+function clearSel() { selectedIds.clear(); renderProducts(); }
+function updateBulkBar() { const b=$('bulkBar'); $('selCount').textContent=selectedIds.size; selectedIds.size>0?b.classList.add('on'):b.classList.remove('on'); }
+
+function bulkSetCategory() {
+  const cat = $('bkCat').value; if(!cat){toast('Select a category','w');return;}
+  pushUndo(`Bulk category → ${cat} (${selectedIds.size})`);
+  allProducts.forEach(p=>{ if(selectedIds.has(p.productId))p.category=cat; });
+  selectedIds.clear(); refreshAll(); sendToServer(); toast(`Category → "${cat}"`, 's');
+}
+function bulkSetField() {
+  const field=$('bkField').value, val=$('bkVal').value.trim();
+  if(!field||!val){toast('Choose field and enter value','w');return;}
+  pushUndo(`Bulk ${field}="${val}" (${selectedIds.size})`);
+  allProducts.forEach(p=>{ if(selectedIds.has(p.productId))p[field]=val; });
+  selectedIds.clear(); applyFilters(); sendToServer(); toast(`${field} = "${val}" set`, 's');
+}
+function bulkWarranty(w) {
+  if(!selectedIds.size){toast('Select products first','w');return;}
+  pushUndo(`Bulk warranty → ${w}`);
+  allProducts.forEach(p=>{ if(selectedIds.has(p.productId))p.warranty=w; });
+  selectedIds.clear(); applyFilters(); sendToServer(); toast(`Warranty → "${w}"`, 's');
+}
+function bulkVerify(level) {
+  const n=selectedIds.size; if(!n){toast('Select products first','w');return;}
+  pushUndo(`Bulk ${level} (${n})`);
+  allProducts.forEach(p=>{ if(selectedIds.has(p.productId)){ if(!p._verification)p._verification={}; p._verification.level=level; } });
+  selectedIds.clear(); refreshAll(); sendToServer(); toast(`${n} → ${level}`, 's');
+}
+function bulkRandomStock() {
+  if(!selectedIds.size){toast('Select products first','w');return;}
+  pushUndo(`Bulk random stock (${selectedIds.size})`);
+  allProducts.forEach(p=>{ if(selectedIds.has(p.productId)){ p.stock_quantity=Math.floor(Math.random()*46)+5; p.status='Active'; } });
+  selectedIds.clear(); applyFilters(); sendToServer(); toast('Random stock assigned', 's');
+}
+function quickVerify(id) { const p=allProducts.find(x=>x.productId===id); if(!p)return; pushUndo(`Verify ${id}`); if(!p._verification)p._verification={}; p._verification.level='VERIFIED'; applyFilters(); updateStats(); sendToServer(); toast(`✅ "${p.name||id}" verified`, 's'); }
+function quickRandomStock(id) { const p=allProducts.find(x=>x.productId===id); if(!p)return; pushUndo(`Random stock ${id}`); p.stock_quantity=Math.floor(Math.random()*46)+5; p.status='Active'; applyFilters(); sendToServer(); toast(`🎲 Stock: ${p.stock_quantity}`, 's'); }
+
+// ================================================================
+// DUPLICATE DETECTION
+// ================================================================
+function detectDupes() {
+  const idCnt={};
+  allProducts.forEach(p=>{ idCnt[p.productId]=(idCnt[p.productId]||0)+1; });
+  pushUndo('Detect duplicates');
+  let n=0;
+  allProducts.forEach(p=>{ if(!p._flags)p._flags=[]; if(idCnt[p.productId]>1&&!p._flags.includes('Duplicate')){p._flags.push('Duplicate');n++;} });
+  applyFilters(); sendToServer();
+  toast(n>0?`Found ${n} duplicates — filter by Duplicate`:'No duplicates found', n>0?'w':'s');
+}
+
+// ================================================================
+// EDITOR MODAL
+// ================================================================
+function openModal(id) {
+  curEditId=id;
+  const p=allProducts.find(x=>x.productId===id); if(!p)return;
+  document.getElementById('moverlay').classList.add('open');
+  populateModal(p);
+  const idx=filteredProducts.findIndex(x=>x.productId===id);
+  $('mPos').textContent=idx>=0?`${idx+1}/${filteredProducts.length}`:'';
+  $('mPrev').disabled=idx<=0; $('mNext').disabled=idx<0||idx>=filteredProducts.length-1;
+}
+
+function populateModal(p) {
+  // Basic
+  sv('e_pid',p.productId); sv('e_sku',p.sku); sv('e_name',p.name); sv('e_brand',p.brand);
+  sv('e_category',p.category); sv('e_subcategory',p.subcategory); sv('e_type',p.type);
+  sv('e_desc',p.description); sv('e_usage',p.usage); sv('e_warranty',p.warranty);
+  // Price
+  sv('e_price',p.price); sv('e_mrp',p.mrp); sv('e_stock',p.stock_quantity); sv('e_status',p.status||'Active');
+  const disc = p.price&&p.mrp&&p.mrp>p.price ? Math.round(((p.mrp-p.price)/p.mrp)*100) : 0;
+  sv('e_disc',disc);
+  // Specs
+  sv('e_material',p.material); sv('e_size',p.size); sv('e_packSize',p.packSize); sv('e_finish',p.finish);
+  sv('e_weight',p.weight); sv('e_dimensions',p.dimensions);
+  sv('e_powerSource',p.powerSource); sv('e_voltage',p.voltage); sv('e_rpm',p.rpm);
+  sv('e_aboutItem',p.aboutItem); sv('e_boxContents',p.boxContents);
+  // Quality
+  if(p._verification) sv('e_verlevel',p._verification.level||'UNKNOWN');
+  $('flagInfoBox').innerHTML=`
+    <div class="fi-row"><strong>Flags:</strong> ${(p._flags||[]).map(f=>`<span class="flag ${f==='Duplicate'?'dup':''}">${f}</span>`).join(' ')||'None'}</div>
+    <div class="fi-row"><strong>Verification:</strong> ${p._verification?.level||'N/A'} (Score: ${p._verification?.score||0})</div>
+    <div class="fi-row"><strong>Quality Grade:</strong> ${p._quality?.grade||'?'} (${p._quality?.score||0}/100)</div>
+    <div class="fi-row"><strong>Completeness:</strong> ${p._completeness||0}%</div>
+    <div class="fi-row"><strong>Availability:</strong> ${p._availability||'UNKNOWN'}</div>
+    ${p._mrpCorrected?'<div class="fi-row" style="color:#e17055"><strong>⚠️ MRP was auto-corrected by pipeline</strong></div>':''}`;
+
+  // Custom fields (any extra key not in known list)
+  const KNOWN = new Set(['productId','name','brand','category','subcategory','type','description','usage','warranty','sku','price','mrp','discount_percent','stock_quantity','status','material','size','packSize','finish','weight','dimensions','powerSource','voltage','rpm','aboutItem','boxContents','imageUrl','productUrl','source','scrapedAt','created_at','updated_at','thumbnail','images','imageCount','specifications','features','videos','_sources','_inferredBrand','_missingFields','_isComplete','_imputedFrom','_confidence','_verification','_availability','_flags','_completeness','_quality','_urlGenerated','_urlMethod','_scraped','_mrpCorrected','_nameAutoFixed']);
+  customFieldKeys = Object.keys(p).filter(k=>!KNOWN.has(k));
+  const cfWrap = $('customFieldsWrap');
+  cfWrap.innerHTML = customFieldKeys.map(k=>`
+    <div class="cf-row">
+      <input type="text" value="${k}" disabled style="max-width:130px;background:#f8f9fa">
+      <input type="text" id="cf_${k}" value="${typeof p[k]==='object'?JSON.stringify(p[k]):p[k]||''}">
+      <button class="cf-rm" onclick="removeCf('${k}')">✕</button>
+    </div>`).join('');
+
+  // Images
+  renderModalImages(p);
+  // Compare
+  populateCompare(p);
+  // Quick-picks
+  buildQuickPicks(p);
+  // Live preview
+  livePreview();
+}
+
+function renderModalImages(p) {
+  const imgs = p.images||[];
+  $('imgCountLbl').textContent = imgs.length;
+  $('imgGrid').innerHTML = imgs.map((url,i)=>`
+    <div class="img-thumb ${i===0?'primary':''}">
+      <img src="${url}" loading="lazy" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22100%22 height=%22100%22/%3E%3C/svg%3E'">
+      <button class="rm-btn" onclick="removeImg(${i})">✕</button>
+      ${i===0?'<span class="pri-lbl">MAIN</span>':''}
+    </div>`).join('') || '<div style="grid-column:1/-1;text-align:center;color:#adb5bd;font-size:0.78rem;padding:10px">No images yet</div>';
+}
+
+function populateCompare(p) {
+  const url = getProductUrl(p);
+  $('cmpLink').href=url;
+  const sc = p._scraped||{};
+  $('cmpYN').textContent=p.name||'—';
+  $('cmpAN').textContent=sc.title||'—';
+  $('cmpAN').className=`cmp-val${sc.title&&sc.title!==p.name?' diff':''}`;
+  $('cmpYB').textContent=p.brand||'—';
+  $('cmpAB').textContent=sc.brand||'—';
+  $('adoptBtn').style.display=(sc.title&&sc.title!==p.name)?'inline-block':'none';
+}
+
+function buildQuickPicks(p) {
+  // Brand
+  $('qp_brand').innerHTML=BRANDS.map(b=>`<span class="qp" onclick="qfill('e_brand','${b}');livePreview()">${b}</span>`).join('');
+  // Categories from data
+  const cats=[...new Set(allProducts.map(x=>x.category).filter(Boolean))].sort();
+  $('qp_category').innerHTML=cats.map(c=>`<span class="qp" onclick="qfill('e_category','${c.replace(/'/g,"\\'")}'.trim());updateSubcatPicks();livePreview()">${c}</span>`).join('');
+  // Subcategory (based on current category)
+  updateSubcatPicks(p.category);
+  // Type
+  const sub=p.subcategory||'';
+  const types=TYPE_CHIPS_MAP[sub]||[];
+  $('qp_type').innerHTML=types.map(t=>`<span class="qp" onclick="qfill('e_type','${t}');livePreview()">${t}</span>`).join('');
+}
+
+function updateSubcatPicks(cat) {
+  cat=cat||gv('e_category');
+  const subs=SUBCATEGORY_MAP[cat]||[];
+  $('qp_subcategory').innerHTML=subs.map(s=>`<span class="qp" onclick="qfill('e_subcategory','${s}')">${s}</span>`).join('');
+}
+
+function qfill(id, val) { sv(id, val); livePreview(); }
+
+function computeMrp(mult) {
+  const price=parseFloat(gv('e_price'))||0;
+  if(!price){toast('Enter price first','w');return;}
+  sv('e_mrp', Math.round(price*mult/10)*10);
+  livePreview();
+}
+
+function randomStock() { const s=Math.floor(Math.random()*46)+5; sv('e_stock',s); sv('e_status','Active'); livePreview(); }
+
+// ================================================================
+// LIVE PREVIEW (debounced)
+// ================================================================
+function livePreview() {
+  clearTimeout(previewDebounce);
+  previewDebounce = setTimeout(() => {
+    const name=gv('e_name'), brand=gv('e_brand'), price=gv('e_price'), mrp=gv('e_mrp');
+    const p=allProducts.find(x=>x.productId===curEditId);
+    const imgs=p?.images||[];
+    const thumb=imgs[0]||p?.imageUrl||'';
+    const img=$('prevImg'); const noImg=$('prevNoImg');
+    if(thumb){img.src=thumb;img.style.display='';noImg.style.display='none';}else{img.style.display='none';noImg.style.display='';}
+    $('prevTitle').textContent=name||'—';
+    $('prevBrand').textContent=brand||'—';
+    $('prevPrice').textContent=price?`₹${Number(price).toLocaleString()}`:'—';
+    $('prevMrp').textContent=mrp&&parseFloat(mrp)>parseFloat(price)?`₹${Number(mrp).toLocaleString()}`:'';
+    const level=gv('e_verlevel')||'UNKNOWN';
+    $('prevBadges').innerHTML=`<span class="vbadge ${level}" style="font-size:0.6rem">${level}</span>`;
+  }, 200);
+}
+
+// ================================================================
+// CUSTOM FIELDS
+// ================================================================
+function addCustomField() {
+  const key=prompt('Field name (e.g. powerSource, rpm):');
+  if(!key?.trim()||KNOWN_FIELDS.has(key))return;
+  customFieldKeys.push(key.trim());
+  const cfWrap=$('customFieldsWrap');
+  const row=document.createElement('div'); row.className='cf-row';
+  row.innerHTML=`<input type="text" value="${key}" disabled style="max-width:130px;background:#f8f9fa"><input type="text" id="cf_${key}" placeholder="Value…"><button class="cf-rm" onclick="this.parentElement.remove()">✕</button>`;
+  cfWrap.appendChild(row);
+  toast(`Field "${key}" added — fill value & save`, 'i');
+}
+const KNOWN_FIELDS = new Set(['productId','name','brand','category','subcategory','type','description','usage','warranty','sku','price','mrp','stock_quantity','status','material','size','packSize','finish']);
+function removeCf(key) { const el=$(`cf_${key}`); if(el)el.closest('.cf-row').remove(); customFieldKeys=customFieldKeys.filter(k=>k!==key); }
+
+// ================================================================
+// ADOPT AMAZON TITLE
+// ================================================================
+function adoptTitle() {
+  const p=allProducts.find(x=>x.productId===curEditId); if(!p)return;
+  const t=p._scraped?.title; if(!t)return;
+  sv('e_name',t); $('cmpYN').textContent=t; $('cmpAN').className='cmp-val'; $('adoptBtn').style.display='none'; livePreview();
+  toast('Amazon title adopted — save to confirm', 'i');
+}
+
+// ================================================================
+// IMAGES
+// ================================================================
+function addImg() {
+  const url=$('newImgUrl').value.trim(); if(!url)return;
+  const p=allProducts.find(x=>x.productId===curEditId); if(!p)return;
+  if(!p.images)p.images=[];
+  p.images.push(url); $('newImgUrl').value='';
+  renderModalImages(p); livePreview(); toast('Image added', 's');
+}
+function removeImg(idx) {
+  const p=allProducts.find(x=>x.productId===curEditId); if(!p||!p.images)return;
+  p.images.splice(idx,1); renderModalImages(p); livePreview(); toast('Image removed', 'i');
+}
+
+// ================================================================
+// SAVE MODAL
+// ================================================================
+function saveModal() {
+  const p=allProducts.find(x=>x.productId===curEditId); if(!p)return;
+  pushUndo(`Edit: ${p.name||curEditId}`);
+  const gvn=id=>{ const v=gv(id); return v!==''?v:null; };
+  p.sku=gvn('e_sku'); p.name=gvn('e_name'); p.brand=gvn('e_brand');
+  p.category=gvn('e_category'); p.subcategory=gvn('e_subcategory'); p.type=gvn('e_type');
+  p.description=gvn('e_desc'); p.usage=gvn('e_usage'); p.warranty=gvn('e_warranty');
+  p.price=parseFloat(gv('e_price'))||p.price; p.mrp=parseFloat(gv('e_mrp'))||p.mrp;
+  p.stock_quantity=parseInt(gv('e_stock'))||p.stock_quantity; p.status=gvn('e_status');
+  p.material=gvn('e_material'); p.size=gvn('e_size'); p.packSize=gvn('e_packSize'); p.finish=gvn('e_finish');
+  p.weight=gvn('e_weight'); p.dimensions=gvn('e_dimensions');
+  p.powerSource=gvn('e_powerSource'); p.voltage=gvn('e_voltage'); p.rpm=gvn('e_rpm');
+  p.aboutItem=gvn('e_aboutItem'); p.boxContents=gvn('e_boxContents');
+  if(gvn('e_verlevel')){ if(!p._verification)p._verification={}; p._verification.level=gv('e_verlevel'); }
+  // Custom fields
+  customFieldKeys.forEach(k=>{ const el=$(`cf_${k}`); if(el) p[k]=el.value; });
+  // New custom fields from DOM
+  $('customFieldsWrap').querySelectorAll('.cf-row').forEach(row=>{
+    const inputs=row.querySelectorAll('input[type="text"]');
+    if(inputs.length>=2&&!inputs[0].disabled){ const k=inputs[0].value.trim(); const v=inputs[1].value; if(k)p[k]=v; }
+  });
+  // Recompute discount
+  if(p.price&&p.mrp&&p.mrp>p.price) p.discount_percent=Math.round(((p.mrp-p.price)/p.mrp)*100);
+  closeModal(); refreshAll(); sendToServer(); toast(`"${p.name}" saved`, 's');
+}
+
+function closeModal() { $('moverlay').classList.remove('open'); curEditId=null; }
+function handleMOverlay(e) { if(e.target===$('moverlay'))closeModal(); }
+function navigateModal(dir) {
+  const idx=filteredProducts.findIndex(x=>x.productId===curEditId);
+  const ni=idx+dir; if(ni<0||ni>=filteredProducts.length)return;
+  saveModal();
+  openModal(filteredProducts[ni].productId);
+}
+
+// ================================================================
+// TAB SWITCH
+// ================================================================
+function switchTab(tab) {
+  curTab=tab;
+  domQ('.ftab').forEach(t=>t.classList.remove('on'));
+  domQ('.fpanel').forEach(p=>p.classList.remove('on'));
+  const tabEl=document.querySelector(`.ftab[onclick*="${tab}"]`); if(tabEl)tabEl.classList.add('on');
+  const panEl=$(`fp-${tab}`); if(panEl)panEl.classList.add('on');
+}
+
+// ================================================================
+// PIPELINE
+// ================================================================
+function openPipeline() { 
+  alert('The Pipeline requires Node.js and Playwright. Download the JSON, run the pipeline locally, and upload back to GitHub.');
+}
+function closePipeline() { $('pipeOverlay').classList.remove('open'); }
+function runPipeline() {}
+
+// ================================================================
+// EXPORT CSV
+// ================================================================
+async function exportCSV() {
+  if(!filteredProducts.length){toast('Nothing to export','w');return;}
+  try {
+    const res=await fetch('/api/export-csv',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(filteredProducts)});
+    const blob=await res.blob(); const url=URL.createObjectURL(blob);
+    const a=document.createElement('a'); a.href=url; a.download=`products_${Date.now()}.csv`; a.click(); URL.revokeObjectURL(url);
+    toast(`Exported ${filteredProducts.length} products`, 's');
+  } catch{toast('Export failed','e');}
+}
+
+// ================================================================
+// SAVE TO GITHUB
+// ================================================================
+function sendToServer() { try { localStorage.setItem('localProducts', JSON.stringify(allProducts)); } catch(e){} }
+async function saveToGitHub() {
+  const c = loadGhConfig();
+  if (!c) return openConfigModal();
+  try {
+    toast('Saving to GitHub...', 'i');
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(allProducts, null, 2))));
+    const res = await fetch(`https://api.github.com/repos/${c.owner}/${c.repo}/contents/${c.path}`, {
+      method: 'PUT',
+      headers: { 'Authorization': `Bearer ${c.token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: 'Update products via Build Mart Editor',
+        content: content,
+        sha: currentGhSha
+      })
+    });
+    if (!res.ok) throw new Error(await res.text());
+    const data = await res.json();
+    currentGhSha = data.content.sha;
+    toast('Saved to GitHub!', 's');
+    localStorage.removeItem('localProducts');
+  } catch(e) {
+    toast('Failed to save to GitHub: ' + e.message, 'e');
+    console.error(e);
+  }
+}
+
+// ================================================================
+// KEYBOARD SHORTCUTS
+// ================================================================
+document.addEventListener('keydown', e => {
+  const mo=$('moverlay').classList.contains('open');
+  if(e.key==='Escape'){ if(mo)closeModal(); else if($('pipeOverlay').classList.contains('open'))closePipeline(); }
+  if(mo){
+    if((e.ctrlKey||e.metaKey)&&e.key==='s'){e.preventDefault();saveModal();}
+    if(e.key==='ArrowRight'&&!e.target.matches('input,textarea,select')){e.preventDefault();navigateModal(1);}
+    if(e.key==='ArrowLeft'&&!e.target.matches('input,textarea,select')){e.preventDefault();navigateModal(-1);}
+  } else {
+    if((e.ctrlKey||e.metaKey)&&e.key==='z'&&!e.shiftKey){e.preventDefault();undo();}
+    if((e.ctrlKey||e.metaKey)&&(e.key==='y'||(e.key==='z'&&e.shiftKey))){e.preventDefault();redo();}
+  }
+});
+
+// ================================================================
+// INIT
+// ================================================================
+loadData();
+</script>
+</body>
+</html>
